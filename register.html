@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>ABOUTCOST</title>
+    <link rel="stylesheet" type="text/css" href="style/css/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="nav flex-container item-center flex-space-between">
+        <div class="nav__header">
+            <a class="nav__logo" href="/"></a>
+        </div>
+        <ul class="nav__content">
+            <li class="nav__item">
+                <a class="btn btn-primary" href="">우리 견적서 솔루션은?</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link" href="">기존 견적서 발송은?</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link" href="">장점</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link" href="">요금제</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link" href="">문의</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link" href="">로그인</a>
+            </li>
+            <li class="nav__item">
+                <a class="btn btn-outline-secondary" href="">무료 서비스 가입하기</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="register">
+        <div class="container">
+            <div class="row">
+                <section class="register-info register-default-info">
+                    <!-- 중앙 정렬을 위해, 비어있는 1 column을 삽입함 -->
+                    <div class="one column empty"></div>
+                    <div class="left-section three columns">
+                        <h2 class="title">기본 정보</h2>
+                    </div>
+                    <div class="right-section seven columns">
+                        <form class="form">
+                            <div class="form__group">
+                                <label>아이디<b class="required">*</b></label>
+                                <input class="form__input input-with-btn" type="text" placeholder="이메일 주소로 입력해주세요" /><button class="btn btn-outline-secondary">중복확인</button>
+                            </div>
+                            <div class="form__group">
+                                <label>패스워드<b class="required">*</b></label>
+                                <input class="form__input" type="text" placeholder="8자리 이상 숫자, 문자 포함해주세요" />
+                            </div>
+                            <div class="form__group">
+                                <label>패스워드 확인<b class="required">*</b></label>
+                                <input class="form__input" type="text" placeholder="패스워드를 한 번 더 입력해주세요" />
+                            </div>
+                        </form>
+                    </div>
+                </section>
+            </div>
+            <div class="row">
+                <section class="register-info register-manager-info">
+                    <!-- 중앙 정렬을 위해, 비어있는 1 column을 삽입함 -->
+                    <div class="one column empty"></div>
+                    <div class="left-section three columns">
+                        <h2 class="title">담당자 정보</h2>
+                    </div>
+                    <div class="right-section seven columns">
+                        <form class="form">
+                            <div class="form__group">
+                                <label>담당자 이름<b class="required">*</b></label>
+                                <input class="form__input" type="text" placeholder="{설명 필요}" />
+                            </div>
+                            <div class="form__group">
+                                <label>담당자 부서</label>
+                                <input class="form__input" type="text" placeholder="{설명 필요}" />
+                            </div>
+                            <div class="form__group">
+                                <label>담당자 직책</label>
+                                <input class="form__input" type="text" placeholder="{설명 필요}" />
+                            </div>
+                            <div class="form__group">
+                                <label>담당자 이메일</label>
+                                <input class="form__input" type="text" placeholder="아이디 상의 이메일 주소와 다른 경우 수정해주세요" />
+                            </div>
+                            <div class="form__group">
+                                <label>담당자 연락처</label>
+                                <input class="form__input" type="text" placeholder="{설명 필요}" />
+                            </div>
+                        </form>
+                    </div>
+                </section>
+            </div>
+            <div class="row">
+                <section class="register-info register-company-info">
+                    <!-- 중앙 정렬을 위해, 비어있는 1 column을 삽입함 -->
+                    <div class="one column empty"></div>
+                    <div class="left-section three columns">
+                        <h2 class="title">회사 정보</h2>
+                    </div>
+                    <div class="right-section seven columns">
+                        <form class="form">
+                            <div class="form__group">
+                                <label>사업자등록번호</label>
+                                <input class="form__input input-with-btn" class="input-with-btn" type="text" placeholder="10자리 숫자를 입력해주세요" /><button class="btn btn-outline-secondary">확인</button>
+                                <small class="form__text">없는 경우 생략가능. 입력시 아래 정보가 자동입력됩니다.</small>
+                            </div>
+                            <div class="form__group">
+                                <label>법인등록번호</label>
+                                <input class="form__input input-with-btn" type="text" placeholder="13자리 숫자를 입력해주세요" /><button class="btn btn-outline-secondary">확인</button>
+                                <small class="form__text">없는 경우 생략가능.</small>
+                            </div>
+                            <hr class="divider"/>
+                            <div class="form__group-wrap row">
+                                <div class="form__group six columns">
+                                    <label>회사 이름</label>
+                                    <input class="form__input" type="text" placeholder="{설명 필요}" />
+                                </div>
+                                <div class="form__group six columns">
+                                    <label>대표자 이름</label>
+                                    <input class="form__input" type="text" placeholder="{설명 필요}" />
+                                </div>
+                            </div>
+                            <div class="form__group">
+                                <label>대표 이메일</label>
+                                <input class="form__input" type="text" placeholder="아이디 상의 이메일 주소와 다른 경우 수정해주세요" />
+                            </div>
+                            <div class="form__group">
+                                <label>대표 연락처</label>
+                                <input class="form__input" type="text" placeholder="{설명 필요}" />
+                            </div>
+                            <div class="form__group">
+                                <label>회사 주소</label>
+                                <input class="form__input input-with-btn" type="text" placeholder="{설명 필요}" /><button class="btn btn-outline-secondary">찾기</button>
+                            </div>
+                            <hr class="divider"/>
+                            <div class="form__group-wrap row">
+                                <div class="form__group six columns">
+                                    <label>업종</label>
+                                    <input class="form__input" type="text" placeholder="{설명 필요}" />
+                                </div>
+                                <div class="form__group six columns">
+                                    <label>업태</label>
+                                    <input class="form__input" type="text" placeholder="{설명 필요}" />
+                                </div>
+                            </div>
+                            <button class="btn btn-primary">가입 완료</button>
+                        </form>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

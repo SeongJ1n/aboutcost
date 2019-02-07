@@ -3,7 +3,7 @@
 .container {
   position: relative;
   width: 100%;
-  max-width: 1060px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box; }
@@ -12,9 +12,12 @@
   width: 100%;
   float: left;
   box-sizing: border-box; }
+.empty {
+  height: 0;
+}
 
-/* For devices larger than 550px */
-@media (min-width: 650px) {
+/* For devices larger than 775px */
+@media (min-width: 775px) {
   .column,
   .columns {
     margin-left: 4%; }
