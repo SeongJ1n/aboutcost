@@ -15,7 +15,7 @@
         </div>
         <ul class="nav__content">
             <li class="nav__item">
-                <a class="btn btn-primary" href="">우리 견적서 솔루션은?</a>
+                <a class="btn btn--primary" href="">우리 견적서 솔루션은?</a>
             </li>
             <li class="nav__item">
                 <a class="nav__link" href="">기존 견적서 발송은?</a>
@@ -33,7 +33,7 @@
                 <a class="nav__link" href="">로그인</a>
             </li>
             <li class="nav__item">
-                <a class="btn btn-outline-secondary" href="">무료 서비스 가입하기</a>
+                <a class="btn btn-outline--secondary" href="">무료 서비스 가입하기</a>
             </li>
         </ul>
     </nav>
@@ -51,7 +51,7 @@
                         <form class="form">
                             <div class="form__group">
                                 <label>아이디<b class="required">*</b></label>
-                                <input class="form__input input-with-btn" type="text" placeholder="이메일 주소로 입력해주세요" /><button class="btn btn-outline-secondary">중복확인</button>
+                                <input class="form__input input-with-btn" type="text" placeholder="이메일 주소로 입력해주세요" /><button class="btn btn-outline--secondary">중복확인</button>
                             </div>
                             <div class="form__group">
                                 <label>패스워드<b class="required">*</b></label>
@@ -73,28 +73,67 @@
                         <h2 class="title">담당자 정보</h2>
                     </div>
                     <div class="right-section seven columns">
-                        <form class="form">
-                            <div class="form__group">
-                                <label>담당자 이름<b class="required">*</b></label>
-                                <input class="form__input" type="text" placeholder="{설명 필요}" />
+                        <div class="manager__list manager__list--open">
+                            <div class="list__header">
+                                <h3 class="list__title">담당자 1</h3>
+                                <div class="list__arrow"></div>
                             </div>
-                            <div class="form__group">
-                                <label>담당자 부서</label>
-                                <input class="form__input" type="text" placeholder="{설명 필요}" />
+                            <hr class="divider" />
+                            <form class="form">
+                                <div class="form__group">
+                                    <label>담당자 이름<b class="required">*</b></label>
+                                    <input class="form__input" type="text" placeholder="{설명 필요}" />
+                                </div>
+                                <div class="form__group">
+                                    <label>담당자 부서</label>
+                                    <input class="form__input" type="text" placeholder="{설명 필요}" />
+                                </div>
+                                <div class="form__group">
+                                    <label>담당자 직책</label>
+                                    <input class="form__input" type="text" placeholder="{설명 필요}" />
+                                </div>
+                                <div class="form__group">
+                                    <label>담당자 이메일</label>
+                                    <input class="form__input" type="text" placeholder="아이디 상의 이메일 주소와 다른 경우 수정해주세요" />
+                                </div>
+                                <div class="form__group">
+                                    <label>담당자 연락처</label>
+                                    <input class="form__input" type="text" placeholder="{설명 필요}" />
+                                </div>
+                                <button class="btn btn-outline--danger">삭제하기</button>
+                            </form>
+                        </div>
+                        <div class="manager__list">
+                            <div class="list__header">
+                                <h3 class="list__title">담당자 2</h3>
+                                <div class="list__arrow"></div>
                             </div>
-                            <div class="form__group">
-                                <label>담당자 직책</label>
-                                <input class="form__input" type="text" placeholder="{설명 필요}" />
-                            </div>
-                            <div class="form__group">
-                                <label>담당자 이메일</label>
-                                <input class="form__input" type="text" placeholder="아이디 상의 이메일 주소와 다른 경우 수정해주세요" />
-                            </div>
-                            <div class="form__group">
-                                <label>담당자 연락처</label>
-                                <input class="form__input" type="text" placeholder="{설명 필요}" />
-                            </div>
-                        </form>
+                            <hr class="divider" />
+                            <form class="form">
+                                <div class="form__group">
+                                    <label>담당자 이름<b class="required">*</b></label>
+                                    <input class="form__input" type="text" placeholder="{설명 필요}" />
+                                </div>
+                                <div class="form__group">
+                                    <label>담당자 부서</label>
+                                    <input class="form__input" type="text" placeholder="{설명 필요}" />
+                                </div>
+                                <div class="form__group">
+                                    <label>담당자 직책</label>
+                                    <input class="form__input" type="text" placeholder="{설명 필요}" />
+                                </div>
+                                <div class="form__group">
+                                    <label>담당자 이메일</label>
+                                    <input class="form__input" type="text" placeholder="아이디 상의 이메일 주소와 다른 경우 수정해주세요" />
+                                </div>
+                                <div class="form__group">
+                                    <label>담당자 연락처</label>
+                                    <input class="form__input" type="text" placeholder="{설명 필요}" />
+                                </div>
+                                <button class="btn btn-outline--danger">삭제하기</button>
+                            </form>
+                        </div>
+                        <button class="btn btn-outline--primary">담당자 추가하기</button>
                     </div>
                 </section>
             </div>
@@ -109,12 +148,12 @@
                         <form class="form">
                             <div class="form__group">
                                 <label>사업자등록번호</label>
-                                <input class="form__input input-with-btn" class="input-with-btn" type="text" placeholder="10자리 숫자를 입력해주세요" /><button class="btn btn-outline-secondary">확인</button>
+                                <input class="form__input input-with-btn" class="input-with-btn" type="text" placeholder="10자리 숫자를 입력해주세요" /><button class="btn btn-outline--secondary">확인</button>
                                 <small class="form__text">없는 경우 생략가능. 입력시 아래 정보가 자동입력됩니다.</small>
                             </div>
                             <div class="form__group">
                                 <label>법인등록번호</label>
-                                <input class="form__input input-with-btn" type="text" placeholder="13자리 숫자를 입력해주세요" /><button class="btn btn-outline-secondary">확인</button>
+                                <input class="form__input input-with-btn" type="text" placeholder="13자리 숫자를 입력해주세요" /><button class="btn btn-outline--secondary">확인</button>
                                 <small class="form__text">없는 경우 생략가능.</small>
                             </div>
                             <hr class="divider"/>
@@ -138,7 +177,7 @@
                             </div>
                             <div class="form__group">
                                 <label>회사 주소</label>
-                                <input class="form__input input-with-btn" type="text" placeholder="{설명 필요}" /><button class="btn btn-outline-secondary">찾기</button>
+                                <input class="form__input input-with-btn" type="text" placeholder="{설명 필요}" /><button class="btn btn-outline--secondary">찾기</button>
                             </div>
                             <hr class="divider"/>
                             <div class="form__group-wrap row">
@@ -151,7 +190,7 @@
                                     <input class="form__input" type="text" placeholder="{설명 필요}" />
                                 </div>
                             </div>
-                            <button class="btn btn-primary">가입 완료</button>
+                            <button class="btn btn--primary">가입 완료</button>
                         </form>
                     </div>
                 </section>

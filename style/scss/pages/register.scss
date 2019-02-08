@@ -16,6 +16,7 @@
         .right-section {
             padding-bottom: 40px;
             border: 1px solid $oc-gray-3;
+            border-radius: 5px;
             background-color: $oc-white;
             box-shadow: 0 2px 4px $oc-gray-2;
             .form__group {
@@ -31,13 +32,13 @@
                     transition: 0.2s ease-out;
                     &:focus { border-bottom-color: $oc-gray-9; }
                 }
-                .input-with-btn { width: calc(100% - 110px); }
-                .btn.btn-outline-secondary {
+                .input-with-btn { width: calc(100% - 120px); }
+                .btn.btn-outline--secondary {
                     display: inline-block;
                     width: 100px; 
+                    margin-left: 20px;
                     padding: 11px 18px;
                     border-color: $oc-gray-3;
-                    border-radius: 0;
                     font-size: 15px;
                 }
             }
@@ -48,6 +49,7 @@
             .divider {
                 width: 100%;
                 margin-top: 20px;
+                padding-top: 0; // 기본 padding 초기화
                 padding-bottom: 20px;
                 border: 0;
                 border-bottom: 1px dashed $oc-gray-4;
@@ -56,6 +58,9 @@
         }
     }
     .row:first-child .register-info { margin-top: 0; }
+    .row:last-child {
+        padding-bottom: 40px; // 마지막 섹션 하단 패딩 
+    }
 }
 
 // 기본정보
@@ -65,7 +70,69 @@
 // 담당자 정보
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 .register-info.register-manager-info {
-    
+    .right-section {
+        padding-bottom: 0;
+        border: 0;
+        background-color: transparent;
+        box-shadow: none;
+        .manager__list {
+            padding-bottom: 0;
+            border: 1px solid $oc-gray-3;
+            border-radius: 5px;
+            background-color: $oc-white;
+            box-shadow: 0 2px 4px $oc-gray-2;
+            .list__header {
+                padding: 30px 40px;
+                transition: 0.2s ease-out;
+                cursor: pointer;
+                &:hover { background-color: $oc-gray-0; }
+                .list__title {
+                    display: inline-block;
+                }
+                .list__arrow {
+                    float: right;
+                    display: inline-block;
+                    width: 15px;
+                    height: 15px;
+                    border: 0 solid $oc-gray-5;
+                    border-width: 0 0 2px 2px;
+                    transform: translateY(-2px) rotate(-45deg);
+                }
+            }
+            .divider {
+                display: none;
+                margin-top: 0;
+                padding: 0;
+            }
+            .form { display: none; }
+            .btn.btn-outline--danger {
+                width: 100%;
+                padding: 14px 16px 15px;
+                border-radius: 0 0 3px 3px;
+                margin-top: 40px;
+                font-size: 15px;
+                font-weight: 600;
+            }
+        }
+        .manager__list.manager__list--open {
+            .list__header {
+                .list__arrow {
+                    transform: translateY(6px) rotate(135deg);
+                }
+            }
+            .form { display: block; }
+            .divider { display: block; }
+        }
+        .manager__list ~ .manager__list { margin-top: 20px; }
+    }
+    .btn.btn-outline--primary {
+        width: 100%;
+        padding: 14px 16px 15px;
+        border-style: dashed;
+        margin-top: 20px;
+        font-size: 15px;
+        font-weight: 600;
+    }
 }
 
 // 회사 정보
@@ -73,11 +140,11 @@
 .register-info.register-company-info {
     .right-section {
         padding-bottom: 0;
-        .btn.btn-primary {
+        .btn.btn--primary {
             width: 100%;
             padding: 14px 16px 15px;
             border-radius: 0 0 3px 3px;
-            margin-top: 50px;
+            margin-top: 40px;
             font-size: 15px;
             font-weight: 600;
         }

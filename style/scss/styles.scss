@@ -113,22 +113,32 @@ html {
     border-radius: 3px;
     font-size: 13px;
     transition: 0.2s ease-out;
+    cursor: pointer;
 }
 
-.btn-primary {
+.btn--primary {
     background-color: $oc-cyan-5;
     color: $oc-white;
     &:hover { background-color: $oc-cyan-6; }
 }
 
-.btn-outline-secondary {
+.btn-outline--primary {
+    border-color: $oc-cyan-5;
+    background-color: transparent;
+    color: $oc-cyan-5;
+    &:hover { background-color: $oc-cyan-0; }
+}
+.btn-outline--secondary {
     border-color: $oc-gray-4;
+    background-color: transparent;
     color: $oc-gray-8;
     &:hover { background-color: $oc-gray-0; }
 }
-.btn-outline-danger {
+.btn-outline--danger {
     border-color: $oc-red-7;
+    background-color: transparent;
     color: $oc-red-7;
+    &:hover { background-color: $oc-red-0; }
 }
 
 // input
