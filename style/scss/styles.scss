@@ -6,6 +6,7 @@
 @import 'ingredients/type';
 @import 'ingredients/mixin';
 @import 'ingredients/flex';
+@import 'pages/landing';
 @import 'pages/register';
 
 // 공통요소
@@ -74,7 +75,7 @@ html {
     padding: 0 40px;
     border-bottom: 1px solid $oc-gray-3;
     background-color: $oc-white;
-    box-shadow: 0 2px 4px $oc-gray-1;
+    box-shadow: 0 2px 4px rgba(222, 226, 230, 0.3);
     .nav__header {
         .nav__logo {
             display: inline-block;

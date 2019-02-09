@@ -1,8 +1,6 @@
 // 가입페이지
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 .register {
-    display: flex;
-    justify-content: center;
     min-height: 100vh;
     padding-top: 110px; // nav height + 40px
     background-color: $oc-gray-0;
@@ -57,8 +55,8 @@
             }
         }
     }
-    .row:first-child .register-info { margin-top: 0; }
-    .row:last-child {
+    .register-info:first-child { margin-top: 0; }
+    .register-info:last-child {
         padding-bottom: 40px; // 마지막 섹션 하단 패딩 
     }
 }

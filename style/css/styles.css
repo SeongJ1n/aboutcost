@@ -262,11 +262,12 @@ body {
 
 h1 {
   font-size: 36px;
-  line-height: 1.45em;
+  line-height: 1.25em;
   letter-spacing: -.03em; }
 
 h2 {
   font-size: 27px;
+  line-height: 1.45em;
   letter-spacing: -.03em; }
 
 h3 {
@@ -274,8 +275,8 @@ h3 {
   letter-spacing: -.02em; }
 
 h4 {
-  font-weight: 400;
-  font-size: 16px; }
+  font-size: 16px;
+  line-height: 1.55em; }
 
 h5 {
   font-weight: 600;
@@ -336,9 +337,50 @@ p {
 .item-center {
   align-items: center; }
 
-.register {
+.landing .landing__cover {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  height: 700px;
+  padding-top: 70px;
+  background-color: #ffffff; }
+  .landing .landing__cover .left .cover__img {
+    width: 100%;
+    height: 450px; }
+  .landing .landing__cover .right {
+    padding-left: 20px; }
+    .landing .landing__cover .right .cover__title {
+      margin-top: 140px; }
+    .landing .landing__cover .right .cover__subtitle {
+      margin-top: 20px;
+      line-height: 1.75em;
+      color: #868e96; }
+.landing .landing__merit {
+  padding: 80px 0; }
+  .landing .landing__merit .merit__item {
+    padding: 40px;
+    text-align: center; }
+    .landing .landing__merit .merit__item .item__img {
+      width: 100%;
+      height: 250px; }
+    .landing .landing__merit .merit__item .item__title {
+      margin-top: 30px; }
+    .landing .landing__merit .merit__item .item__description {
+      margin-top: 15px;
+      color: #868e96; }
+.landing .landing__premium {
+  padding: 80px 0;
+  background-color: #ffffff; }
+  .landing .landing__premium .left .premium__title {
+    margin-top: 120px; }
+  .landing .landing__premium .left .premium__subtitle {
+    margin-top: 20px;
+    line-height: 1.75em;
+    color: #868e96; }
+  .landing .landing__premium .right .premium__img {
+    width: 100%;
+    height: 400px; }
+
+.register {
   min-height: 100vh;
   padding-top: 110px;
   background-color: #f8f9fa; }
@@ -387,9 +429,9 @@ p {
         border: 0;
         border-bottom: 1px dashed #ced4da;
         box-shadow: 0 2px 4px #f1f3f5; }
-  .register .row:first-child .register-info {
+  .register .register-info:first-child {
     margin-top: 0; }
-  .register .row:last-child {
+  .register .register-info:last-child {
     padding-bottom: 40px; }
 
 .register-info.register-manager-info .right-section {
@@ -509,7 +551,7 @@ html {
   padding: 0 40px;
   border-bottom: 1px solid #dee2e6;
   background-color: #ffffff;
-  box-shadow: 0 2px 4px #f1f3f5; }
+  box-shadow: 0 2px 4px rgba(222, 226, 230, 0.3); }
   .nav .nav__header .nav__logo {
     display: inline-block;
     width: 70px;
