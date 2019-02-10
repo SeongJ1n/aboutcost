@@ -407,6 +407,48 @@ p {
       margin-top: 20px;
       font-size: 15px; }
 
+.login {
+  background-color: #f8f9fa; }
+  .login .container {
+    padding-top: 40px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center; }
+  .login .login-form {
+    padding: 40px;
+    border: 1px solid #e9ecef;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px #e9ecef; }
+    .login .login-form .title {
+      text-align: center; }
+    .login .login-form .form__group {
+      margin-top: 20px; }
+      .login .login-form .form__group .form__input {
+        margin-top: 15px;
+        padding: 12px 12px 13px;
+        border: 1px solid #e9ecef;
+        border-radius: 3px; }
+        .login .login-form .form__group .form__input:focus {
+          border-color: #212529; }
+    .login .login-form .form__group:first-child {
+      margin-top: 30px; }
+    .login .login-form .btn--primary {
+      width: 100%;
+      padding: 14px 16px 15px;
+      margin-top: 20px;
+      font-size: 15px; }
+    .login .login-form .link-wrap {
+      margin-top: 25px;
+      text-align: center;
+      color: #868e96;
+      font-weight: 500;
+      font-size: 15px; }
+      .login .login-form .link-wrap .link {
+        color: #1098ad; }
+    .login .login-form .link-wrap ~ .link-wrap {
+      margin-top: 15px; }
+
 .register {
   min-height: 100vh;
   padding-top: 110px;
