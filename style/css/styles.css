@@ -449,6 +449,42 @@ p {
     .login .login-form .link-wrap ~ .link-wrap {
       margin-top: 15px; }
 
+.findpass {
+  background-color: #f8f9fa; }
+  .findpass .container {
+    padding-top: 40px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center; }
+  .findpass .findpass-form {
+    padding: 40px;
+    border: 1px solid #e9ecef;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px #e9ecef; }
+    .findpass .findpass-form .title {
+      text-align: center; }
+    .findpass .findpass-form .description {
+      margin-top: 15px;
+      text-align: center;
+      color: #868e96; }
+    .findpass .findpass-form .divider {
+      margin-top: 5px; }
+    .findpass .findpass-form .form__group {
+      margin-top: 25px; }
+      .findpass .findpass-form .form__group .form__input {
+        margin-top: 15px;
+        padding: 12px 12px 13px;
+        border: 1px solid #e9ecef;
+        border-radius: 3px; }
+        .findpass .findpass-form .form__group .form__input:focus {
+          border-color: #212529; }
+    .findpass .findpass-form .btn--primary {
+      width: 100%;
+      padding: 14px 16px 15px;
+      margin-top: 25px;
+      font-size: 15px; }
+
 .register {
   min-height: 100vh;
   padding-top: 110px;
