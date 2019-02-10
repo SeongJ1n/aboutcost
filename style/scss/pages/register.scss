@@ -8,10 +8,10 @@
     // ––––––––––––––––––––––––––––––––––––––––––––––––––
     .register-info {
         margin-top: 40px;
-        .left-section {
+        .left {
             .title { margin-top: 35px; }
         }
-        .right-section {
+        .right {
             padding-bottom: 40px;
             border: 1px solid $oc-gray-3;
             border-radius: 5px;
@@ -19,17 +19,6 @@
             box-shadow: 0 2px 4px $oc-gray-2;
             .form__group {
                 padding: 40px 40px 0;
-                label { font-size: 16px; }
-                .form__input {
-                    width: 100%;
-                    margin-top: 12px;
-                    padding: 12px 0 13px;
-                    border: 0;
-                    border-bottom: 1px solid $oc-gray-3;
-                    font-size: 16px;
-                    transition: 0.2s ease-out;
-                    &:focus { border-bottom-color: $oc-gray-9; }
-                }
                 .input-with-btn { width: calc(100% - 120px); }
                 .btn.btn-outline--secondary {
                     display: inline-block;
@@ -45,12 +34,6 @@
                 .form__group:last-child { padding-left: 0; }
             }
             .divider {
-                width: 100%;
-                margin-top: 20px;
-                padding-top: 0; // 기본 padding 초기화
-                padding-bottom: 20px;
-                border: 0;
-                border-bottom: 1px dashed $oc-gray-4;
                 box-shadow: 0 2px 4px $oc-gray-1;
             }
         }
@@ -68,7 +51,7 @@
 // 담당자 정보
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 .register-info.register-manager-info {
-    .right-section {
+    .right {
         padding-bottom: 0;
         border: 0;
         background-color: transparent;
@@ -109,7 +92,6 @@
                 border-radius: 0 0 3px 3px;
                 margin-top: 40px;
                 font-size: 15px;
-                font-weight: 600;
             }
         }
         .manager__list.manager__list--open {
@@ -129,14 +111,13 @@
         border-style: dashed;
         margin-top: 20px;
         font-size: 15px;
-        font-weight: 600;
     }
 }
 
 // 회사 정보
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 .register-info.register-company-info {
-    .right-section {
+    .right {
         padding-bottom: 0;
         .btn.btn--primary {
             width: 100%;
@@ -144,7 +125,6 @@
             border-radius: 0 0 3px 3px;
             margin-top: 40px;
             font-size: 15px;
-            font-weight: 600;
         }
     }
 }

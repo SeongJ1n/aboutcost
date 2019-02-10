@@ -1,0 +1,28 @@
+// 문의페이지
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+.ask {
+    min-height: 100vh;
+    padding-top: 110px; // nav height + 40px
+    padding-bottom: 40px;
+    background-color: $oc-gray-0;
+    .ask-form {
+        padding: 40px;
+        border: 1px solid $oc-gray-2;
+        border-radius: 5px;
+        background-color: $oc-white;
+        box-shadow: 0 2px 4px $oc-gray-2;
+        .title { text-align: center;}
+        .description {
+            margin-top: 15px;
+            text-align: center;
+            color: $oc-gray-6;
+        }
+        .form__group { margin-top: 40px; }
+        .btn--primary {
+            width: 100%;
+            padding: 14px 16px 15px;
+            margin-top: 20px;
+            font-size: 15px;
+        }
+    }   
+}

@@ -7,6 +7,7 @@
 @import 'ingredients/mixin';
 @import 'ingredients/flex';
 @import 'pages/landing';
+@import 'pages/ask';
 @import 'pages/register';
 
 // 공통요소
@@ -113,6 +114,7 @@ html {
     border: 1px solid transparent;
     border-radius: 3px;
     font-size: 13px;
+    font-weight: 600;
     transition: 0.2s ease-out;
     cursor: pointer;
 }
@@ -147,15 +149,20 @@ html {
 .form__group {
     label {
         display: block;
-        font-size: 14px;
+        font-size: 16px;
         .required { color: $oc-red-7; }
     }
     .form__input {
-        padding: 12px 14px 13px;
-        border: 1px solid $oc-gray-3;
-        font-size: 14px;
+        width: 100%;
+        margin-top: 12px;
+        padding: 12px 0 13px;
+        border: 0;
+        border-bottom: 1px solid $oc-gray-3;
+        font-size: 16px;
+        transition: 0.2s ease-out;
+        &:focus { border-bottom-color: $oc-gray-9; }
         &::placeholder { color: $oc-gray-5; }
-    }    
+    }
     .form__text {
         display: block;
         margin-top: 10px;
@@ -163,4 +170,29 @@ html {
         font-size: 13px;
         font-weight: 500;
     } 
+    .form__textarea {
+        width: 100%;
+        min-height: 8.5em;
+        margin-top: 15px;
+        padding: 12px;
+        border: 1px solid $oc-gray-3;
+        font-size: 16px;
+        transition: 0.2s ease-out;
+        &:focus {
+            border-color: $oc-gray-9;
+            outline: none;
+        }
+        &::placeholder { color: $oc-gray-5; }
+    }
+}
+
+// divider
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+.divider {
+    width: 100%;
+    margin-top: 20px;
+    padding-top: 0; // 기본 padding 초기화
+    padding-bottom: 20px;
+    border: 0;
+    border-bottom: 1px dashed $oc-gray-4;
 }
