@@ -46,7 +46,6 @@
     }
     .landing__premium {
         padding: 80px 0;
-        background-color: $oc-white;
         .left {
             .premium__title {
                 margin-top: 120px;
@@ -61,6 +60,26 @@
             .premium__img {
                 width: 100%;
                 height: 400px;
+            }
+        }
+    }
+    .landing__test {
+        padding: 80px 0;
+        background-color: $oc-white;
+        .left {
+            .test__img {
+                width: 100%;
+                height: 400px;
+            }
+        }
+        .right {
+            .test__title {
+                margin-top: 120px;
+            }
+            .test__subtitle {
+                margin-top: 20px;
+                line-height: 1.75em;
+                color: $oc-gray-6;
             }
         }
     }

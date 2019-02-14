@@ -48,6 +48,21 @@
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 .register-info.register-default-info {}
 
+// 기본정보 - 약식 회원가입
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+.register-info.register-default-info.register--informality {
+    .right {
+        padding-bottom: 0;
+        .btn.btn--primary {
+            width: 100%;
+            padding: 14px 16px 15px;
+            border-radius: 0 0 3px 3px;
+            margin-top: 40px;
+            font-size: 15px;
+        }
+    }
+}
+
 // 담당자 정보
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 .register-info.register-manager-info {
