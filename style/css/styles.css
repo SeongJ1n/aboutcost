@@ -574,12 +574,12 @@ p {
       padding: 0; }
     .register-info.register-manager-info .right .manager__list .form {
       display: none; }
-    .register-info.register-manager-info .right .manager__list .btn.btn-outline--danger {
-      width: 100%;
-      padding: 14px 16px 15px;
-      border-radius: 0 0 3px 3px;
-      margin-top: 40px;
-      font-size: 15px; }
+    .register-info.register-manager-info .right .manager__list .btn-wrap {
+      padding: 40px; }
+      .register-info.register-manager-info .right .manager__list .btn-wrap .btn.btn-outline--danger {
+        width: 100%;
+        padding: 14px 16px 15px;
+        font-size: 15px; }
   .register-info.register-manager-info .right .manager__list.manager__list--open .list__header .list__arrow {
     transform: translateY(6px) rotate(135deg); }
   .register-info.register-manager-info .right .manager__list.manager__list--open .form {
