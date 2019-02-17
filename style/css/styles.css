@@ -767,7 +767,8 @@ html {
   font-size: 16px;
   transition: 0.2s ease-out; }
   .form__group .form__input:focus {
-    border-bottom-color: #212529; }
+    border-bottom-color: #212529;
+    outline: none; }
   .form__group .form__input::placeholder {
     color: #adb5bd; }
 .form__group .form__text {

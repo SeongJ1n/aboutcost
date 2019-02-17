@@ -162,7 +162,10 @@ html {
         border-bottom: 1px solid $oc-gray-3;
         font-size: 16px;
         transition: 0.2s ease-out;
-        &:focus { border-bottom-color: $oc-gray-9; }
+        &:focus {
+            border-bottom-color: $oc-gray-9;
+            outline: none;
+        }
         &::placeholder { color: $oc-gray-5; }
     }
     .form__text {
