@@ -72,7 +72,6 @@
         background-color: transparent;
         box-shadow: none;
         .manager__list {
-            padding-bottom: 0;
             border: 1px solid $oc-gray-3;
             border-radius: 5px;
             background-color: $oc-white;
@@ -95,7 +94,7 @@
                     transform: translateY(-2px) rotate(-45deg);
                 }
             }
-            .divider {
+            .divider__header {
                 display: none;
                 margin-top: 0;
                 padding: 0;
@@ -134,13 +133,60 @@
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 .register-info.register-company-info {
     .right {
-        padding-bottom: 0;
-        .btn.btn--primary {
-            width: 100%;
-            padding: 14px 16px 15px;
-            border-radius: 0 0 3px 3px;
-            margin-top: 40px;
-            font-size: 15px;
+        border: 0;
+        background-color: transparent;
+        box-shadow: none;
+        .company-info {
+            padding-bottom: 0;
+            border: 1px solid $oc-gray-3;
+            border-radius: 5px;
+            background-color: $oc-white;
+            box-shadow: 0 2px 4px $oc-gray-2;
+            .list__header {
+                padding: 30px 40px;
+                transition: 0.2s ease-out;
+                cursor: pointer;
+                &:hover { background-color: $oc-gray-0; }
+                .list__title {
+                    display: inline-block;
+                }
+                .list__arrow {
+                    float: right;
+                    display: inline-block;
+                    width: 15px;
+                    height: 15px;
+                    border: 0 solid $oc-gray-5;
+                    border-width: 0 0 2px 2px;
+                    transform: translateY(-2px) rotate(-45deg);
+                }
+            }
+            .divider__header {
+                display: none;
+                margin-top: 0;
+                padding: 0;
+            }
+            .divider__header {
+                display: none;
+                margin-top: 0;
+                padding: 0;
+            }
+            .form { display: none; }
         }
+        .company-info.company-info--open {
+            padding-bottom: 40px;
+            .list__header {
+                .list__arrow {
+                    transform: translateY(6px) rotate(135deg);
+                }
+            }
+            .form { display: block; }
+            .divider { display: block; }
+        }
+    }
+    .btn.btn--primary {
+        width: 100%;
+        padding: 14px 16px 15px;
+        margin-top: 20px;
+        font-size: 15px;
     }
 }

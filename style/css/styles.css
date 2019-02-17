@@ -547,7 +547,6 @@ p {
   background-color: transparent;
   box-shadow: none; }
   .register-info.register-manager-info .right .manager__list {
-    padding-bottom: 0;
     border: 1px solid #dee2e6;
     border-radius: 5px;
     background-color: #ffffff;
@@ -568,7 +567,7 @@ p {
         border: 0 solid #adb5bd;
         border-width: 0 0 2px 2px;
         transform: translateY(-2px) rotate(-45deg); }
-    .register-info.register-manager-info .right .manager__list .divider {
+    .register-info.register-manager-info .right .manager__list .divider__header {
       display: none;
       margin-top: 0;
       padding: 0; }
@@ -596,13 +595,54 @@ p {
   font-size: 15px; }
 
 .register-info.register-company-info .right {
-  padding-bottom: 0; }
-  .register-info.register-company-info .right .btn.btn--primary {
-    width: 100%;
-    padding: 14px 16px 15px;
-    border-radius: 0 0 3px 3px;
-    margin-top: 40px;
-    font-size: 15px; }
+  border: 0;
+  background-color: transparent;
+  box-shadow: none; }
+  .register-info.register-company-info .right .company-info {
+    padding-bottom: 0;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px #e9ecef; }
+    .register-info.register-company-info .right .company-info .list__header {
+      padding: 30px 40px;
+      transition: 0.2s ease-out;
+      cursor: pointer; }
+      .register-info.register-company-info .right .company-info .list__header:hover {
+        background-color: #f8f9fa; }
+      .register-info.register-company-info .right .company-info .list__header .list__title {
+        display: inline-block; }
+      .register-info.register-company-info .right .company-info .list__header .list__arrow {
+        float: right;
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        border: 0 solid #adb5bd;
+        border-width: 0 0 2px 2px;
+        transform: translateY(-2px) rotate(-45deg); }
+    .register-info.register-company-info .right .company-info .divider__header {
+      display: none;
+      margin-top: 0;
+      padding: 0; }
+    .register-info.register-company-info .right .company-info .divider__header {
+      display: none;
+      margin-top: 0;
+      padding: 0; }
+    .register-info.register-company-info .right .company-info .form {
+      display: none; }
+  .register-info.register-company-info .right .company-info.company-info--open {
+    padding-bottom: 40px; }
+    .register-info.register-company-info .right .company-info.company-info--open .list__header .list__arrow {
+      transform: translateY(6px) rotate(135deg); }
+    .register-info.register-company-info .right .company-info.company-info--open .form {
+      display: block; }
+    .register-info.register-company-info .right .company-info.company-info--open .divider {
+      display: block; }
+.register-info.register-company-info .btn.btn--primary {
+  width: 100%;
+  padding: 14px 16px 15px;
+  margin-top: 20px;
+  font-size: 15px; }
 
 html {
   background-color: #f1f3f5; }
