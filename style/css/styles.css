@@ -86,10 +86,14 @@ button {
   box-sizing: border-box; }
 
 .empty {
+  display: none;
   height: 1px; }
 
 /* For devices larger than 775px */
 @media (min-width: 775px) {
+  .empty {
+    display: block; }
+
   .column,
   .columns {
     margin-left: 4%; }
