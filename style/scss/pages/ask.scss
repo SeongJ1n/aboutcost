@@ -7,10 +7,10 @@
     background-color: $oc-gray-0;
     .ask-form {
         padding: 40px;
-        border: 1px solid $oc-gray-2;
+        border: 1px solid $border;
         border-radius: 5px;
         background-color: $oc-white;
-        box-shadow: 0 2px 4px $oc-gray-2;
+        box-shadow: 0 2px 4px $border;
         .title { text-align: center;}
         .description {
             margin-top: 15px;

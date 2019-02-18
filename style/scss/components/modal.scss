@@ -1,6 +1,4 @@
-// 로그인페이지
-// ––––––––––––––––––––––––––––––––––––––––––––––––––
-.login {
+.modal {
     background-color: $oc-gray-0;
     .container {
         padding-top: 40px;
@@ -8,15 +6,21 @@
         display: flex;
         align-items: center;
     }
-    .login-form {
+    .modal-form {
         padding: 40px;
         border: 1px solid $border;
         border-radius: 5px;
         background-color: $oc-white;
         box-shadow: 0 2px 4px $border;
         .title { text-align: center; }
+        .description {
+            margin-top: 15px;
+            text-align: center;
+            color: $oc-gray-6;
+        }
+        .divider { margin-top: 5px; }
         .form__group {
-            margin-top: 20px;
+            margin-top: 25px;
             .form__input {
                 margin-top: 15px;
                 padding: 12px 12px 13px;
@@ -25,23 +29,11 @@
                 &:focus { border-color: $oc-gray-9; }
             }
         }
-        .form__group:first-child { margin-top: 30px; }
         .btn--primary {
             width: 100%;
             padding: 14px 16px 15px;
-            margin-top: 20px;
-            font-size: 15px;
-        }
-        .link-wrap {
             margin-top: 25px;
-            text-align: center;
-            color: $oc-gray-6;
-            font-weight: 500;
             font-size: 15px;
-            .link {
-                color: $primary--dark;
-            }
         }
-        .link-wrap ~ .link-wrap { margin-top: 15px; }
     }   
 }
