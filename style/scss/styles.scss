@@ -30,6 +30,10 @@ html {
     position: absolute;
     top: 70px; // nav height
     left: 0;
+    width: 100vw;
+    min-height: 100vh;
+    &:before,
+    &:after { clear: both; }
     .sidebar {
         position: fixed;
         left: 0;
@@ -72,5 +76,8 @@ html {
         min-height: 100%;
         padding: 20px 20px 40px;
         margin: auto;
+        &:after {
+            clear: both;
+        }
     }
 }

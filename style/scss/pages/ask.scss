@@ -26,3 +26,15 @@
         }
     }   
 }
+
+// page-container > page-wrap 안에 있을 때, CSS
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+.page-container {
+    .page-wrap {
+        .ask {
+            padding-top: 20px;
+            padding-bottom: 0;
+            background-color: transparent;
+        }
+    }
+}
