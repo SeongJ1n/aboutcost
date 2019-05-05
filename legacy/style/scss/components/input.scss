@@ -1,0 +1,74 @@
+// input
+// form__group과 같은 네이밍은 부트스트랩을 참고했습니다.
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+.form__group {
+    label {
+        display: block;
+        font-size: 15px;
+        .required { color: $oc-red-7; }
+    }
+    input:focus {
+        outline: none;
+    }
+    // .form__input {
+    //     width: 100%;
+    //     margin-top: 12px;
+    //     padding: 12px 0 13px;
+    //     border: 0;
+    //     border-bottom: 1px solid $border;
+    //     font-size: 16px;
+    //     transition: 0.2s ease-out;
+    //     &:focus {
+    //         border-bottom-color: $oc-gray-9;
+    //     }
+    //     &::placeholder { color: $oc-gray-5; }
+    // }
+    .form__input {
+        width: 100%;
+        margin-top: 12px;
+        padding: 12px 12px 13px;
+        border: 1px solid $border;
+        border-radius: $border-radius;
+        font-size: 15px;
+        transition: 0.2s ease-out;
+        &:focus {
+            border-color: $oc-gray-4;
+        }
+        &::placeholder { color: $oc-gray-5; }
+    }
+
+    .form__text {
+        display: block;
+        margin-top: 10px;
+        color: $primary--dark;
+        font-size: 13px;
+        font-weight: 500;
+    }
+    .form__file {
+        display: block;
+        width: 100%;
+        margin-top: 15px;
+        padding: 10px;
+        border: 1px solid $border;
+        border-radius: 5px;
+        font-family: inherit;
+        line-height: inherit;
+        transition: 0.2s ease-out;
+        cursor: pointer;
+        &:hover { background-color: $oc-gray-0; }
+    }
+    .form__textarea {
+        width: 100%;
+        min-height: 8.5em;
+        margin-top: 15px;
+        padding: 12px;
+        border: 1px solid $border;
+        font-size: 16px;
+        transition: 0.2s ease-out;
+        &:focus {
+            border-color: $oc-gray-9;
+            outline: none;
+        }
+        &::placeholder { color: $oc-gray-5; }
+    }
+}

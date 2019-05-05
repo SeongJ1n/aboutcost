@@ -1,0 +1,42 @@
+// btn
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+.btn {
+    padding: 11px 16px 12px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    font-size: 13px;
+    font-weight: 600;
+    transition: 0.2s ease-out;
+    cursor: pointer;
+}
+
+.btn--primary {
+    background-color: $primary;
+    color: $oc-white;
+    &:hover { background-color: $primary--dark; }
+}
+
+.btn-outline--primary {
+    border-color: $primary;
+    background-color: transparent;
+    color: $primary;
+    &:hover { background-color: $oc-cyan-0; }
+}
+.btn-outline--secondary {
+    border-color: $oc-gray-4;
+    background-color: transparent;
+    color: $oc-gray-8;
+    &:hover { background-color: $oc-gray-0; }
+}
+.btn-outline--danger {
+    border-color: $oc-red-7;
+    background-color: transparent;
+    color: $oc-red-7;
+    &:hover { background-color: $oc-red-0; }
+}
+
+.btn--add.btn-outline--secondary {
+    border-style: dashed;
+    background-color: $oc-gray-0;
+    &:hover { background-color: $oc-gray-1; }
+}

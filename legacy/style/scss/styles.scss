@@ -1,0 +1,92 @@
+$container-width: 940px;
+$border-radius: 5px;
+
+// SASS Import
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+@import 'ingredients/reset';
+@import 'ingredients/skeleton';
+@import 'ingredients/open-color';
+@import 'ingredients/type';
+@import 'ingredients/mixin';
+@import 'ingredients/flex';
+@import 'components/nav';
+@import 'components/btn';
+@import 'components/input';
+@import 'components/divider';
+@import 'components/modal';
+@import 'pages/landing';
+@import 'pages/ask';
+@import 'pages/login';
+@import 'pages/findpass';
+@import 'pages/register';
+@import 'pages/new';
+@import 'pages/email-verify';
+
+// 공통요소
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+html {
+    background-color: $oc-gray-1;
+}
+
+// 왼쪽에 side menu 있을 시, container 관련 css
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+.body-container {
+    position: absolute;
+    top: 0; // nav height
+    left: 0;
+    width: 100vw;
+    min-height: 100vh;
+    &:before,
+    &:after { clear: both; }
+    .sidebar {
+        position: fixed;
+        left: 0;
+        width: 260px;
+        height: 100%;
+        padding: 20px 0;
+        border-right: 1px solid $border;
+        background-color: $oc-white;
+        .sidebar__menu {
+            .menu__item {
+                .menu__link {
+                    display: inline-block;
+                    width: 100%;
+                    padding: 20px 30px;
+                    color: $oc-gray-6;
+                    transition: 0.2s ease-out;
+                    &:hover { background-color: $oc-gray-1; }
+                    .nav__logo {
+                        display: inline-block;
+                        width: 70px;
+                        height: 20px;
+                    }
+                }
+                i {
+                    display: inline-block;
+                    min-width: 16px;
+                    margin-right: 24px;
+                    font-size: 16px;
+                    text-align: center;
+                }
+            }
+            .menu__item--active {
+                .menu__link {
+                    background-color: $oc-gray-0;
+                    color: $oc-gray-9;
+                }
+            }
+        }
+    }
+    .body-wrap {
+        position: absolute;
+        left: 260px;
+        top: 0;
+        right: 0;
+        min-height: 100%;
+        padding: 20px 20px 40px;
+        margin: auto;
+        &:after {
+            clear: both;
+        }
+    }
+}

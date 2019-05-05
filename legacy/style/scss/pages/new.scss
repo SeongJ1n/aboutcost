@@ -1,0 +1,45 @@
+.new {
+  .page-container {
+    width: $container-width;
+    .container { padding: 0; } // 내부 container는 padding 제거
+    .page-header {
+      padding-bottom: 15px;
+      border-bottom: 1px solid $border;
+
+      // btn 사이즈 조절 및 primary 색상 버튼 좌측 마진
+      .btn { min-width: 120px; }
+      .btn.btn--primary { margin-left: 10px; }
+    }
+    .estimation-document-info {
+      margin-top: 20px;
+      padding: 30px;
+      border: 1px solid $border;
+      border-radius: $border-radius;
+      background-color: white;
+      @include shadow;
+      .btn-wrap {
+        padding-bottom: 20px;
+        border-bottom: 1px dashed $border;
+        .btn { min-width: 150px; }
+        .btn ~ .btn { margin-left: 10px; }
+      }
+      .container {
+        margin-top: 20px;
+        .btn.add-memo {
+          width: 100%;
+          margin-top: 28px;
+        }
+      }
+    }
+    .estimation-main-data {
+      .chip {
+        min-height: 100px;
+        margin-top: 20px;
+        border-radius: $border-radius;
+        border: 1px solid $border;
+        background-color: white;
+        @include shadow;
+      }
+    }
+  }
+}
