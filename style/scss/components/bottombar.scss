@@ -15,5 +15,5 @@
 }
 
 @media (max-width: $mobile-max-width) {
-    .bottombar { display: block; }
+    .bottombar { display: flex; }
 }
