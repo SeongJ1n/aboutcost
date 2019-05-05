@@ -538,6 +538,7 @@ hr {
 
 .btn--text {
   padding: 0;
+  background-color: transparent;
   color: #22b8cf;
   font-weight: 600; }
 
