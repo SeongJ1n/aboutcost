@@ -65,6 +65,14 @@
                 .btn { min-width: 120px; }
                 .btn.btn--primary { margin-left: 10px; }
             }
+            .page-description {
+                margin-top: 6px;
+                .description {
+                    color: $oc-gray-6;
+                    font-weight: 500;
+                    font-size: 12px;
+                }
+            }
             .row { margin-top: 20px; }
         }
     }
@@ -77,7 +85,7 @@
                 .page-header {
                     border-bottom: none;
                     .title { font-weight: 400; }
-                    .btn { display: none; }
+                    .btn-wrap { display: none; }
                 }
                 .row { margin: 0; }
             }
