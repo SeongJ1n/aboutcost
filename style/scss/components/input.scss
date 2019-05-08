@@ -8,6 +8,8 @@ label {
 }
 input:focus { outline: none; }
 
+// input__text
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
 .input__text {
     width: 100%;
     margin-top: 12px;
@@ -23,7 +25,6 @@ input:focus { outline: none; }
 .input__text.disabled {
     background-color: $oc-gray-0;
 }
-
 .form__input {}
 .form__input.with-btn {
     .input__text { border-radius: $border-radius 0 0 $border-radius;}
@@ -38,6 +39,41 @@ input:focus { outline: none; }
     }
 }
 .form__input ~ .form__input { margin-top: 20px; }
+
+// select-box
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+.select-wrap {
+    position: relative;
+    &:after {
+        position: absolute;
+        z-index: 1;
+        top: 50%;
+        right: 16px;
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        border: solid #212729;
+        border-width: 0 0 1px 1px;
+        transform: rotate(-45deg);
+        content: "";
+    }
+    .select {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        margin-top: 12px;
+        padding: 10px 12px 11px;
+        padding-right: 32px;
+        border: 1px solid $border;
+        border-radius: $border-radius;
+        background-color: transparent;
+        font-family : inherit;
+        font-size: 14px;
+        -webkit-appearance: none;
+        &:focus { outline: none; }
+    }    
+}
+.form__select {}
 
 
 // .form__group {
