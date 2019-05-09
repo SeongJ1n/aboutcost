@@ -18,6 +18,133 @@
             margin-top: 25px;
         }
     }
+    // 견적서 입력부분
+    // ––––––––––––––––––––––––––––––––––––––––––––––––––
+    .document-section {
+        .section__header {
+            border-bottom: 2px solid $oc-gray-9;
+            .input__text {
+                margin: 0;
+                padding-left: 0;
+                font-weight: 700;
+                border: none;
+                background-color: transparent;
+                font-size: 15px;
+            }
+        }
+        .form__select.add-tax {
+            max-width: 360px;
+            .select { background-color: white; }
+        }
+        .table-wrap {
+            margin-top: 15px;
+            overflow: auto;
+            .table {
+                .table__row {
+                    .table__header, 
+                    .table__data {
+                        min-width: 160px;
+                        border-right: 1px solid $border;
+                        font-size: 14px;
+                    }
+                    .table__header {
+                        background-color: $oc-gray-0;
+                    }
+                    .table__data {
+                        position: relative;
+                        background-color: white;
+                        .input__text {
+                            margin: 0;
+                            padding: 0;
+                            border: none;
+                        }
+                    }
+                }
+                .table__row ~ .table__row {
+                    border-top: 1px solid $border;
+                }
+            }
+        }
+    }
+    // 견적서 전체 섹션 합계
+    // ––––––––––––––––––––––––––––––––––––––––––––––––––
+    .document-section__total {
+        overflow: hidden;
+        border: 1px solid $border;
+        border-radius: $border-radius;
+        background-color: white;
+        @include shadow;
+        .total__content {
+            padding: 30px 30px 35px;
+            .title-wrap {
+                padding-bottom: 15px;
+                border-bottom: 1px solid $border;
+                .title { font-weight: 700; }
+            }
+            .total__row {
+                margin-top: 25px;
+                .subtitle {
+                    font-weight: 400;
+                    font-size: 16px;
+                }
+                .content {
+                    font-weight: 700;
+                    font-size: 16px;
+                }
+            }
+        }
+        .total__final {
+            padding: 30px 30px 40px;
+            color: white;
+            background-color: $primary;
+            .title {
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 1em;
+            }
+            .content {
+                font-weight: 700;
+                line-height: 0.8em;
+            }
+        }
+    }
+    // 견적 부가 정보 / 첨부 파일 업로드 스타일링
+    // ––––––––––––––––––––––––––––––––––––––––––––––––––
+    .add-on {
+        margin-top: 20px;
+        border: 1px solid $border;
+        border-radius: $border-radius;
+        background-color: white;
+        @include shadow;
+        .component__header {
+            border: none; 
+            transition: 0.2s ease-out;
+            cursor: pointer;
+            &:hover { background-color: $oc-gray-0; }
+            .title {
+                font-weight: 700;
+                font-size: 16px;
+            }
+            .tag { margin-right: 20px; }
+            .arrow {
+                display: inline-block;
+                width: 10px;
+                height: 10px;
+                border: 0 solid $oc-gray-9;
+                border-width: 0 0 2px 2px;
+                transform: rotate(-45deg);
+                transition: 0.2s ease-out;
+            }
+        }
+        .component__content { display: none; }
+    }
+    .add-on.add-on--open {
+        .component__header {
+            border-bottom: 1px dashed $border;
+            .arrow { transform: translateY(8px) rotate(135deg); }
+        }
+        .component__content { display: block; }
+    }
 }
 
 .chip {

@@ -37,7 +37,7 @@ html { background-color: $oc-gray-1; }
 .component__header {
     padding: 20px 30px;
     border-bottom: 1px solid $border;
-    .title { font-size: 19px; }
+    .title { font-size: 19px; line-height: 1.45em; }
 }
 .component__content { padding: 30px; }
 @media (max-width: $mobile-max-width) {

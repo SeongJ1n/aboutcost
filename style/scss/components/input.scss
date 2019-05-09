@@ -1,4 +1,4 @@
-// input
+// 인풋 라벨
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 label {
     display: block;
@@ -8,7 +8,7 @@ label {
 }
 input:focus { outline: none; }
 
-// input__text
+// 인풋 기본형
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 .input__text {
     width: 100%;
@@ -40,7 +40,7 @@ input:focus { outline: none; }
 }
 .form__input ~ .form__input { margin-top: 20px; }
 
-// select-box
+// 셀렉트박스
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 .select-wrap {
     position: relative;
@@ -75,6 +75,37 @@ input:focus { outline: none; }
 }
 .form__select {}
 
+// 할인율 인풋 : 셀렉트박스 + 텍스트 인풋 + add-on 조합
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+.form__discount {
+    .select-wrap {
+        display: inline-block;
+        &:after { top: 16px; }
+        .select {
+            margin: 0;
+            border: 1px solid $oc-gray-7;
+            border-radius: $border-radius 0 0 $border-radius;
+        }
+    }
+    .input__text {
+        width: auto;
+        margin: 0;
+        border-left: 0;
+        border-right: 0;
+        border-radius: 0;
+        &:focus { border-color: $oc-gray-3; }
+    }
+    .input__add-on {
+        display: inline-block;
+        width: 44px;
+        height: 100%;
+        border: 1px solid $oc-gray-3;
+        border-radius: 0 $border-radius $border-radius 0;
+        text-align: center;
+        line-height: 38px;
+        background-color: $oc-gray-0;
+    }
+}
 
 // .form__group {
 //     label {
