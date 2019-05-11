@@ -762,23 +762,23 @@ input:focus {
     .select-wrap .select:focus {
       outline: none; }
 
-.form__discount .select-wrap {
+.form__mixed .select-wrap {
   display: inline-block; }
-  .form__discount .select-wrap:after {
+  .form__mixed .select-wrap:after {
     top: 16px; }
-  .form__discount .select-wrap .select {
+  .form__mixed .select-wrap .select {
     margin: 0;
     border: 1px solid #495057;
     border-radius: 5px 0 0 5px; }
-.form__discount .input__text {
+.form__mixed .input__text {
   width: auto;
   margin: 0;
   border-left: 0;
   border-right: 0;
   border-radius: 0; }
-  .form__discount .input__text:focus {
+  .form__mixed .input__text:focus {
     border-color: #dee2e6; }
-.form__discount .input__add-on {
+.form__mixed .input__add-on {
   display: inline-block;
   width: 44px;
   height: 100%;
@@ -903,7 +903,8 @@ input:focus {
 
 .user .company-info,
 .user .payment-info,
-.user .manager-info {
+.user .manager-info,
+.user .account-info {
   border: 1px solid #dee2e6;
   border-radius: 5px;
   background-color: white;
@@ -912,6 +913,14 @@ input:focus {
   margin-top: 20px; }
   .user .payment-info .btn.btn--text {
     margin-top: 8px; }
+.user .account-info {
+  margin-top: 20px; }
+  .user .account-info .form__mixed .input__text {
+    border-right: 1px solid #dee2e6;
+    border-radius: 0 5px 5px 0; }
+  .user .account-info .select-account {
+    width: 100%;
+    margin-top: 20px; }
 .user .change-pw {
   width: 100%;
   margin-top: 20px;
@@ -1261,7 +1270,17 @@ input:focus {
       border-radius: 5px;
       color: #f03e3e; }
       .new .add-on .component__content .file__item .file__name {
-        font-size: 14px; }
+        overflow: hidden;
+        display: -webkit-box;
+        width: 100%;
+        max-height: 1.5em;
+        font-weight: 400;
+        font-size: 14px;
+        text-overflow: ellipsis;
+        line-height: 1.5em;
+        word-wrap: break-all;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical; }
       .new .add-on .component__content .file__item .btn.btn--danger {
         font-size: 17px; }
 .new .add-on.add-on--open .component__header {
