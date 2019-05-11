@@ -1465,6 +1465,51 @@ input:focus {
     margin-bottom: 50px; }
     .new-sender .six.columns ~ .six.columns {
       margin-top: 20px; } }
+.new-recipient .company-info,
+.new-recipient .manager-info {
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0 2px 4px #dee2e6; }
+.new-recipient .add-memo {
+  width: 100%;
+  margin-top: 20px; }
+.new-recipient .manager-info .component__header {
+  border: none;
+  transition: 0.2s ease-out;
+  cursor: pointer; }
+  .new-recipient .manager-info .component__header:hover {
+    background-color: #f8f9fa; }
+  .new-recipient .manager-info .component__header .arrow {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 0 solid #212529;
+    border-width: 0 0 2px 2px;
+    transform: rotate(-45deg);
+    transition: 0.2s ease-out; }
+.new-recipient .manager-info .component__content {
+  display: none; }
+.new-recipient .manager-info .btn.btn-outline--danger {
+  width: 100%;
+  margin-top: 20px; }
+.new-recipient .manager-info ~ .btn.btn-outline--primary {
+  width: 100%;
+  margin-top: 20px;
+  border-style: dashed; }
+.new-recipient .manager-info.manager-info--open .component__header {
+  border-bottom: 1px dashed #dee2e6; }
+  .new-recipient .manager-info.manager-info--open .component__header .arrow {
+    transform: translateY(8px) rotate(135deg); }
+.new-recipient .manager-info.manager-info--open .component__content {
+  display: block; }
+
+@media (max-width: 800px) {
+  .new-recipient {
+    margin-top: 60px;
+    margin-bottom: 50px; }
+    .new-recipient .six.columns ~ .six.columns {
+      margin-top: 20px; } }
 html {
   background-color: #f1f3f5; }
 

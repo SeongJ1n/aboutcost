@@ -24,6 +24,8 @@ $mobile-max-width: 800px;
 @import 'pages/setup';
 @import 'pages/new';
 @import 'pages/new-sender';
+@import 'pages/new-recipient';
+
 
 @media (max-width: $mobile-max-width) {}
 
