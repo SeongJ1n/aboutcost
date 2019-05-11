@@ -12,6 +12,7 @@
     .btn-wrap {
         .btn { width: 100%; }
         .btn ~ .btn { margin-left: 3%; }
+        .btn.btn-outline--danger { border-style: dashed; }
     }
 }
 

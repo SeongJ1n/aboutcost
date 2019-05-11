@@ -65,13 +65,31 @@
                 // btn 사이즈 조절 및 primary 색상 버튼 좌측 마진
                 .btn { min-width: 120px; }
                 .btn.btn--primary { margin-left: 10px; }
+                .btn.btn-outline--danger { border-style: dashed; }
             }
             .page-description {
-                margin-top: 6px;
+                margin-top: 8px;
                 .description {
                     color: $oc-gray-6;
-                    font-weight: 500;
                     font-size: 12px;
+                }
+                .breadcrumb {
+                    border-bottom: 1px solid $oc-blue-6;
+                    color: $oc-blue-6;
+                    font-size: 15px;
+                }
+                .breadcrumb:last-child {
+                    border: none;
+                    color: $oc-gray-6;
+                }
+                .breadcrumb ~ .breadcrumb {
+                    &:before {
+                        display: inline-block;
+                        padding-right: .5rem;
+                        padding-left: .5rem;
+                        color: $oc-gray-5;
+                        content: "/";
+                    }
                 }
             }
             .row { margin-top: 20px; }

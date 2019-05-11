@@ -337,6 +337,7 @@
         margin-top: 60px;
         margin-bottom: 50px;
         .mt-20 { margin-top: 20px; }
+        .six.columns ~ .six.columns { margin-top: 20px; }
         .document-info {
             position: relative;
             padding: 0;
