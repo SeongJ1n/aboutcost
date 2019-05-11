@@ -54,7 +54,8 @@
     </nav>
     <div class="bottombar flex-container item-center">
         <div class="btn-wrap flex-container flex-item">
-            <button class="btn btn--primary">새로운 견적서 양식 만들기</button>
+            <button class="btn btn-outline--secondary">저장하기</button>
+            <button class="btn btn--primary">발송하기</button>
         </div>
     </div>
     <div class="sidebar">
@@ -139,7 +140,7 @@
                     </div>
                     <div class="row">
                         <div class="six columns">
-                            <div class="chip chip--confirmed flex-container flex-center item-center">
+                            <div class="chip mt-20 chip--confirmed flex-container flex-center item-center">
                                 <div class="icon-wrap flex-container flex-center item-center">
                                     <i class="fal fa-file-upload"></i>
                                 </div>
@@ -177,17 +178,55 @@
                             <div class="table-wrap">
                                 <table class="table">
                                     <tr class="table__row">
-                                        <th class="table__header">test</th>
-                                        <th class="table__header">품목</th>
-                                        <th class="table__header">수량</th>
-                                        <th class="table__header">단가</th>
-                                        <th class="table__header">공급가액</th>
+                                        <th class="table__header first">
+                                            <button class="btn change-status">편집</button>
+                                        </th>
+                                        <th class="table__header">
+                                            <div class="flex-container">
+                                                <span class="title">품목</span>
+                                                <div class="select-wrap flex-item">
+                                                    <select class="select" name="">
+                                                            <option value="">품목</option>
+                                                    </select>
+                                                </div>
+                                                <button class="btn btn--text btn--danger">×</button>
+                                            </div>
+                                        </th>
+                                        <th class="table__header">
+                                            <div class="flex-container">
+                                                <span class="title">단가</span>
+                                                <div class="select-wrap flex-item">
+                                                    <select class="select" name="">
+                                                            <option value="">단가</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <th class="table__header">
+                                            <div class="flex-container">
+                                                <span class="title">수량</span>
+                                                <div class="select-wrap flex-item">
+                                                    <select class="select" name="">
+                                                            <option value="">수량</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <th class="table__header">
+                                            <div class="flex-container">
+                                                <span class="title">공급가액</span>
+                                                <div class="select-wrap flex-item">
+                                                    <select class="select" name="">
+                                                            <option value="">공급가액</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </th>
                                         <th class="table__header">부가세</th>
                                     </tr>
                                     <tr class="table__row">
-                                        <td class="table__data">test</td>
-                                        <td class="table__data">
-                                            <input class="input__text flex-item" type="text" placeholder="값" />
+                                        <td class="table__data first">
+                                            <button class="btn btn--text btn--danger">×</button>
                                         </td>
                                         <td class="table__data">
                                             <input class="input__text flex-item" type="text" placeholder="값" />
@@ -195,19 +234,256 @@
                                         <td class="table__data">
                                             <input class="input__text flex-item" type="text" placeholder="값" />
                                         </td>
-                                        <td class="table__data">
+                                        <td class="table__data align-right">
                                             <input class="input__text flex-item" type="text" placeholder="값" />
+                                        </td>
+                                        <td class="table__data align-right">
+                                            <input class="input__text flex-item" type="text" placeholder="값" />
+                                        </td>
+                                        <td class="table__data align-right">
+                                            <input class="input__text flex-item" type="text" placeholder="값" value="0"/>
+                                        </td>
+                                    </tr>
+                                    <tr class="table__row">
+                                        <td class="table__data first">
+                                            <button class="btn btn--text btn--danger">×</button>
                                         </td>
                                         <td class="table__data">
                                             <input class="input__text flex-item" type="text" placeholder="값" />
                                         </td>
+                                        <td class="table__data">
+                                            <input class="input__text flex-item" type="text" placeholder="값" />
+                                        </td>
+                                        <td class="table__data align-right">
+                                            <input class="input__text flex-item" type="text" placeholder="값" />
+                                        </td>
+                                        <td class="table__data align-right">
+                                            <input class="input__text flex-item" type="text" placeholder="값" />
+                                        </td>
+                                        <td class="table__data align-right">
+                                            <input class="input__text flex-item" type="text" placeholder="값" value="0"/>
+                                        </td>
+                                    </tr>
+                                    <tr class="table__row table__total">
+                                        <td class="table__data first"></td>
+                                        <td colspan="3" class="table__data total__title">계</td>
+                                        <td class="table__data align-right">0원</td>
+                                        <td class="table__data align-right text--primary">0원</td>
                                     </tr>
                                 </table>
                             </div>
+                            <div class="table__summary">
+                                <div class="row">
+                                    <div class="three columns summary__item flex-container flex-space-between">
+                                        <span class="title">공급가액</span>
+                                        <span class="content">0원</span>
+                                    </div>
+                                    <div class="three columns summary__item text--red flex-container flex-space-between">
+                                        <span class="title">할인정보</span>
+                                        <span class="content">-0원</span>
+                                    </div>
+                                    <div class="three columns summary__item text--primary flex-container flex-space-between">
+                                        <span class="title">부가세</span>
+                                        <span class="content">+0원</span>
+                                    </div>
+                                    <div class="three columns summary__item flex-container flex-space-between">
+                                        <span class="title">소계</span>
+                                        <span class="content">0원</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                        <div class="document-section twelve columns">
+                            <div class="section__header flex-container flex-space-between">
+                                <input class="input__text flex-item" type="text" placeholder="섹션 이름을 입력하세요" />
+                                <button class="btn btn--text btn--danger">섹션 삭제하기 ×</button>
+                            </div>
+                            <div class="form__select add-tax">
+                                <div class="select-wrap">
+                                    <select class="select" name="">
+                                        <option value="">개별항목에 10% 부가세 추가</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <ul class="add-table__header flex-container item-center">
+                                <h4 class="title">추가할 항목 선택</h4>
+                                <li class="header-item">날짜 +</li>
+                                <li class="header-item">수량단위 +</li>
+                                <li class="header-item">규격 +</li>
+                                <li class="header-item">세부단가 +</li>
+                                <li class="header-item">단가단위 +</li>
+                            </ul>
+                            <div class="table-wrap">
+                                <table class="table edit">
+                                    <tr class="table__row">
+                                        <th class="table__header first">
+                                            <button class="btn change-status">저장</button>
+                                        </th>
+                                        <th class="table__header">
+                                            <div class="flex-container">
+                                                <span class="title">품목</span>
+                                                <div class="select-wrap flex-item">
+                                                    <select class="select" name="">
+                                                            <option value="">품목</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <th class="table__header">
+                                            <div class="flex-container">
+                                                <span class="title">품목추가정보</span>
+                                                <div class="select-wrap flex-item">
+                                                    <select class="select" name="">
+                                                            <option value="">품목추가정보</option>
+                                                    </select>
+                                                </div>
+                                                <button class="btn btn--text btn--danger">×</button>
+                                            </div>
+                                        </th>
+                                        <th class="table__header">
+                                            <div class="flex-container">
+                                                <span class="title">단가</span>
+                                                <div class="select-wrap flex-item">
+                                                    <select class="select" name="">
+                                                            <option value="">단가</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <th class="table__header">
+                                            <div class="flex-container">
+                                                <span class="title">수량</span>
+                                                <div class="select-wrap flex-item">
+                                                    <select class="select" name="">
+                                                            <option value="">수량</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <th class="table__header">
+                                            <div class="flex-container">
+                                                <span class="title">공급가액</span>
+                                                <div class="select-wrap flex-item">
+                                                    <select class="select" name="">
+                                                            <option value="">공급가액</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <th class="table__header">부가세</th>
+                                    </tr>
+                                    <tr class="table__row">
+                                        <td class="table__data first">
+                                            <button class="btn btn--text btn--danger">×</button>
+                                        </td>
+                                        <td class="table__data">
+                                            <input class="input__text flex-item" type="text" placeholder="값" />
+                                        </td>
+                                        <td class="table__data">
+                                            <input class="input__text flex-item" type="text" placeholder="값" />
+                                        </td>
+                                        <td class="table__data">
+                                            <input class="input__text flex-item" type="text" placeholder="값" />
+                                        </td>
+                                        <td class="table__data align-right">
+                                            <input class="input__text flex-item" type="text" placeholder="값" />
+                                        </td>
+                                        <td class="table__data align-right">
+                                            <input class="input__text flex-item" type="text" placeholder="값" />
+                                        </td>
+                                        <td class="table__data align-right">
+                                            <input class="input__text flex-item" type="text" placeholder="값" value="0"/>
+                                        </td>
+                                    </tr>
+                                    <tr class="table__row">
+                                        <td class="table__data first">
+                                            <button class="btn btn--text btn--danger">×</button>
+                                        </td>
+                                        <td class="table__data">
+                                            <input class="input__text flex-item" type="text" placeholder="값" />
+                                        </td>
+                                        <td class="table__data">
+                                            <input class="input__text flex-item" type="text" placeholder="값" />
+                                        </td>
+                                        <td class="table__data">
+                                            <input class="input__text flex-item" type="text" placeholder="값" />
+                                        </td>
+                                        <td class="table__data align-right">
+                                            <input class="input__text flex-item" type="text" placeholder="값" />
+                                        </td>
+                                        <td class="table__data align-right">
+                                            <input class="input__text flex-item" type="text" placeholder="값" />
+                                        </td>
+                                        <td class="table__data align-right">
+                                            <input class="input__text flex-item" type="text" placeholder="값" value="0"/>
+                                        </td>
+                                    </tr>
+                                    <tr class="table__row table__total">
+                                        <td class="table__data first"></td>
+                                        <td colspan="4" class="table__data total__title">계</td>
+                                        <td class="table__data align-right">0원</td>
+                                        <td class="table__data align-right text--primary">0원</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="table__summary">
+                                <div class="row">
+                                    <div class="three columns summary__item flex-container flex-space-between">
+                                        <span class="title">공급가액</span>
+                                        <span class="content">0원</span>
+                                    </div>
+                                    <div class="three columns summary__item text--red flex-container flex-space-between">
+                                        <span class="title">할인정보</span>
+                                        <span class="content">-0원</span>
+                                    </div>
+                                    <div class="three columns summary__item text--primary flex-container flex-space-between">
+                                        <span class="title">부가세</span>
+                                        <span class="content">+0원</span>
+                                    </div>
+                                    <div class="three columns summary__item flex-container flex-space-between">
+                                        <span class="title">소계</span>
+                                        <span class="content">0원</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-outline--primary add-section">섹션 추가하기 ＋</button>
                     </div>
                     <div class="row">
-                        <div class="six columns">
+                        <div class="six columns show-mobile">
+                            <div class="document-section__total">
+                                <div class="total__content">
+                                    <div class="title-wrap">
+                                        <h3 class="title">전체 섹션 합계</h3>
+                                    </div>
+                                    <div class="total__row flex-container item-center flex-space-between">
+                                        <span class="subtitle">섹션#1</span>
+                                        <h4 class="content">69,300,000원</h4>
+                                    </div>
+                                    <div class="total__row flex-container item-center flex-space-between">
+                                        <span class="subtitle">섹션#2</span>
+                                        <h4 class="content">69,300,000원</h4>
+                                    </div>
+                                    <div class="total__row flex-container flex-space-between">
+                                        <div class="form__discount flex-container flex-item">
+                                            <div class="select-wrap">
+                                                <select class="select" name="">
+                                                        <option value="">할인율</option>
+                                                        <option value="">할인금액</option>
+                                                </select>
+                                            </div>
+                                            <input class="input__text flex-item" type="text" placeholder="숫자를 입력하세요" />
+                                            <span class="input__add-on">%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="total__final flex-container item-center flex-space-between">
+                                    <h3 class="title">전체 섹션 합계</h3>
+                                    <h1 class="content">138,600,000원</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="six columns m-0">
                             <div class="chip flex-container flex-column flex-center item-center">
                                 <h4 class="chip__title">결제 옵션</h4>
                                 <p class="chip__subtitle">{결제 옵션 리스트 표기}</p>
@@ -216,7 +492,7 @@
                                 <h4 class="chip__title">견적서 레이아웃 선택</h4>
                                 <p class="chip__subtitle">{타입 A}</p>
                             </div>
-                            <div class="add-on add-on--open">
+                            <div class="add-on">
                                 <div class="component__header flex-container flex-space-between">
                                     <h3 class="title">견적 부가 정보</h3>
                                     <div class="arrow"></div>
@@ -227,7 +503,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="add-on add-on--open">
+                            <div class="add-on">
                                 <div class="component__header flex-container flex-space-between">
                                     <div class="flex-container flex-item flex-space-between">
                                         <h3 class="title">첨부 파일 업로드</h3>
@@ -242,17 +518,17 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="six columns">
+                        <div class="six columns show-pc">
                             <div class="document-section__total">
                                 <div class="total__content">
                                     <div class="title-wrap">
                                         <h3 class="title">전체 섹션 합계</h3>
                                     </div>
-                                    <div class="total__row flex-container flex-space-between">
+                                    <div class="total__row flex-container item-center flex-space-between">
                                         <span class="subtitle">섹션#1</span>
                                         <h4 class="content">69,300,000원</h4>
                                     </div>
-                                    <div class="total__row flex-container flex-space-between">
+                                    <div class="total__row flex-container item-center flex-space-between">
                                         <span class="subtitle">섹션#2</span>
                                         <h4 class="content">69,300,000원</h4>
                                     </div>

@@ -11,6 +11,7 @@
     background-color: $oc-white;
     .btn-wrap {
         .btn { width: 100%; }
+        .btn ~ .btn { margin-left: 3%; }
     }
 }
 

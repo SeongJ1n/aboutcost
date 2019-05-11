@@ -52,3 +52,7 @@
 .btn--text.btn--danger {
     color: $oc-red-7;
 }
+
+@media (max-width: $mobile-max-width) {
+    .btn { font-size: 14px; }
+}
