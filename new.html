@@ -55,7 +55,7 @@
     <div class="bottombar flex-container item-center">
         <div class="btn-wrap flex-container flex-item">
             <button class="btn btn-outline--secondary">저장하기</button>
-            <button class="btn btn--primary">발송하기</button>
+            <button class="btn btn--primary">발행하기</button>
         </div>
     </div>
     <div class="sidebar">
@@ -104,7 +104,7 @@
                         <h2 class="title">신규 {견적서} 발행하기</h2>
                         <div class="btn-wrap">
                             <button class="btn btn-outline--secondary">저장하기</button>
-                            <button class="btn btn--primary">발송하기</button>
+                            <button class="btn btn--primary">발행하기</button>
                         </div>
                     </div>
                     <div class="row">
@@ -492,18 +492,37 @@
                                 <h4 class="chip__title">견적서 레이아웃 선택</h4>
                                 <p class="chip__subtitle">{타입 A}</p>
                             </div>
-                            <div class="add-on">
+                            <div class="add-on add-on--open">
                                 <div class="component__header flex-container flex-space-between">
                                     <h3 class="title">견적 부가 정보</h3>
                                     <div class="arrow"></div>
                                 </div>
                                 <div class="component__content">
-                                    <div class="btn-wrap">
-                                        <button class="btn btn-outline--danger">담당자 삭제하기 ×</button>
+                                    <div class="btn-wrap flex-container">
+                                        <button class="btn btn-outline--primary flex-item">자유형식 ＋</button>
+                                        <button class="btn btn-outline--primary flex-item">날짜 ＋</button>
+                                    </div>
+                                    <div class="add-on__item">
+                                        <div class="item__header flex-container flex-space-between">
+                                            <input class="input__text flex-item" type="text" placeholder="부가 정보 제목 입력" />
+                                            <button class="btn btn--text btn--danger">×</button>
+                                        </div>
+                                        <div class="form__textarea">
+                                            <textarea class="input__textarea" placeholder="자유롭게 입력하세요"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="add-on__item">
+                                        <div class="item__header flex-container flex-space-between">
+                                            <input class="input__text flex-item" type="text" placeholder="부가 정보 제목 입력" />
+                                            <button class="btn btn--text btn--danger">×</button>
+                                        </div>
+                                        <div class="form__text">
+                                            <input class="input__text flex-item" type="date" />
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="add-on">
+                            <div class="add-on add-on--open">
                                 <div class="component__header flex-container flex-space-between">
                                     <div class="flex-container flex-item flex-space-between">
                                         <h3 class="title">첨부 파일 업로드</h3>
@@ -512,8 +531,12 @@
                                     <div class="arrow"></div>
                                 </div>
                                 <div class="component__content">
-                                    <div class="btn-wrap">
-                                        <button class="btn btn-outline--danger">담당자 삭제하기 ×</button>
+                                    <div class="btn-wrap flex-container">
+                                        <button class="btn btn-outline--primary add-file flex-item"><i class="fal fa-search"></i>파일 찾기</button>
+                                    </div>
+                                    <div class="file__item flex-container item-center flex-space-between">
+                                        <h4 class="file__name">디자인_레퍼런스_003.pdf</h4>
+                                        <button class="btn btn--text btn--danger">×</button>
                                     </div>
                                 </div>
                             </div>

@@ -201,6 +201,7 @@
         margin-bottom: 30px;
         width: 100%;
         border-style: dashed;
+        font-size: 14px;
     }
     // 견적서 전체 섹션 합계
     // ––––––––––––––––––––––––––––––––––––––––––––––––––
@@ -272,7 +273,42 @@
                 transition: 0.2s ease-out;
             }
         }
-        .component__content { display: none; }
+        .component__content {
+            display: none;
+            .btn-wrap {
+                .btn { font-size: 14px; }
+                .btn.btn-outline--primary { border-style: dashed; }
+                .add-file {
+                    i { margin-right: 8px; }
+                }
+                .btn ~ .btn { margin-left: 3%; }
+            }
+            .add-on__item {
+                margin-top: 20px;
+                padding: 15px 20px 20px;
+                border: 1px solid $border;
+                border-radius: $border-radius;
+                .item__header {
+                    .input__text {
+                        margin-top: 0;
+                        padding: 0;
+                        border: none;
+                        font-weight: 600;
+                        font-size: 15px;
+                    }
+                    .btn.btn--danger { font-size: 17px; }
+                }
+            } 
+            .file__item {
+                margin-top: 20px;
+                padding: 10px 20px;
+                border: 1px solid $oc-red-7;
+                border-radius: $border-radius;
+                color: $oc-red-7;
+                .file__name { font-size: 14px; }
+                .btn.btn--danger { font-size: 17px; }
+            }
+        }
     }
     .add-on.add-on--open {
         .component__header {

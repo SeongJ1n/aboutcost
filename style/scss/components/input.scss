@@ -107,6 +107,22 @@ input:focus { outline: none; }
     }
 }
 
+// 텍스트에어리어
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+.input__textarea {
+    width: 100%;
+    min-height: 3em;
+    margin-top: 12px;
+    padding: 10px 12px 11px;
+    border: 1px solid $border;
+    border-radius: $border-radius;
+    font-family : inherit;
+    font-size: 14px;
+    transition: 0.2s ease-out;
+    &:focus { border-color: $oc-gray-6; outline: none; }
+    &::placeholder { color: $oc-gray-5; }
+}
+
 // .form__group {
 //     label {
 //         display: block;
