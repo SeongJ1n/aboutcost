@@ -74,10 +74,9 @@
                 border-radius: $border-radius;
                 @include shadow;
                 &:hover { background-color: $oc-gray-0; }
-                .account__name {
-                    font-size: 15px;
-                }
+                .account__name { font-size: 15px; }
                 .account__num {
+                    font-weight: 400;
                     font-size: 15px;
                 }
             }

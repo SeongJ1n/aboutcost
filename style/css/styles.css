@@ -919,6 +919,7 @@ input:focus {
   .modal-wrap .modal .list-wrap.select-account .list__item .account__name {
     font-size: 15px; }
   .modal-wrap .modal .list-wrap.select-account .list__item .account__num {
+    font-weight: 400;
     font-size: 15px; }
 .modal-wrap .modal .list-wrap.select-account .list__item ~ .list__item {
   margin-top: 15px; }
