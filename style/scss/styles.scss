@@ -25,6 +25,7 @@ $mobile-max-width: 800px;
 @import 'pages/new';
 @import 'pages/new-sender';
 @import 'pages/new-recipient';
+@import 'pages/new-payment-option';
 
 
 @media (max-width: $mobile-max-width) {}

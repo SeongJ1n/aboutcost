@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>ABOUTCOST</title>
+    <link rel="stylesheet" type="text/css" href="style/css/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<body>
+    <!-- nav--open 클래스를 추가하면 nav__menu 영역이 열립니다. -->
+    <!-- nav__menu 영역이 열려있을 때, 스크롤락 기능이 필요합니다. -->
+    <nav class="nav">
+        <div class="nav__header flex-container flex-item item-center flex-space-between">
+            <a class="nav__logo" href="/"></a>
+            <i class="nav__hamburger fas fa-bars"></i>
+            <i class="nav__close fas fa-times"></i>
+        </div>
+        <ul class="nav__menu">
+            <li class="menu__item">
+                <a class="menu__link" href=""><i class="fas fa-bell"></i>알림함</a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href=""><i class="fas fa-plus-square"></i>신규발행</a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href=""><i class="fas fa-th-list"></i>발송리스트</a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href=""><i class="fas fa-chart-line"></i>상세통계추적</a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href=""><i class="fas fa-cog"></i>설정관리</a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href=""><i class="fas fa-building"></i>거래처관리</a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href=""><i class="fas fa-mail-bulk"></i>수신리스트</a>
+            </li>
+            <hr class="divider">
+            <li class="menu__item">
+                <a class="menu__link" href="">문의하기</a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href="">사용자정보</a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href="">로그아웃</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="bottombar flex-container item-center">
+        <div class="btn-wrap flex-container flex-item">
+            <button class="btn btn--primary">다음으로</button>
+        </div>
+    </div>
+    <div class="sidebar">
+        <ul class="sidebar__menu">
+            <li class="menu__item">
+                <a class="menu__link" href="/"><img class="nav__logo" src="res/img/logo.png"></a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href=""><i class="fas fa-bell"></i>알림함</a>
+            </li>
+            <li class="menu__item menu__item--active">
+                <a class="menu__link" href=""><i class="fas fa-plus-square"></i>신규발행</a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href=""><i class="fas fa-th-list"></i>발송리스트</a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href=""><i class="fas fa-chart-line"></i>상세통계추적</a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href=""><i class="fas fa-cog"></i>설정관리</a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href=""><i class="fas fa-building"></i>거래처관리</a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href=""><i class="fas fa-mail-bulk"></i>수신리스트</a>
+            </li>
+            <hr class="divider">
+            <li class="menu__item">
+                <a class="menu__link" href="">문의하기</a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href="">사용자정보</a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href="">로그아웃</a>
+            </li>
+        </ul>
+    </div>
+    <div class="body-container">
+        <div class="body-wrap">
+            <div class="new-payment-option flex-container flex-center">
+                <div class="content-container">
+                    <div class="page-header flex-container flex-space-between">
+                        <h2 class="title">결제 옵션</h2>
+                        <div class="btn-wrap">
+                            <button class="btn btn--primary">다음으로</button>
+                        </div>
+                    </div>
+                    <div class="page-description flex-container flex-start show-pc">
+                        <a class="breadcrumb" href="">신규발행</a>
+                        <span class="breadcrumb">결제 옵션</span>
+                    </div>
+                    <div class="row">
+                        <div class="four columns">
+                            <div class="payment-option">
+                                <div class="option__header">
+                                    <div class="flex-container flex-item item-center flex-space-between">
+                                        <h4 class="title">간편계좌이체</h4>
+                                        <div class="checkbox-wrapper">
+                                            <!-- id/name/for 테스트값 -->
+                                            <input class="checkbox" id="test" name="test" type="checkbox">
+                                            <label for="test">
+                                                <span class="checkbox__icon"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <p class="subtitle">공인인증서 없이 입금완료 알림까지</p>
+                                </div>
+                                <div class="info-wrap flex-container">
+                                    <div class="info flex-container flex-column">
+                                        <h4 class="title">수수료</h4>
+                                        <p class="content">1%</p>
+                                    </div>
+                                    <div class="info flex-container flex-column">
+                                        <h4 class="title">정산기간</h4>
+                                        <p class="content">2일</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="four columns">
+                            <div class="payment-option">
+                                <div class="option__header">
+                                    <div class="flex-container flex-item">
+                                        <div class="select-wrap flex-item item-center flex-space-between">
+                                            <select class="select" name="">
+                                                <option value="">은행계좌번호</option>
+                                            </select>
+                                        </div>
+                                        <div class="checkbox-wrapper">
+                                            <!-- id/name/for 테스트값 -->
+                                            <input class="checkbox" id="test2" name="test2" type="checkbox">
+                                            <label for="test2">
+                                                <span class="checkbox__icon"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <p class="subtitle">인터넷뱅킹/공인인증서, 수동 입금확인 필요</p>
+                                </div>
+                                <div class="info-wrap flex-container">
+                                    <div class="info flex-container flex-column">
+                                        <h4 class="title">수수료</h4>
+                                        <p class="content">없음</p>
+                                    </div>
+                                    <div class="info flex-container flex-column">
+                                        <h4 class="title">정산기간</h4>
+                                        <p class="content">없음</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="four columns">
+                            <div class="payment-option">
+                                <div class="option__header">
+                                    <div class="flex-container flex-item item-center flex-space-between">
+                                        <h4 class="title">카드결제</h4>
+                                        <div class="checkbox-wrapper">
+                                            <!-- id/name/for 테스트값 -->
+                                            <input class="checkbox" id="test3" name="test3" type="checkbox">
+                                            <label for="test3">
+                                                <span class="checkbox__icon"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <p class="subtitle">자동으로 입금완료 알림</p>
+                                </div>
+                                <div class="info-wrap flex-container">
+                                    <div class="info flex-container flex-column">
+                                        <h4 class="title">수수료</h4>
+                                        <p class="content">2.5%</p>
+                                    </div>
+                                    <div class="info flex-container flex-column">
+                                        <h4 class="title">정산기간</h4>
+                                        <p class="content">3일</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="five columns">
+                            <h3 class="conditional-payment-option__title">조건부 결제옵션</h3>
+                            <div class="conditional-payment-option">
+                                <div class="discount">
+                                    <div class="flex-container item-center flex-space-between">
+                                        <h4 class="title">기간대별 할인</h4>
+                                        <div class="switch-wrap flex-container">
+                                            <input class="switch" id="test4" name="switch" type="radio">
+                                            <label class="switch__label" for="test4" class="radio__label">ON</label>
+                                            <input class="switch" id="test5" name="switch" type="radio" checked>
+                                            <label class="switch__label" for="test5" class="radio__label">OFF</label>
+                                        </div>
+                                    </div>
+                                    <div class="form__text">
+                                        <input class="input__text flex-item" type="date" />
+                                    </div>
+                                </div>
+                                <div class="discount-result">
+                                    <div class="flex-container item-center flex-space-between">
+                                        <h4 class="title">최종 금액</h4>
+                                        <h4 class="content">140,000,000원</h4>
+                                    </div>
+                                    <div class="form__mixed flex-container flex-item">
+                                        <div class="select-wrap">
+                                            <select class="select" name="">
+                                                <option value="">할인율</option>
+                                                <option value="">할인금액</option>
+                                            </select>
+                                        </div>
+                                        <input class="input__text flex-item" type="text" placeholder="숫자를 입력하세요" />
+                                        <span class="input__add-on">%</span>
+                                    </div>
+                                    <div class="total flex-container item-center flex-space-between">
+                                        <h4 class="title">할인적용 금액</h4>
+                                        <h4 class="content">140,000,000원</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

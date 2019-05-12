@@ -1510,6 +1510,139 @@ input:focus {
     margin-bottom: 50px; }
     .new-recipient .six.columns ~ .six.columns {
       margin-top: 20px; } }
+.new-payment-option .payment-option {
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px #dee2e6;
+  background-color: white; }
+  .new-payment-option .payment-option .option__header {
+    padding: 18px 20px 15px;
+    border-bottom: 1px dashed #dee2e6; }
+    .new-payment-option .payment-option .option__header .title {
+      font-weight: 700;
+      font-size: 18px; }
+    .new-payment-option .payment-option .option__header .subtitle {
+      margin-top: 3px;
+      color: #868e96;
+      font-weight: 400;
+      font-size: 13px; }
+    .new-payment-option .payment-option .option__header .select-wrap:after {
+      top: 13px; }
+    .new-payment-option .payment-option .option__header .select-wrap .select {
+      margin-top: 0;
+      padding: 6px 12px 7px;
+      font-weight: 700; }
+    .new-payment-option .payment-option .option__header .checkbox-wrapper .checkbox__icon {
+      position: relative;
+      display: inline-block;
+      width: 35px;
+      height: 35px;
+      margin-left: 15px;
+      border: 1px solid #dee2e6;
+      border-radius: 5px; }
+      .new-payment-option .payment-option .option__header .checkbox-wrapper .checkbox__icon:before {
+        position: absolute;
+        top: 11px;
+        left: 10px;
+        display: inline-block;
+        width: 11px;
+        height: 5px;
+        border: solid #dee2e6;
+        border-width: 0 0 2px 2px;
+        transform: rotate(-45deg);
+        content: ''; }
+    .new-payment-option .payment-option .option__header .checkbox-wrapper .checkbox {
+      display: none; }
+    .new-payment-option .payment-option .option__header .checkbox-wrapper .checkbox[type=checkbox]:checked + label .checkbox__icon {
+      border-color: #22b8cf;
+      background-color: #22b8cf; }
+      .new-payment-option .payment-option .option__header .checkbox-wrapper .checkbox[type=checkbox]:checked + label .checkbox__icon:before {
+        border-color: white; }
+  .new-payment-option .payment-option .info-wrap {
+    padding: 15px 20px; }
+    .new-payment-option .payment-option .info-wrap .info {
+      width: 30%; }
+      .new-payment-option .payment-option .info-wrap .info .title {
+        font-size: 14px; }
+      .new-payment-option .payment-option .info-wrap .info .content {
+        margin-top: 4px;
+        color: #868e96;
+        font-weight: 400;
+        font-size: 14px; }
+.new-payment-option .conditional-payment-option {
+  margin-top: 15px;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px #dee2e6;
+  background-color: white; }
+  .new-payment-option .conditional-payment-option .discount {
+    padding: 15px 20px 18px;
+    border-bottom: 1px dashed #dee2e6; }
+    .new-payment-option .conditional-payment-option .discount .title {
+      font-size: 15px; }
+    .new-payment-option .conditional-payment-option .discount .switch-wrap {
+      z-index: 1;
+      position: relative; }
+      .new-payment-option .conditional-payment-option .discount .switch-wrap:before {
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: inline-block;
+        width: 88px;
+        height: 25px;
+        border: 1px solid #dee2e6;
+        border-radius: 5px;
+        content: ''; }
+      .new-payment-option .conditional-payment-option .discount .switch-wrap .switch {
+        display: none; }
+      .new-payment-option .conditional-payment-option .discount .switch-wrap .switch__label {
+        width: 45px;
+        padding: 5px 8px 6px;
+        height: 27px;
+        border: 1px solid transparent;
+        border-radius: 5px;
+        color: #adb5bd;
+        font-weight: 600;
+        font-size: 14px;
+        text-align: center; }
+      .new-payment-option .conditional-payment-option .discount .switch-wrap .switch[type=radio]:checked + .switch__label {
+        border-color: #22b8cf;
+        color: #22b8cf; }
+  .new-payment-option .conditional-payment-option .discount-result {
+    padding: 15px 20px; }
+    .new-payment-option .conditional-payment-option .discount-result .title {
+      font-size: 15px; }
+    .new-payment-option .conditional-payment-option .discount-result .content {
+      font-size: 15px; }
+    .new-payment-option .conditional-payment-option .discount-result .form__mixed {
+      margin-top: 15px; }
+      .new-payment-option .conditional-payment-option .discount-result .form__mixed .select-wrap .select {
+        font-size: 13px; }
+      .new-payment-option .conditional-payment-option .discount-result .form__mixed .input__text {
+        font-size: 13px; }
+      .new-payment-option .conditional-payment-option .discount-result .form__mixed .input__add-on {
+        height: auto;
+        font-size: 14px; }
+    .new-payment-option .conditional-payment-option .discount-result .total {
+      margin-top: 15px;
+      padding: 12px 15px;
+      border: 1px solid #22b8cf;
+      border-radius: 5px;
+      background-color: rgba(21, 170, 191, 0.05); }
+      .new-payment-option .conditional-payment-option .discount-result .total .title,
+      .new-payment-option .conditional-payment-option .discount-result .total .content {
+        color: #22b8cf;
+        font-size: 14px; }
+
+@media (max-width: 800px) {
+  .new-payment-option {
+    margin-top: 60px;
+    margin-bottom: 50px; }
+    .new-payment-option .four.columns ~ .four.columns {
+      margin-top: 20px; }
+    .new-payment-option .conditional-payment-option__title {
+      margin-top: 30px; } }
 html {
   background-color: #f1f3f5; }
 
