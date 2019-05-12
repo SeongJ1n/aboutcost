@@ -1645,6 +1645,100 @@ input:focus {
       margin-top: 20px; }
     .new-payment-option .conditional-payment-option__title {
       margin-top: 30px; } }
+.new-layout .layout-wrap {
+  width: 100vw;
+  margin-left: -20px;
+  padding: 0 20px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  scrollbar-width: none; }
+  .new-layout .layout-wrap::-webkit-scrollbar {
+    display: none; }
+  .new-layout .layout-wrap .layout {
+    display: inline-block;
+    min-width: 80vw; }
+  .new-layout .layout-wrap .layout ~ .layout {
+    margin-left: 20px; }
+  .new-layout .layout-wrap .layout:first-child {
+    margin: 0; }
+.new-layout .layout {
+  padding: 0;
+  text-align: center;
+  box-shadow: 0 2px 4px #dee2e6; }
+  .new-layout .layout .mt-15 {
+    margin-top: 15px; }
+  .new-layout .layout .layout__thumbnail {
+    padding: 30px 30px 35px;
+    border-bottom: 1px dashed #dee2e6; }
+    .new-layout .layout .layout__thumbnail .row {
+      margin-top: 0; }
+    .new-layout .layout .layout__thumbnail .section .title {
+      text-align: left;
+      font-weight: 700;
+      font-size: 14px; }
+    .new-layout .layout .layout__thumbnail .section .box {
+      width: 80%;
+      height: 8px;
+      margin-top: 7px;
+      background-color: #f1f3f5; }
+    .new-layout .layout .layout__thumbnail .section .box.box--short {
+      width: 55%; }
+    .new-layout .layout .layout__thumbnail .table {
+      position: relative;
+      margin-top: 20px;
+      border: 1px solid #dee2e6; }
+      .new-layout .layout .layout__thumbnail .table .header,
+      .new-layout .layout .layout__thumbnail .table .cell {
+        width: 100%;
+        height: 14px;
+        border-bottom: 1px solid #dee2e6; }
+      .new-layout .layout .layout__thumbnail .table .header {
+        background-color: #f1f3f5; }
+      .new-layout .layout .layout__thumbnail .table .cell:last-child {
+        border: none; }
+      .new-layout .layout .layout__thumbnail .table .title {
+        z-index: 1;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        display: inline-block;
+        width: 100%;
+        transform: translate(-50%, -50%);
+        font-weight: 700;
+        font-size: 14px; }
+    .new-layout .layout .layout__thumbnail .stamp {
+      position: relative;
+      display: inline-block;
+      width: 45%;
+      height: 8px;
+      margin-top: 20px;
+      background-color: #f1f3f5; }
+      .new-layout .layout .layout__thumbnail .stamp:before {
+        position: absolute;
+        display: inline-block;
+        top: -7px;
+        right: -10px;
+        width: 20px;
+        height: 20px;
+        border: 1px dashed #f03e3e;
+        border-radius: 50%;
+        content: ''; }
+      .new-layout .layout .layout__thumbnail .stamp:after {
+        position: absolute;
+        top: -3px;
+        right: -5px;
+        font-size: 13px;
+        color: #f03e3e;
+        content: "印"; }
+  .new-layout .layout .btn.btn--text {
+    padding: 14px 15px 15px;
+    font-size: 14px; }
+
+@media (max-width: 800px) {
+  .new-layout {
+    margin-top: 60px;
+    margin-bottom: 60px; } }
 .new-send .send-form {
   max-width: 600px;
   width: 100%;
