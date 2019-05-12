@@ -1569,6 +1569,8 @@ input:focus {
         color: #868e96;
         font-weight: 400;
         font-size: 14px; }
+.new-payment-option .conditional-payment-option__title {
+  margin-top: 20px; }
 .new-payment-option .conditional-payment-option {
   margin-top: 15px;
   border: 1px solid #dee2e6;
@@ -1643,6 +1645,42 @@ input:focus {
       margin-top: 20px; }
     .new-payment-option .conditional-payment-option__title {
       margin-top: 30px; } }
+.new-send .send-form {
+  max-width: 600px;
+  width: 100%;
+  margin-top: 20px;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0 2px 4px #dee2e6; }
+  .new-send .send-form .share {
+    width: 100%;
+    margin-top: 20px; }
+    .new-send .send-form .share i {
+      margin-right: 10px; }
+  .new-send .send-form .divider {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-bottom: 1px dashed #ced4da; }
+  .new-send .send-form .form__textarea {
+    margin-top: 20px; }
+  .new-send .send-form .btn--add {
+    width: 100%;
+    margin-top: 20px; }
+
+@media (max-width: 800px) {
+  .new-send {
+    margin-top: 60px;
+    margin-bottom: 60px; }
+    .new-send .send-form {
+      margin: -10px;
+      border: none;
+      box-shadow: none; }
+      .new-send .send-form .component__header {
+        padding: 0; }
+      .new-send .send-form .component__content {
+        padding: 0; } }
 html {
   background-color: #f1f3f5; }
 
