@@ -1816,6 +1816,52 @@ input:focus {
           border-radius: 5px; }
         .customer .customer-list .input--search .btn {
           display: none; } }
+.customer-new .divider {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-top: 1px dashed #dee2e6; }
+.customer-new .company-info,
+.customer-new .manager-info {
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0 2px 4px #dee2e6; }
+.customer-new .manager-info .component__header {
+  border: none;
+  transition: 0.2s ease-out;
+  cursor: pointer; }
+  .customer-new .manager-info .component__header:hover {
+    background-color: #f8f9fa; }
+  .customer-new .manager-info .component__header .arrow {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 0 solid #212529;
+    border-width: 0 0 2px 2px;
+    transform: rotate(-45deg);
+    transition: 0.2s ease-out; }
+.customer-new .manager-info .component__content {
+  display: none; }
+.customer-new .manager-info .btn.btn-outline--danger {
+  width: 100%;
+  margin-top: 20px; }
+.customer-new .manager-info ~ .btn.btn-outline--primary {
+  width: 100%;
+  margin-top: 20px;
+  border-style: dashed; }
+.customer-new .manager-info.manager-info--open .component__header {
+  border-bottom: 1px dashed #dee2e6; }
+  .customer-new .manager-info.manager-info--open .component__header .arrow {
+    transform: translateY(8px) rotate(135deg); }
+.customer-new .manager-info.manager-info--open .component__content {
+  display: block; }
+
+@media (max-width: 800px) {
+  .customer-new {
+    margin-top: 60px;
+    margin-bottom: 50px; }
+    .customer-new .six.columns ~ .six.columns {
+      margin-top: 20px; } }
 html {
   background-color: #f1f3f5; }
 
