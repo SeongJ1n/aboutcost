@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>ABOUTCOST</title>
+    <link rel="stylesheet" type="text/css" href="style/css/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<body>
+    <!-- nav--open 클래스를 추가하면 nav__menu 영역이 열립니다. -->
+    <!-- nav__menu 영역이 열려있을 때, 스크롤락 기능이 필요합니다. -->
+    <nav class="nav">
+        <div class="nav__header flex-container flex-item item-center flex-space-between">
+            <a class="nav__logo" href="/"></a>
+            <i class="nav__hamburger fas fa-bars"></i>
+            <i class="nav__close fas fa-times"></i>
+        </div>
+        <ul class="nav__menu">
+            <li class="menu__item">
+                <a class="menu__link" href=""><i class="fas fa-bell"></i>알림함</a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href=""><i class="fas fa-plus-square"></i>신규발행</a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href=""><i class="fas fa-th-list"></i>발송리스트</a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href=""><i class="fas fa-chart-line"></i>상세통계추적</a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href=""><i class="fas fa-cog"></i>설정관리</a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href=""><i class="fas fa-building"></i>거래처관리</a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href=""><i class="fas fa-mail-bulk"></i>수신리스트</a>
+            </li>
+            <hr class="divider">
+            <li class="menu__item">
+                <a class="menu__link" href="">문의하기</a>
+            </li>
+            <li class="menu__item menu__item--active">
+                <a class="menu__link" href="">사용자정보</a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href="">로그아웃</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="sidebar">
+        <ul class="sidebar__menu">
+            <li class="menu__item">
+                <a class="menu__link" href="/"><img class="nav__logo" src="res/img/logo.png"></a>
+            </li>
+            <li class="menu__item menu__item--active">
+                <a class="menu__link" href=""><i class="fas fa-bell"></i>알림함</a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href=""><i class="fas fa-plus-square"></i>신규발행</a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href=""><i class="fas fa-th-list"></i>발송리스트</a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href=""><i class="fas fa-chart-line"></i>상세통계추적</a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href=""><i class="fas fa-cog"></i>설정관리</a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href=""><i class="fas fa-building"></i>거래처관리</a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href=""><i class="fas fa-mail-bulk"></i>수신리스트</a>
+            </li>
+            <hr class="divider">
+            <li class="menu__item">
+                <a class="menu__link" href="">문의하기</a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href="">사용자정보</a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href="">로그아웃</a>
+            </li>
+        </ul>
+    </div>
+    <div class="body-container">
+        <div class="body-wrap">
+            <div class="noti flex-container flex-center">
+                <div class="content-container">
+                    <div class="page-header flex-container flex-space-between">
+                        <h2 class="title">알림함</h2>
+                    </div>
+                    <div class="flex-container flex-center">
+                        <div class="noti-wrap">
+                            <div class="noti__item unread flex-container">
+                                <div class="flex-container flex-item flex-column">
+                                    <div>
+                                        <div class="tag tag--red"><i class="fas fa-file-upload"></i>발신</div>
+                                        <div class="tag tag--cyan">견적서</div>
+                                        <div class="tag tag--outline"><i class="fas fa-repeat-alt"></i>견적서상태 변경</div>
+                                    </div>
+                                    <div class="flex-container item-center">
+                                        <h4 class="title">[회사명 벨루가 브루어리]</h4>
+                                        <h4 class="title flex-item">140,000,000원</h4>
+                                    </div>
+                                    <p class="content">
+                                        견적수신인 [회사명]이 [날짜]자로 발행한 총액 [총액] 금액의 견적서를 확인했습니다.
+                                    </p>
+                                    <span class="date">2019.04.22</span>
+                                </div>
+                            </div>
+                            <div class="noti__item flex-container">
+                                <div class="flex-container flex-item flex-column">
+                                    <div>
+                                        <div class="tag tag--cyan"><i class="fas fa-file-download"></i>수신</div>
+                                        <div class="tag tag--cyan">견적서</div>
+                                        <div class="tag tag--outline"><i class="fas fa-repeat-alt"></i>견적서상태 변경</div>
+                                    </div>
+                                    <div class="flex-container item-center">
+                                        <h4 class="title">[회사명 벨루가 브루어리]</h4>
+                                        <h4 class="title flex-item">140,000,000원</h4>
+                                    </div>
+                                    <p class="content">
+                                        견적수신인 [회사명]이 [날짜]자로 발행한 총액 [총액] 금액의 견적서를 확인했습니다.
+                                    </p>
+                                    <span class="date">2019.04.22</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

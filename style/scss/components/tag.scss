@@ -5,6 +5,11 @@
     font-weight: 600;
     font-size: 13px;
     background-color: $oc-gray-0;
+    i { margin-right: 10px; }
+}
+.tag.tag--outline {
+    border: 1px solid $border;
+    background-color: transparent;
 }
 .tag.tag--red {
     color: $oc-red-6;
