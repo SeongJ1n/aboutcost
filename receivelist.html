@@ -111,16 +111,16 @@
                                     <div class="form__input with-btn input--search flex-container">
                                         <input class="input__text flex-item" type="text" placeholder="견적서이름, 회사명, 담당자 검색" /><button class="btn btn-outline--secondary">검색</button>
                                     </div>
-                                    <div class="filter-wrap">
+                                    <div class="filter-wrap show-pc">
                                         <button class="btn btn-outline--secondary">검색조건 추가하기</button>
                                         <!-- filter--open 클래스를 삭제하면 필터가 닫힙니다. -->
                                         <div class="filter filter--open">
                                             <div class="set-period">
-                                                <div class="row">
-                                                    <button class="three columns btn btn-outline--primary">일주일</button>
-                                                    <button class="three columns btn btn-outline--secondary">한달</button>
-                                                    <button class="three columns btn btn-outline--secondary">6개월</button>
-                                                    <button class="three columns btn btn-outline--secondary">1년</button>
+                                                <div class="period-btn flex-container">
+                                                    <button class="flex-item btn btn-outline--primary">일주일</button>
+                                                    <button class="flex-item btn btn-outline--secondary">한달</button>
+                                                    <button class="flex-item btn btn-outline--secondary">6개월</button>
+                                                    <button class="flex-item btn btn-outline--secondary">1년</button>
                                                 </div>
                                                 <div class="period flex-container">
                                                     <div class="flex-item form__text">
@@ -207,6 +207,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                <button class="btn btn-outline--secondary show-mobile">검색조건 추가하기</button>
                                 <table class="list--table show-pc">
                                     <tr class="table__row">
                                         <th class="table__header">입금상태</th>
@@ -391,75 +392,65 @@
                                 </table>
                                 <div class="list--card show-mobile">
                                     <div class="card">
-                                        <div class="flex-container">
-                                            <h4 class="card__title">{회사이름}</h4>
+                                        <div class="card__header flex-container item-center flex-space-between">
+                                            <span class="card__content">관리번호: <b>ABC-123</b></span>
+                                            <div class="tag tag--cyan">입금 100%</div>
                                         </div>
-                                        <div class="flex-container">
-                                            <h4 class="card__title">김아무개 대리 외 1인</h4>
-                                        </div>
-                                        <div class="card__row flex-container flex-space-between">
-                                            <h5 class="card__subtitle">연락처</h5>
-                                            <span class="card__content">070)1234-1234</span>
+                                        <div class="flex-container flex-space-between">
+                                            <h4 class="card__title">[견적서 이름]</h4>
+                                            <h4 class="card__title">140,000,000원</h4>
                                         </div>
                                         <div class="card__row flex-container flex-space-between">
-                                            <h5 class="card__subtitle">이메일</h5>
-                                            <span class="card__content">amugae@company.com</span>
+                                            <h5 class="card__subtitle">문서상태</h5>
+                                            <span class="card__content">
+                                                <div class="switch switch--on flex-container item-center flex-end">
+                                                    <div class="switch__icon"></div>
+                                                    <span class="switch__text">활성화</span>
+                                                </div>
+                                            </span>
                                         </div>
                                         <div class="card__row flex-container flex-space-between">
-                                            <h5 class="card__subtitle">발행횟수</h5>
-                                            <span class="card__content">62회</span>
+                                            <h5 class="card__subtitle">발행일자</h5>
+                                            <span class="card__content">2019-03-20</span>
                                         </div>
                                         <div class="card__row flex-container flex-space-between">
-                                            <h5 class="card__subtitle">발행금액 총합</h5>
-                                            <span class="card__content">1,114,300,100원</span>
+                                            <h5 class="card__subtitle">발신인 회사</h5>
+                                            <span class="card__content">비엘티특허</span>
+                                        </div>
+                                        <div class="card__row flex-container flex-space-between">
+                                            <h5 class="card__subtitle">발신인 담당자</h5>
+                                            <span class="card__content">김아무개 대리</span>
                                         </div>
                                     </div>
                                     <div class="card">
-                                        <div class="flex-container">
-                                            <h4 class="card__title">{회사이름}</h4>
+                                        <div class="card__header flex-container item-center flex-space-between">
+                                            <span class="card__content">관리번호: <b>ABC-123</b></span>
+                                            <div class="tag tag--cyan">입금 100%</div>
                                         </div>
-                                        <div class="flex-container">
-                                            <h4 class="card__title">김아무개 대리 외 1인</h4>
-                                        </div>
-                                        <div class="card__row flex-container flex-space-between">
-                                            <h5 class="card__subtitle">연락처</h5>
-                                            <span class="card__content">070)1234-1234</span>
+                                        <div class="flex-container flex-space-between">
+                                            <h4 class="card__title">[견적서 이름]</h4>
+                                            <h4 class="card__title">140,000,000원</h4>
                                         </div>
                                         <div class="card__row flex-container flex-space-between">
-                                            <h5 class="card__subtitle">이메일</h5>
-                                            <span class="card__content">amugae@company.com</span>
+                                            <h5 class="card__subtitle">문서상태</h5>
+                                            <span class="card__content">
+                                                <div class="switch flex-container item-center flex-end">
+                                                    <div class="switch__icon"></div>
+                                                    <span class="switch__text">비활성화</span>
+                                                </div>
+                                            </span>
                                         </div>
                                         <div class="card__row flex-container flex-space-between">
-                                            <h5 class="card__subtitle">발행횟수</h5>
-                                            <span class="card__content">62회</span>
+                                            <h5 class="card__subtitle">발행일자</h5>
+                                            <span class="card__content">2019-03-20</span>
                                         </div>
                                         <div class="card__row flex-container flex-space-between">
-                                            <h5 class="card__subtitle">발행금액 총합</h5>
-                                            <span class="card__content">1,114,300,100원</span>
-                                        </div>
-                                    </div>
-                                    <div class="card">
-                                        <div class="flex-container">
-                                            <h4 class="card__title">{회사이름}</h4>
-                                        </div>
-                                        <div class="flex-container">
-                                            <h4 class="card__title">김아무개 대리 외 1인</h4>
+                                            <h5 class="card__subtitle">발신인 회사</h5>
+                                            <span class="card__content">비엘티특허</span>
                                         </div>
                                         <div class="card__row flex-container flex-space-between">
-                                            <h5 class="card__subtitle">연락처</h5>
-                                            <span class="card__content">070)1234-1234</span>
-                                        </div>
-                                        <div class="card__row flex-container flex-space-between">
-                                            <h5 class="card__subtitle">이메일</h5>
-                                            <span class="card__content">amugae@company.com</span>
-                                        </div>
-                                        <div class="card__row flex-container flex-space-between">
-                                            <h5 class="card__subtitle">발행횟수</h5>
-                                            <span class="card__content">62회</span>
-                                        </div>
-                                        <div class="card__row flex-container flex-space-between">
-                                            <h5 class="card__subtitle">발행금액 총합</h5>
-                                            <span class="card__content">1,114,300,100원</span>
+                                            <h5 class="card__subtitle">발신인 담당자</h5>
+                                            <span class="card__content">김아무개 대리</span>
                                         </div>
                                     </div>
                                 </div>
