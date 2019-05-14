@@ -412,6 +412,22 @@ hr {
       font-weight: 400;
       white-space: nowrap;
       text-overflow: ellipsis; }
+      .list--table .table__row .table__data .switch {
+        transform: translateY(-2px); }
+        .list--table .table__row .table__data .switch .switch__icon {
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          background-color: #adb5bd; }
+        .list--table .table__row .table__data .switch .switch__text {
+          margin-left: 8px;
+          color: #868e96;
+          font-weight: 500;
+          font-size: 13px; }
+      .list--table .table__row .table__data .switch.switch--on .switch__icon {
+        background-color: #22b8cf; }
+      .list--table .table__row .table__data .switch.switch--on .switch__text {
+        color: #22b8cf; }
   .list--table .table__row:first-child {
     border-top: 1px solid #212529;
     border-bottom: 1px solid #212529;
@@ -886,6 +902,104 @@ input:focus {
     color: #22b8cf; }
   .chip.chip--confirmed .chip__title {
     color: #22b8cf; }
+
+.filter-wrap {
+  z-index: 1;
+  position: relative; }
+  .filter-wrap .filter {
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    display: none;
+    max-width: 360px;
+    width: 100vw;
+    margin-top: 4px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 2px 4px #dee2e6; }
+    .filter-wrap .filter .set-period {
+      padding: 20px; }
+      .filter-wrap .filter .set-period .row {
+        margin-top: 0; }
+      .filter-wrap .filter .set-period .period {
+        margin-top: 15px; }
+        .filter-wrap .filter .set-period .period .form__text {
+          max-width: 150px; }
+          .filter-wrap .filter .set-period .period .form__text .input__text {
+            margin-top: 0; }
+        .filter-wrap .filter .set-period .period .swung-dash {
+          width: 20px;
+          padding-top: 10px;
+          text-align: center;
+          font-size: 20px; }
+    .filter-wrap .filter .filter-list .component__header {
+      padding: 12px 20px;
+      border-top: 1px solid #dee2e6;
+      border-bottom: none;
+      cursor: pointer; }
+      .filter-wrap .filter .filter-list .component__header:hover {
+        background-color: #f8f9fa; }
+      .filter-wrap .filter .filter-list .component__header .title {
+        font-weight: 600;
+        font-size: 14px; }
+      .filter-wrap .filter .filter-list .component__header .arrow {
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        border: 0 solid #212529;
+        border-width: 0 0 2px 2px;
+        transform: translateX(-5px) translateY(-3px) rotate(-45deg);
+        transition: 0.2s ease-out; }
+    .filter-wrap .filter .filter-list .component__content {
+      display: none;
+      padding: 16px 20px;
+      background-color: #f8f9fa; }
+      .filter-wrap .filter .filter-list .component__content .form__check .checkbox__label {
+        font-weight: 500;
+        font-size: 14px; }
+      .filter-wrap .filter .filter-list .component__content .form__check .checkbox__icon {
+        position: relative;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border: 1px solid #dee2e6;
+        border-radius: 5px;
+        background-color: white; }
+        .filter-wrap .filter .filter-list .component__content .form__check .checkbox__icon:before {
+          position: absolute;
+          top: 5px;
+          left: 4px;
+          display: inline-block;
+          width: 8px;
+          height: 3px;
+          border: solid #dee2e6;
+          border-width: 0 0 2px 2px;
+          transform: rotate(-45deg);
+          content: ''; }
+      .filter-wrap .filter .filter-list .component__content .form__check .checkbox {
+        display: none; }
+      .filter-wrap .filter .filter-list .component__content .form__check .checkbox[type=checkbox]:checked + label .checkbox__icon {
+        border-color: #22b8cf;
+        background-color: #22b8cf; }
+        .filter-wrap .filter .filter-list .component__content .form__check .checkbox[type=checkbox]:checked + label .checkbox__icon:before {
+          border-color: white; }
+      .filter-wrap .filter .filter-list .component__content .form__check ~ .form__check {
+        margin-top: 15px; }
+    .filter-wrap .filter .filter-list.filter-list--open .component__header {
+      border-bottom: 1px solid #dee2e6; }
+      .filter-wrap .filter .filter-list.filter-list--open .component__header .arrow {
+        transform: translateX(-5px) translateY(2px) rotate(135deg); }
+    .filter-wrap .filter .filter-list.filter-list--open .component__content {
+      display: block; }
+    .filter-wrap .filter .btn-wrap {
+      padding: 15px 20px;
+      border-top: 1px solid #dee2e6; }
+      .filter-wrap .filter .btn-wrap .btn.btn--primary {
+        width: 100%; }
+  .filter-wrap .filter.filter--open {
+    display: block; }
 
 .modal-wrap {
   width: 100vw;
@@ -1868,6 +1982,49 @@ input:focus {
     margin-bottom: 50px; }
     .customer-new .six.columns ~ .six.columns {
       margin-top: 20px; } }
+.receivelist .receivelist-list {
+  padding: 20px 30px 30px;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0 2px 4px #dee2e6; }
+  .receivelist .receivelist-list .input--search {
+    position: relative;
+    width: 350px;
+    font-size: 14px; }
+    .receivelist .receivelist-list .input--search:before {
+      position: absolute;
+      top: 49%;
+      left: 15px;
+      font-family: "Font Awesome 5 Free";
+      font-weight: 300;
+      font-size: 16px;
+      transform: translate(0, -50%);
+      content: "\f002"; }
+    .receivelist .receivelist-list .input--search .input__text {
+      padding: 10px 16px 11px 42px;
+      margin: 0; }
+    .receivelist .receivelist-list .input--search .btn {
+      margin: 0; }
+  .receivelist .receivelist-list .filter-wrap {
+    margin-left: 15px; }
+  .receivelist .receivelist-list .list--table {
+    margin-top: 30px; }
+
+@media (max-width: 800px) {
+  .receivelist {
+    margin-top: 60px;
+    margin-bottom: 50px; }
+    .receivelist .receivelist-list {
+      padding: 0;
+      border: none;
+      box-shadow: none; }
+      .receivelist .receivelist-list .input--search {
+        width: 100%; }
+        .receivelist .receivelist-list .input--search .input__text {
+          border-radius: 5px; }
+        .receivelist .receivelist-list .input--search .btn {
+          display: none; } }
 .noti .noti-wrap {
   max-width: 600px;
   width: 100%;

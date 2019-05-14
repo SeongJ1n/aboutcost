@@ -67,6 +67,25 @@
             font-weight: 400;
             white-space: nowrap;
             text-overflow: ellipsis;
+            .switch {
+                transform: translateY(-2px);
+                .switch__icon {
+                    width: 8px;
+                    height: 8px;
+                    border-radius: 50%;
+                    background-color: $oc-gray-5;
+                }
+                .switch__text {
+                    margin-left: 8px;
+                    color: $oc-gray-6;
+                    font-weight: 500;
+                    font-size: 13px;
+                }
+            }
+            .switch.switch--on {
+                .switch__icon { background-color: $primary; }
+                .switch__text { color: $primary; }
+            }
         }
     
     }
