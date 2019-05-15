@@ -67,7 +67,7 @@
             <li class="menu__item">
                 <a class="menu__link" href=""><i class="fas fa-plus-square"></i>신규발행</a>
             </li>
-            <li class="menu__item">
+            <li class="menu__item menu__item--active">
                 <a class="menu__link" href=""><i class="fas fa-th-list"></i>발송리스트</a>
             </li>
             <li class="menu__item">
@@ -79,7 +79,7 @@
             <li class="menu__item">
                 <a class="menu__link" href=""><i class="fas fa-building"></i>거래처관리</a>
             </li>
-            <li class="menu__item menu__item--active">
+            <li class="menu__item">
                 <a class="menu__link" href=""><i class="fas fa-mail-bulk"></i>수신리스트</a>
             </li>
             <hr class="divider">
@@ -96,25 +96,25 @@
     </div>
     <div class="body-container">
         <div class="body-wrap">
-            <div class="receivelist flex-container flex-center">
+            <div class="sendlist flex-container flex-center">
                 <div class="content-container">
                     <div class="page-header flex-container flex-space-between">
-                        <h2 class="title">수신리스트</h2>
+                        <h2 class="title">발송리스트</h2>
                         <div class="btn-wrap">
                             <button class="btn btn--primary">신규발행</button>
                         </div>
                     </div>
                     <div class="row">
                         <div class="twelve columns">
-                            <div class="receivelist-list">
+                            <div class="sendlist-list">
                                 <div class="flex-container flex-end">
                                     <div class="form__input with-btn input--search flex-container">
                                         <input class="input__text flex-item" type="text" placeholder="견적서이름, 회사명, 담당자 검색" /><button class="btn btn-outline--secondary">검색</button>
                                     </div>
                                     <div class="filter-wrap show-pc">
                                         <button class="btn btn-outline--secondary">검색조건 추가하기</button>
-                                        <!-- filter--open 클래스를 삭제하면 필터가 닫힙니다. -->
-                                        <div class="filter filter--open">
+                                        <!-- filter--open 클래스를 추가하면 필터가 열립니다. -->
+                                        <div class="filter">
                                             <div class="set-period">
                                                 <div class="period-btn flex-container">
                                                     <button class="flex-item btn btn-outline--primary">일주일</button>

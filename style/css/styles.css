@@ -2035,7 +2035,6 @@ input:focus {
   .receivelist .receivelist-list .input--search {
     position: relative;
     width: 350px;
-    margin-bottom: 10px;
     font-size: 14px; }
     .receivelist .receivelist-list .input--search:before {
       position: absolute;
@@ -2065,10 +2064,55 @@ input:focus {
       border: none;
       box-shadow: none; }
       .receivelist .receivelist-list .input--search {
-        width: 100%; }
+        width: 100%;
+        margin-bottom: 10px; }
         .receivelist .receivelist-list .input--search .input__text {
           border-radius: 5px; }
         .receivelist .receivelist-list .input--search .btn {
+          display: none; } }
+.sendlist .sendlist-list {
+  padding: 20px 30px 30px;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0 2px 4px #dee2e6; }
+  .sendlist .sendlist-list .input--search {
+    position: relative;
+    width: 350px;
+    font-size: 14px; }
+    .sendlist .sendlist-list .input--search:before {
+      position: absolute;
+      top: 49%;
+      left: 15px;
+      font-family: "Font Awesome 5 Free";
+      font-weight: 300;
+      font-size: 16px;
+      transform: translate(0, -50%);
+      content: "\f002"; }
+    .sendlist .sendlist-list .input--search .input__text {
+      padding: 10px 16px 11px 42px;
+      margin: 0; }
+    .sendlist .sendlist-list .input--search .btn {
+      margin: 0; }
+  .sendlist .sendlist-list .filter-wrap {
+    margin-left: 15px; }
+  .sendlist .sendlist-list .list--table {
+    margin-top: 30px; }
+
+@media (max-width: 800px) {
+  .sendlist {
+    margin-top: 60px;
+    margin-bottom: 50px; }
+    .sendlist .sendlist-list {
+      padding: 0;
+      border: none;
+      box-shadow: none; }
+      .sendlist .sendlist-list .input--search {
+        width: 100%;
+        margin-bottom: 10px; }
+        .sendlist .sendlist-list .input--search .input__text {
+          border-radius: 5px; }
+        .sendlist .sendlist-list .input--search .btn {
           display: none; } }
 .noti .noti-wrap {
   max-width: 600px;

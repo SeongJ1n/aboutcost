@@ -1,7 +1,7 @@
-// 수신리스트 페이지
+// 발송리스트 페이지
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
-.receivelist {
-    .receivelist-list {
+.sendlist {
+    .sendlist-list {
         padding: 20px 30px 30px;
         border: 1px solid $border;
         border-radius: $border-radius;
@@ -12,6 +12,7 @@
         .input--search {
             position: relative;
             width: 350px;
+            margin-bottom: 10px;
             font-size: 14px;
             &:before {
                 position: absolute;
@@ -39,16 +40,15 @@
 }
 
 @media (max-width: $mobile-max-width) {
-    .receivelist {
+    .sendlist {
         margin-top: 60px;
         margin-bottom: 50px;
-        .receivelist-list {
+        .sendlist-list {
             padding: 0;
             border: none;
             box-shadow: none;
             .input--search {
                 width: 100%;
-                margin-bottom: 10px;
                 .input__text { border-radius: $border-radius; }
                 .btn { display: none; }
             }
