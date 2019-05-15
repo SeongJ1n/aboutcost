@@ -1,6 +1,40 @@
 // 발송리스트 페이지
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 .sendlist {
+    .sendlist-stastastics {
+        border: 1px solid $border;
+        border-radius: $border-radius;
+        background-color: white;
+        @include shadow;
+        .stastastics__item {
+            padding: 25px 30px;
+            .title {
+                color: $oc-gray-6;
+                font-weight: 600;
+                font-size: 15px;
+            }
+            .content-wrap {
+                .content {
+                    margin-top: 5px;
+                }
+                .change-value {
+                    margin-left: 5px;
+                    margin-bottom: 5px;
+                    font-weight: 700;
+                    color: $oc-gray-6;
+                }
+                .change-value.increase {
+                    color: $primary;
+                }
+                .change-value.decrease {
+                    color: $oc-red-7;
+                }
+            }
+        }
+        .btn-wrap {
+            padding: 25px 30px;
+        }
+    }
     .sendlist-list {
         padding: 20px 30px 30px;
         border: 1px solid $border;

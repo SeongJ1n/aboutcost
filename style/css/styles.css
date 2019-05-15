@@ -721,6 +721,7 @@ hr {
   padding: 10px 16px 11px;
   border: 1px solid transparent;
   border-radius: 5px;
+  text-align: center;
   font-family: inherit;
   font-weight: 600;
   font-size: 13px;
@@ -2070,6 +2071,30 @@ input:focus {
           border-radius: 5px; }
         .receivelist .receivelist-list .input--search .btn {
           display: none; } }
+.sendlist .sendlist-stastastics {
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0 2px 4px #dee2e6; }
+  .sendlist .sendlist-stastastics .stastastics__item {
+    padding: 25px 30px; }
+    .sendlist .sendlist-stastastics .stastastics__item .title {
+      color: #868e96;
+      font-weight: 600;
+      font-size: 15px; }
+    .sendlist .sendlist-stastastics .stastastics__item .content-wrap .content {
+      margin-top: 5px; }
+    .sendlist .sendlist-stastastics .stastastics__item .content-wrap .change-value {
+      margin-left: 5px;
+      margin-bottom: 5px;
+      font-weight: 700;
+      color: #868e96; }
+    .sendlist .sendlist-stastastics .stastastics__item .content-wrap .change-value.increase {
+      color: #22b8cf; }
+    .sendlist .sendlist-stastastics .stastastics__item .content-wrap .change-value.decrease {
+      color: #f03e3e; }
+  .sendlist .sendlist-stastastics .btn-wrap {
+    padding: 25px 30px; }
 .sendlist .sendlist-list {
   padding: 20px 30px 30px;
   border: 1px solid #dee2e6;
