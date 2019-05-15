@@ -1245,6 +1245,21 @@ input:focus {
           border-radius: 5px; }
         .setup .setup-list .input--search .btn {
           display: none; } }
+.setup-new.new .mt-0 {
+  margin-top: 0; }
+.setup-new.new .document-info .load-btn-wrap .btn {
+  min-width: 160px; }
+.setup-new.new .document-info .load-btn-wrap .btn ~ .btn {
+  margin-left: 0; }
+.setup-new.new .document-section {
+  margin-bottom: 20px; }
+
+@media (max-width: 800px) {
+  .setup-new.new .document-info .load-btn-wrap .btn {
+    width: 100%;
+    border-style: dashed; }
+  .setup-new.new .document-section {
+    margin-bottom: 30px; } }
 .new .m-0 {
   margin: 0; }
 .new .document-info {

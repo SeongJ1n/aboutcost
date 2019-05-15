@@ -1,0 +1,26 @@
+// 새로운 견적서 양식 만들기
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+.setup-new.new {
+    .mt-0 { margin-top: 0; }
+    .document-info {
+        .load-btn-wrap {
+            .btn { min-width: 160px; }
+            .btn ~ .btn { margin-left: 0; }
+        }
+    }
+    .document-section { margin-bottom: 20px; }
+}
+
+@media (max-width: $mobile-max-width) {
+    .setup-new.new {
+        .document-info {
+            .load-btn-wrap {
+                .btn {
+                    width: 100%;
+                    border-style: dashed;
+                }
+            }
+        }
+        .document-section { margin-bottom: 30px; }
+    }
+}
