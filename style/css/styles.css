@@ -2128,6 +2128,35 @@ input:focus {
   .sendlist {
     margin-top: 60px;
     margin-bottom: 50px; }
+    .sendlist .sendlist-stastastics {
+      border: none;
+      background-color: transparent;
+      box-shadow: none; }
+      .sendlist .sendlist-stastastics .stastastics__item {
+        padding: 15px 20px;
+        border: 1px solid #dee2e6;
+        border-radius: 5px;
+        background-color: white;
+        box-shadow: 0 2px 4px #dee2e6; }
+        .sendlist .sendlist-stastastics .stastastics__item .title {
+          font-size: 13px; }
+        .sendlist .sendlist-stastastics .stastastics__item .content-wrap .content {
+          margin-top: 5px;
+          font-weight: 700;
+          font-size: 23px; }
+        .sendlist .sendlist-stastastics .stastastics__item .content-wrap .change-value {
+          margin-left: 5px;
+          margin-bottom: 5px;
+          font-weight: 700;
+          color: #868e96; }
+      .sendlist .sendlist-stastastics .stastastics__item ~ .stastastics__item {
+        margin-left: 20px; }
+      .sendlist .sendlist-stastastics .btn-wrap {
+        margin-top: 15px;
+        margin-bottom: 30px;
+        padding: 0; }
+        .sendlist .sendlist-stastastics .btn-wrap .btn {
+          padding: 12px 16px 13px; }
     .sendlist .sendlist-list {
       padding: 0;
       border: none;
