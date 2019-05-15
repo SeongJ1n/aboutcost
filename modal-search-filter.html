@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>ABOUTCOST</title>
+    <link rel="stylesheet" type="text/css" href="style/css/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<body>
+    <div class="modal-wrap filter-wrap">
+        <div class="filter filter--open">
+            <nav class="nav">
+                <div class="nav__header flex-container flex-item item-center flex-space-between">
+                    <i class="nav__close fas fa-times"></i>
+                    <button class="btn btn--text">초기화</button>
+                </div>
+            </nav>
+            <div class="set-period">
+                <div class="period-btn flex-container">
+                    <button class="flex-item btn btn-outline--primary">일주일</button>
+                    <button class="flex-item btn btn-outline--secondary">한달</button>
+                    <button class="flex-item btn btn-outline--secondary">6개월</button>
+                    <button class="flex-item btn btn-outline--secondary">1년</button>
+                </div>
+                <div class="period flex-container">
+                    <div class="flex-item form__text">
+                        <input class="input__text flex-item" type="date" />
+                    </div>
+                    <div class="swung-dash">~</div>
+                    <div class="flex-item form__text">
+                        <input class="input__text flex-item" type="date" />
+                    </div>
+                </div>
+            </div>
+            <!-- filter-list--open 클래스로 ON/OFF -->
+            <div class="filter-list filter-list--open">
+                <div class="component__header flex-container item-center flex-space-between">
+                    <h3 class="title">입금상태</h3>
+                    <div class="arrow"></div>
+                </div>
+                <div class="component__content">
+                    <div class="form__check">
+                        <input class="checkbox" id="test1" name="test1" type="checkbox">
+                        <label class="flex-container flex-space-between item-center" for="test1">
+                            <span class="checkbox__label">100% 입금완료</span>
+                            <span class="checkbox__icon"></span>
+                        </label>
+                    </div>
+                    <div class="form__check">
+                        <input class="checkbox" id="test2" name="test2" type="checkbox">
+                        <label class="flex-container flex-space-between item-center" for="test2">
+                            <span class="checkbox__label">100% 미만은 입금액 표시</span>
+                            <span class="checkbox__icon"></span>
+                        </label>
+                    </div>
+                    <div class="form__check">
+                        <input class="checkbox" id="test3" name="test3" type="checkbox">
+                        <label class="flex-container flex-space-between item-center" for="test3">
+                            <span class="checkbox__label">0%인 경우는 입금대기중</span>
+                            <span class="checkbox__icon"></span>
+                        </label>
+                    </div>
+                    <div class="form__check">
+                        <input class="checkbox" id="test4" name="test4" type="checkbox">
+                        <label class="flex-container flex-space-between item-center" for="test4">
+                            <span class="checkbox__label">견적서 상태가 발행전이면 -(하이픈)</span>
+                            <span class="checkbox__icon"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="filter-list">
+                <div class="component__header flex-container item-center flex-space-between">
+                    <h3 class="title">정산상태</h3>
+                    <div class="arrow"></div>
+                </div>
+                <div class="component__content">
+                </div>
+            </div>
+            <div class="filter-list">
+                <div class="component__header flex-container item-center flex-space-between">
+                    <h3 class="title">문서상태</h3>
+                    <div class="arrow"></div>
+                </div>
+                <div class="component__content">
+                </div>
+            </div>
+            <div class="filter-list">
+                <div class="component__header flex-container item-center flex-space-between">
+                    <h3 class="title">세금계산서발행상태</h3>
+                    <div class="arrow"></div>
+                </div>
+                <div class="component__content">
+                </div>
+            </div>
+            <div class="filter-list">
+                <div class="component__header flex-container item-center flex-space-between">
+                    <h3 class="title">업무진행상태</h3>
+                    <div class="arrow"></div>
+                </div>
+                <div class="component__content">
+                </div>
+            </div>
+            <div class="btn-wrap">
+                <button class="btn btn--primary">필터 적용하기</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
