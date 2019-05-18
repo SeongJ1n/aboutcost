@@ -36,6 +36,7 @@ $mobile-max-width: 800px;
 @import 'pages/sendlist';
 @import 'pages/document-detail';
 @import 'pages/noti';
+@import 'pages/history';
 
 
 @media (max-width: $mobile-max-width) {}
@@ -62,9 +63,9 @@ html { background-color: $oc-gray-1; }
 
 // PC/모바일에서만 보이는 컴포넌트
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
-.show-pc { display: auto; }
-.show-mobile { display: none; }
+.show-pc { display: auto !important; }
+.show-mobile { display: none !important; }
 @media (max-width: $mobile-max-width) {
-    .show-pc { display: none; }
-    .show-mobile { display: block; }
+    .show-pc { display: none !important; }
+    .show-mobile { display: block !important; }
 }

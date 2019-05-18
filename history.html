@@ -43,7 +43,7 @@
             <li class="menu__item">
                 <a class="menu__link" href="">문의하기</a>
             </li>
-            <li class="menu__item">
+            <li class="menu__item menu__item--active">
                 <a class="menu__link" href="">사용자정보</a>
             </li>
             <li class="menu__item">
@@ -52,8 +52,10 @@
         </ul>
     </nav>
     <div class="bottombar flex-container item-center">
-        <div class="btn-wrap flex-container flex-item">
-            <button class="btn btn--primary">저장하기</button>
+        <div class="form__input with-btn flex-item">
+            <div class="flex-container">
+                <input class="input__text flex-item" type="text" placeholder="상대방에게 보낼 메시지를 입력하세요" /><button class="btn btn--priamry">전송</button>
+            </div>
         </div>
     </div>
     <div class="sidebar">
@@ -61,13 +63,13 @@
             <li class="menu__item">
                 <a class="menu__link" href="/"><img class="nav__logo" src="res/img/logo.png"></a>
             </li>
-            <li class="menu__item">
+            <li class="menu__item menu__item--active">
                 <a class="menu__link" href=""><i class="fas fa-bell"></i>알림함</a>
             </li>
             <li class="menu__item">
                 <a class="menu__link" href=""><i class="fas fa-plus-square"></i>신규발행</a>
             </li>
-            <li class="menu__item menu__item--active">
+            <li class="menu__item">
                 <a class="menu__link" href=""><i class="fas fa-th-list"></i>발송리스트</a>
             </li>
             <li class="menu__item">
@@ -96,76 +98,44 @@
     </div>
     <div class="body-container">
         <div class="body-wrap">
-            <div class="document-detail flex-container flex-center">
+            <div class="history flex-container flex-center">
                 <div class="content-container">
                     <div class="page-header flex-container flex-space-between">
-                        <h2 class="title">{견적서 이름} 상세보기</h2>
-                        <div class="btn-wrap">
-                            <button class="btn btn--primary">저장하기</button>
-                        </div>
+                        <h2 class="title">히스토리 내역</h2>
                     </div>
                     <div class="page-description flex-container flex-start show-pc">
                         <a class="breadcrumb" href="">발송리스트</a>
-                        <span class="breadcrumb">{견적서 이름} 상세보기</span>
+                        <a class="breadcrumb" href="">{견적서 이름} 상세보기</a>
+                        <span class="breadcrumb">히스토리 내역</span>
                     </div>
                     <div class="flex-container flex-center">
-                        <div class="detail-info">
-                            <div class="history-list">
-                                <button class="btn btn-outline--primary">히스토리 내역</button>
-                                <h4 class="description">*히스토리 내역에서 상대방과 메시지를 주고받을 수 있습니다.</h4>
+                        <div class="history-wrap">
+                            <div class="history__item unread flex-container">
+                                <div class="flex-container flex-item flex-column">
+                                    <div>
+                                        <div class="tag tag--outline"><i class="fas fa-repeat-alt"></i>견적서상태 변경</div>
+                                    </div>
+                                    <p class="content">
+                                        견적수신인 [회사명]이 [날짜]자로 발행한 총액 [총액] 금액의 견적서를 확인했습니다.
+                                    </p>
+                                    <span class="date">2019.04.22</span>
+                                </div>
                             </div>
-                            <div class="document-setup">
-                                <button class="btn btn--primary">견적서 확인 및 수정하기</button>
-                                <h4 class="switch__title">견적서 활성화 상태</h4>
-                                <div class="switch-wrap flex-container">
-                                    <input class="switch" id="test4" name="switch" type="radio">
-                                    <label class="switch__label" for="test4" class="radio__label">활성화</label>
-                                    <input class="switch" id="test5" name="switch" type="radio" checked>
-                                    <label class="switch__label" for="test5" class="radio__label">비활성화</label>
-                                </div>
-                                <div class="form__input">
-                                    <label>생성일자</label>
-                                    <input class="input__text disabled" type="text" value="2019-04-01" disabled/>
-                                </div>
-                                <div class="form__input">
-                                    <label>발행일자</label>
-                                    <input class="input__text disabled" type="text" value="2019-04-01" disabled/>
-                                </div>
-                                <div class="form__input">
-                                    <label>발행금액</label>
-                                    <input class="input__text disabled" type="text" value="100,000,000원" disabled/>
-                                </div>
-                                <div class="form__input">
-                                    <label>입금현황</label>
-                                    <input class="input__text" type="text" value="10,000,000"/>
-                                </div>
-                                <div class="deposit-rate flex-container flex-space-between">
-                                    <h4 class="deposit-rate__text">입금비율: 10%</h4>
-                                    <div class="form__checkbox">
-                                        <input id="test6" name="test6" class="checkbox" type="checkbox">
-                                        <label for="test6" class="checkbox__label"><span class="checkbox__icon"></span>전액 입금 완료</label>
+                            <div class="history__item flex-container">
+                                <div class="flex-container flex-item flex-column">
+                                    <div>
+                                        <div class="tag tag--outline"><i class="fas fa-comment"></i>내가 보낸 메시지</div>
                                     </div>
+                                    <p class="content">
+                                        죄송하지만 안됩니다.
+                                    </p>
+                                    <span class="date">2019.04.22</span>
                                 </div>
-                                <div class="form__input">
-                                    <label>정산상태</label>
-                                    <input class="input__text disabled" type="text" value="2019-04-13 입금예정 / 2일 남음" disabled/>
-                                </div>
-                                <div class="form__select">
-                                    <label>세금계산서상태</label>
-                                    <div class="select-wrap">
-                                        <select class="select" name="">
-                                            <option value="">미발행</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="cost-evidence-wrap">
-                                    <h4 class="cost-evidence__title">비용증빙자료</h4>
-                                    <div class="btn-wrap flex-container">
-                                        <button class="btn btn-outline--primary add-file flex-item"><i class="fal fa-search"></i>파일 찾기</button>
-                                    </div>
-                                    <div class="file__item flex-container item-center flex-space-between">
-                                        <h4 class="file__name">디자인_레퍼런스_003.pdf</h4>
-                                        <button class="btn btn--text btn--danger">×</button>
+                            </div>
+                            <div class="floating-input show-pc">
+                                <div class="form__input with-btn">
+                                    <div class="flex-container">
+                                        <input class="input__text flex-item" type="text" placeholder="상대방에게 보낼 메시지를 입력하세요" /><button class="btn btn--priamry">전송</button>
                                     </div>
                                 </div>
                             </div>
