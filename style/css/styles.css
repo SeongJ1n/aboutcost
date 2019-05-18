@@ -887,6 +887,38 @@ input:focus {
   .input__textarea::placeholder {
     color: #adb5bd; }
 
+.form__checkbox .checkbox {
+  display: none; }
+.form__checkbox .checkbox__icon {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  vertical-align: middle; }
+  .form__checkbox .checkbox__icon:after {
+    position: absolute;
+    top: 3px;
+    left: 7px;
+    display: inline-block;
+    width: 4px;
+    height: 8px;
+    border: solid #dee2e6;
+    border-width: 0 1px 1px 0;
+    transform: rotate(45deg);
+    content: ""; }
+.form__checkbox .checkbox__label {
+  font-weight: 500;
+  font-size: 14px; }
+.form__checkbox .checkbox[type="checkbox"]:checked + .checkbox__label .checkbox__icon {
+  border-color: #22b8cf;
+  background-color: #22b8cf; }
+  .form__checkbox .checkbox[type="checkbox"]:checked + .checkbox__label .checkbox__icon:after {
+    border: solid white;
+    border-width: 0 1px 1px 0; }
+
 .chip {
   overflow: hidden;
   position: relative;
@@ -2211,6 +2243,120 @@ input:focus {
           border-radius: 5px; }
         .sendlist .sendlist-list .input--search .btn {
           display: none; } }
+.document-detail .detail-info {
+  max-width: 550px;
+  width: 100%;
+  margin-top: 20px;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0 2px 4px #dee2e6; }
+  .document-detail .detail-info .history-list {
+    padding: 30px 30px 25px;
+    border-bottom: 1px dashed #dee2e6;
+    text-align: center; }
+    .document-detail .detail-info .history-list .btn {
+      width: 100%; }
+    .document-detail .detail-info .history-list .description {
+      margin-top: 8px;
+      color: #868e96;
+      font-weight: 500;
+      font-size: 12px; }
+  .document-detail .detail-info .document-setup {
+    padding: 30px; }
+    .document-detail .detail-info .document-setup .btn.btn--primary {
+      width: 100%; }
+    .document-detail .detail-info .document-setup .switch__title {
+      display: block;
+      margin-top: 20px;
+      font-weight: 700;
+      font-size: 14px; }
+    .document-detail .detail-info .document-setup .switch-wrap {
+      z-index: 1;
+      position: relative;
+      margin-top: 10px; }
+      .document-detail .detail-info .document-setup .switch-wrap:before {
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: inline-block;
+        width: 100%;
+        height: 47px;
+        border: 1px solid #dee2e6;
+        border-radius: 5px;
+        box-sizing: border-box;
+        content: ''; }
+      .document-detail .detail-info .document-setup .switch-wrap .switch {
+        display: none; }
+      .document-detail .detail-info .document-setup .switch-wrap .switch__label {
+        width: 50%;
+        height: 47px;
+        padding-top: 14px;
+        border: 1px solid transparent;
+        border-radius: 5px;
+        color: #adb5bd;
+        font-weight: 600;
+        font-size: 14px;
+        text-align: center; }
+      .document-detail .detail-info .document-setup .switch-wrap .switch[type=radio]:checked + .switch__label {
+        border-color: #22b8cf;
+        color: #22b8cf; }
+    .document-detail .detail-info .document-setup .form__input {
+      margin-top: 20px; }
+    .document-detail .detail-info .document-setup .form__select {
+      margin-top: 20px; }
+    .document-detail .detail-info .document-setup .deposit-rate {
+      margin-top: 8px; }
+      .document-detail .detail-info .document-setup .deposit-rate .deposit-rate__text {
+        color: #22b8cf;
+        font-weight: 600;
+        font-size: 14px; }
+    .document-detail .detail-info .document-setup .cost-evidence-wrap {
+      margin-top: 20px; }
+      .document-detail .detail-info .document-setup .cost-evidence-wrap .cost-evidence__title {
+        font-weight: 700;
+        font-size: 14px; }
+      .document-detail .detail-info .document-setup .cost-evidence-wrap .btn-wrap {
+        margin-top: 10px; }
+        .document-detail .detail-info .document-setup .cost-evidence-wrap .btn-wrap .add-file i {
+          margin-right: 8px; }
+      .document-detail .detail-info .document-setup .cost-evidence-wrap .file__item {
+        margin-top: 10px;
+        padding: 10px 20px;
+        border: 1px solid #dee2e6;
+        border-radius: 5px;
+        background-color: #f8f9fa; }
+        .document-detail .detail-info .document-setup .cost-evidence-wrap .file__item .file__name {
+          overflow: hidden;
+          display: -webkit-box;
+          width: 100%;
+          max-height: 1.5em;
+          color: #868e96;
+          font-weight: 600;
+          font-size: 14px;
+          text-overflow: ellipsis;
+          line-height: 1.5em;
+          word-wrap: break-all;
+          -webkit-line-clamp: 1;
+          -webkit-box-orient: vertical; }
+        .document-detail .detail-info .document-setup .cost-evidence-wrap .file__item .btn.btn--danger {
+          font-size: 17px; }
+
+@media (max-width: 800px) {
+  .document-detail {
+    margin-top: 60px;
+    margin-bottom: 50px; }
+    .document-detail .detail-info {
+      margin-top: 0;
+      border: none;
+      box-shadow: none; }
+      .document-detail .detail-info .history-list {
+        padding: 0;
+        padding-bottom: 20px; }
+      .document-detail .detail-info .document-setup {
+        padding: 0;
+        padding-top: 20px; } }
 .noti .noti-wrap {
   max-width: 600px;
   width: 100%;

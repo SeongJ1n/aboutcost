@@ -123,6 +123,47 @@ input:focus { outline: none; }
     &::placeholder { color: $oc-gray-5; }
 }
 
+// 체크박스
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+.form__checkbox {
+    .checkbox { display: none; }
+    .checkbox__icon {
+        position: relative;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin-right: 8px;
+        border: 1px solid $border;
+        border-radius: $border-radius;
+        vertical-align: middle;
+        &:after {
+            position: absolute;
+            top: 3px;
+            left: 7px;
+            display: inline-block;
+            width: 4px;
+            height: 8px;
+            border: solid $border;
+            border-width: 0 1px 1px 0;
+            transform: rotate(45deg);
+            content: "";
+        }
+    }
+    .checkbox__label {
+        font-weight: 500;
+        font-size: 14px;
+    }
+    .checkbox[type="checkbox"]:checked + .checkbox__label .checkbox__icon {
+        border-color: $primary;
+        background-color: $primary;
+        &:after {
+            border: solid white;
+            border-width: 0 1px 1px 0;
+        }
+    }
+}
+
+
 // .form__group {
 //     label {
 //         display: block;
