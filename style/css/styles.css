@@ -1285,6 +1285,25 @@ input:focus {
     .form__file .btn.btn-outline--secondary:hover {
       background-color: #f1f3f5; }
 
+.payment-details .payment-list {
+  padding: 20px 30px 30px;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0 2px 4px #dee2e6; }
+  .payment-details .payment-list .list--table {
+    margin-top: 10px; }
+
+@media (max-width: 800px) {
+  .payment-details {
+    margin-top: 60px;
+    margin-bottom: 50px; }
+    .payment-details .payment-list {
+      padding: 0;
+      border: none;
+      box-shadow: none; }
+      .payment-details .payment-list .list--card {
+        margin-top: -20px; } }
 .setup .setup-list {
   padding: 20px 30px 30px;
   border: 1px solid #dee2e6;
