@@ -1110,6 +1110,8 @@ input:focus {
   height: 100vh;
   padding: 20px;
   background-color: rgba(33, 37, 41, 0.3); }
+  .modal-wrap .ml-10 {
+    margin-left: 10px; }
   .modal-wrap .modal {
     max-width: 400px;
     width: 100%;

@@ -5,6 +5,7 @@
     height: 100vh;
     padding: 20px;
     background-color: rgba(33, 37, 41, 0.3);
+    .ml-10 { margin-left: 10px; }
     .modal {
         max-width: 400px;
         width: 100%;
@@ -92,5 +93,10 @@
     }
 }
 
-// 계좌 추가하기
+// 카드 정보 등록하기
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
+.modal-wrap {
+    .modal.add-card-info {
+
+    }
+}
