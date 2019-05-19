@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="modal-wrap flex-container flex-center item-center">
-        <div class="modal">
+        <div class="modal select-account">
             <h3 class="title">은행 계좌 선택</h3>
             <div class="list-wrap select-account">
                 <div class="list__item">
@@ -62,8 +62,23 @@
                         </div>
                     </div>
             </div>
-            <div class="btn-wrap">
-                <button class="btn btn--primary">닫기</button>
+            <div class="btn-wrap flex-container">
+                <button class="flex-item btn btn-outline--primary">새로운 계좌 추가</button>
+                <button class="flex-item btn btn--primary">닫기</button>
+            </div>
+        </div>
+        <div class="modal add-account">
+            <h3 class="title">새로운 계좌 추가</h3>
+            <div class="form__input">
+                <label>은행명</label>
+                <input class="input__text" type="text" placeholder="은행명을 입력하세요" />
+            </div>
+            <div class="form__input">
+                <label>계좌번호</label>
+                <input class="input__text" type="text" placeholder="계좌번호를 입력하세요" />
+            </div>
+            <div class="btn-wrap flex-container">
+                <button class="flex-item btn btn--primary">추가하기</button>
             </div>
         </div>
     </div>

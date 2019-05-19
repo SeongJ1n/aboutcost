@@ -1,3 +1,5 @@
+// 모달 기본형
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
 .modal-wrap {
     width: 100vw;
     height: 100vh;
@@ -14,6 +16,7 @@
         .title {
             display: inline-block;
             width: 100%;
+            margin-bottom: 30px;
             text-align: center;
             font-weight: 700;
             font-size: 23px;
@@ -21,7 +24,6 @@
         .list-wrap {
             overflow: auto;
             max-height: 65vh;
-            margin-top: 30px;
             scrollbar-width: none;
             &::-webkit-scrollbar { display: none; }
             .list__item {
@@ -32,6 +34,32 @@
         .btn-wrap {
             position: relative;
             padding-top: 20px;
+            .btn { width: 100%; }
+            .btn ~ .btn { margin-left: 15px; }
+        }
+    }
+}
+
+// 계좌 선택하기
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+.modal-wrap {
+    .modal.select-account {
+        .list-wrap {
+            .list__item {
+                padding: 15px;
+                border: 1px solid $border;
+                border-radius: $border-radius;
+                @include shadow;
+                &:hover { background-color: $oc-gray-0; }
+                .account__name { font-size: 15px; }
+                .account__num {
+                    font-weight: 400;
+                    font-size: 15px;
+                }
+            }
+            .list__item ~ .list__item { margin-top: 15px; }
+        }
+        .btn-wrap {
             &:before {
                 position: absolute;
                 left: 0;
@@ -60,67 +88,9 @@
                 );
                 content: ''
             }
-            .btn { width: 100%; }
         }
     }
 }
 
-.modal-wrap {
-    .modal {
-        .list-wrap.select-account {
-            .list__item {
-                padding: 15px;
-                border: 1px solid $border;
-                border-radius: $border-radius;
-                @include shadow;
-                &:hover { background-color: $oc-gray-0; }
-                .account__name { font-size: 15px; }
-                .account__num {
-                    font-weight: 400;
-                    font-size: 15px;
-                }
-            }
-            .list__item ~ .list__item { margin-top: 15px; }
-        }
-    }
-}
-
-// .modal {
-//     background-color: $oc-gray-0;
-//     .container {
-//         padding-top: 40px;
-//         min-height: 100vh;
-//         display: flex;
-//         align-items: center;
-//     }
-//     .modal-form {
-//         padding: 40px;
-//         border: 1px solid $border;
-//         border-radius: 5px;
-//         background-color: $oc-white;
-//         box-shadow: 0 2px 4px $border;
-//         .title { text-align: center; }
-//         .description {
-//             margin-top: 15px;
-//             text-align: center;
-//             color: $oc-gray-6;
-//         }
-//         .divider { margin-top: 5px; }
-//         .form__group {
-//             margin-top: 25px;
-//             .form__input {
-//                 margin-top: 15px;
-//                 padding: 12px 12px 13px;
-//                 border: 1px solid $border;
-//                 border-radius: 3px;
-//                 &:focus { border-color: $oc-gray-9; }
-//             }
-//         }
-//         .btn--primary {
-//             width: 100%;
-//             padding: 14px 16px 15px;
-//             margin-top: 25px;
-//             font-size: 15px;
-//         }
-//     }   
-// }
+// 계좌 추가하기
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
