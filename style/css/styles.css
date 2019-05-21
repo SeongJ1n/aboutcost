@@ -2581,6 +2581,70 @@ input:focus {
     margin: 0;
     background-color: #22b8cf;
     color: white; } }
+.preview {
+  min-height: 100vh;
+  background-color: white; }
+  .preview .preview-body {
+    max-width: 1000px;
+    width: 100%;
+    padding: 60px 0;
+    text-align: center; }
+    .preview .preview-body .section-name {
+      margin-top: 30px;
+      margin-bottom: 10px;
+      text-align: left;
+      font-weight: 600;
+      font-size: 19px; }
+    .preview .preview-body .table {
+      border-collapse: collapse; }
+      .preview .preview-body .table .table__row .table__header,
+      .preview .preview-body .table .table__row .table__data {
+        min-width: 120px;
+        padding: 10px 15px;
+        border: 1px solid #212529;
+        text-align: center;
+        font-weight: 500;
+        font-size: 15px; }
+      .preview .preview-body .table .table__row .table__header {
+        background-color: #e9ecef;
+        font-weight: 600; }
+      .preview .preview-body .table .align-left {
+        text-align: right !important; }
+      .preview .preview-body .table .align-right {
+        text-align: right !important; }
+    .preview .preview-body .document-type {
+      letter-spacing: 0.8em; }
+    .preview .preview-body .document-info {
+      margin-top: 30px; }
+      .preview .preview-body .document-info .logo {
+        max-height: 100px; }
+      .preview .preview-body .document-info .table {
+        border-collapse: collapse; }
+        .preview .preview-body .document-info .table .table__row .table__header,
+        .preview .preview-body .document-info .table .table__row .table__data {
+          min-width: 100px; }
+    .preview .preview-body .company-info {
+      margin-top: 30px; }
+      .preview .preview-body .company-info .table {
+        width: 100%; }
+        .preview .preview-body .company-info .table .table__row .table__header,
+        .preview .preview-body .company-info .table .table__row .table__data {
+          min-width: 80px; }
+      .preview .preview-body .company-info .table ~ .table {
+        margin-top: 20px; }
+    .preview .preview-body .table-wrap {
+      margin-top: 30px;
+      overflow: auto;
+      scrollbar-width: none; }
+      .preview .preview-body .table-wrap::-webkit-scrollbar {
+        display: none; }
+      .preview .preview-body .table-wrap .table {
+        width: 100%; }
+        .preview .preview-body .table-wrap .table .table__row .table__header {
+          border-bottom: 3px double; }
+        .preview .preview-body .table-wrap .table .total__title {
+          border: 1px solid !important; }
+
 html {
   background-color: #f1f3f5; }
 

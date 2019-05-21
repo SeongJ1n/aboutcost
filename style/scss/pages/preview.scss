@@ -1,0 +1,105 @@
+// 미리보기 페이지
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+.preview {
+    min-height: 100vh;
+    background-color: white;
+    .preview-body {
+        max-width: 1000px;
+        width: 100%;
+        padding: 60px 0;
+        text-align: center;
+        // 미리보기 페이지
+        // ––––––––––––––––––––––––––––––––––––––––––––––––––
+        .section-name {
+            margin-top: 30px;
+            margin-bottom: 10px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 19px;
+        }
+        .table {
+            border-collapse: collapse;
+            .table__row {
+                .table__header,
+                .table__data {
+                    min-width: 120px;
+                    padding: 10px 15px;
+                    border: 1px solid $oc-gray-9;
+                    text-align: center;
+                    font-weight: 500;
+                    font-size: 15px;
+                }
+                .table__header {
+                    background-color: $oc-gray-2;
+                    font-weight: 600;
+                }
+                .talbe__data {}
+            }
+            .align-left { text-align: right !important; }
+            .align-right { text-align: right !important; }
+        }
+        // 문서 타입
+        // ––––––––––––––––––––––––––––––––––––––––––––––––––
+        .document-type { letter-spacing: 0.8em; }
+
+        // 문서 정보
+        // ––––––––––––––––––––––––––––––––––––––––––––––––––
+        .document-info {
+            margin-top: 30px;
+            .logo { max-height: 100px; }
+            .table {
+                border-collapse: collapse;
+                .table__row {
+                    .table__header,
+                    .table__data { min-width: 100px; }
+                }
+            }
+        }
+
+        // 회사 정보
+        // ––––––––––––––––––––––––––––––––––––––––––––––––––
+        .company-info {
+            margin-top: 30px;
+            .table {
+                width: 100%;
+                .table__row {
+                    .table__header,
+                    .table__data { min-width: 80px; }
+                }
+            }
+            .table ~ .table { margin-top: 20px; }
+        }
+
+        // 미리보기 페이지
+        // ––––––––––––––––––––––––––––––––––––––––––––––––––
+        .table-wrap {
+            margin-top: 30px;
+            overflow: auto;
+            scrollbar-width: none;
+            &::-webkit-scrollbar { display: none; }
+            .table {
+                width: 100%;
+                .table__row {
+                    .table__header {
+                        border-bottom: 3px double;
+                    }
+                }
+                .total__title { border: 1px solid !important; }
+            }
+        }
+        // .body__footer {
+        //     z-index: 1;
+        //     position: relative;
+        //     display: inline-block;
+        //     text-align: center;
+        //     .stamp {
+        //         z-index: -1;
+        //         position: absolute;
+        //         top: -50%;
+        //         right: -70px;
+        //         max-width: 100px;
+        //         max-height: 100px;
+        //     }
+        // }
+    }
+}
