@@ -4,17 +4,16 @@
     min-height: 100vh;
     background-color: white;
     .preview-body {
-        max-width: 1000px;
-        width: 100%;
+        width: 1000px;
         padding: 60px 0;
         text-align: center;
-        // 미리보기 페이지
+        // 기본 서식
         // ––––––––––––––––––––––––––––––––––––––––––––––––––
         .section-name {
             margin-top: 30px;
             margin-bottom: 10px;
             text-align: left;
-            font-weight: 600;
+            font-weight: 700;
             font-size: 19px;
         }
         .table {
@@ -38,28 +37,16 @@
             .align-left { text-align: right !important; }
             .align-right { text-align: right !important; }
         }
-        // 문서 타입
+        // 문서 타입 / 문서 이름
         // ––––––––––––––––––––––––––––––––––––––––––––––––––
         .document-type { letter-spacing: 0.8em; }
-
-        // 문서 정보
-        // ––––––––––––––––––––––––––––––––––––––––––––––––––
-        .document-info {
-            margin-top: 30px;
-            .logo { max-height: 100px; }
-            .table {
-                border-collapse: collapse;
-                .table__row {
-                    .table__header,
-                    .table__data { min-width: 100px; }
-                }
-            }
+        .document-name {
+            margin-top: 15px;
         }
-
         // 회사 정보
         // ––––––––––––––––––––––––––––––––––––––––––––––––––
         .company-info {
-            margin-top: 30px;
+            margin-top: 60px;
             .table {
                 width: 100%;
                 .table__row {
@@ -67,13 +54,22 @@
                     .table__data { min-width: 80px; }
                 }
             }
-            .table ~ .table { margin-top: 20px; }
-        }
+            .receiver {
+                .table ~ .table { margin-top: 20px; }
+            }
+            .sender {
+                border: 2px solid $oc-gray-9;
+                .table {
+                    .table__row {
+                        .table__header { width: 95px; }
+                    }
+                }
+            }
 
-        // 미리보기 페이지
+        }
+        // 견적 내용
         // ––––––––––––––––––––––––––––––––––––––––––––––––––
         .table-wrap {
-            margin-top: 30px;
             overflow: auto;
             scrollbar-width: none;
             &::-webkit-scrollbar { display: none; }
@@ -87,19 +83,41 @@
                 .total__title { border: 1px solid !important; }
             }
         }
-        // .body__footer {
-        //     z-index: 1;
-        //     position: relative;
-        //     display: inline-block;
-        //     text-align: center;
-        //     .stamp {
-        //         z-index: -1;
-        //         position: absolute;
-        //         top: -50%;
-        //         right: -70px;
-        //         max-width: 100px;
-        //         max-height: 100px;
-        //     }
-        // }
+        // 합계 금액
+        // ––––––––––––––––––––––––––––––––––––––––––––––––––
+        .total {
+            margin-top: 15px;
+            .table {
+                width: 100%;
+                .table__row {
+                    .table__header,
+                    .table__data {
+                        font-weight: 700;
+                    }
+                }
+                .table__row:first-child {
+                    .table__data {
+                        border: none !important;
+                    }
+                }
+            }
+        }
+        // 문서 하단, 도장
+        // ––––––––––––––––––––––––––––––––––––––––––––––––––
+        .document-footer {
+            z-index: 1;
+            position: relative;
+            display: inline-block;
+            margin-top: 60px;
+            .sender {}
+            .stamp {
+                z-index: -1;
+                position: absolute;
+                top: -50%;
+                right: -25%;
+                max-width: 80px;
+                max-height: 80px;
+            }
+        }
     }
 }
