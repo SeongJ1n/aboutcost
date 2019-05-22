@@ -1,10 +1,14 @@
 // 미리보기 페이지
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
+.sidebar.preview {
+    width: 200px;
+}
 .preview {
     min-height: 100vh;
     background-color: white;
     .preview-body {
         width: 1000px;
+        margin-left: 200px;
         padding: 60px 0;
         text-align: center;
         // 기본 서식

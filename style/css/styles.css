@@ -2581,11 +2581,15 @@ input:focus {
     margin: 0;
     background-color: #22b8cf;
     color: white; } }
+.sidebar.preview {
+  width: 200px; }
+
 .preview {
   min-height: 100vh;
   background-color: white; }
   .preview .preview-body {
     width: 1000px;
+    margin-left: 200px;
     padding: 60px 0;
     text-align: center; }
     .preview .preview-body .section-name {
