@@ -102,21 +102,93 @@
                 }
             }
         }
-        // 문서 하단, 도장
+        // 문서 하단
         // ––––––––––––––––––––––––––––––––––––––––––––––––––
         .document-footer {
-            z-index: 1;
-            position: relative;
-            display: inline-block;
-            margin-top: 60px;
-            .sender {}
-            .stamp {
-                z-index: -1;
-                position: absolute;
-                top: -50%;
-                right: -25%;
-                max-width: 80px;
-                max-height: 80px;
+            margin-top: 50px;
+            .add-on {
+                border: 1px solid $oc-gray-9;
+                background-color: white;
+                .component__header {
+                    padding: 15px 20px;
+                    border: none; 
+                    transition: 0.2s ease-out;
+                    cursor: pointer;
+                    &:hover { background-color: $oc-gray-0; }
+                    .title {
+                        font-weight: 700;
+                        font-size: 16px;
+                    }
+                    .tag { margin-right: 20px; }
+                    .arrow {
+                        display: inline-block;
+                        width: 10px;
+                        height: 10px;
+                        border: 0 solid $oc-gray-9;
+                        border-width: 0 0 2px 2px;
+                        transform: translateY(4px) rotate(-45deg);
+                        transition: 0.2s ease-out;
+                    }
+                }
+                .component__content {
+                    display: none;
+                    padding: 15px 20px;
+                    .add-on__item {
+                        text-align: left;
+                        .title { font-weight: 700; }
+                        .content {
+                            margin-top: 6px;
+                            font-weight: 500;
+                            font-size: 14px;
+                        }
+                    }
+                    .add-on__item ~ .add-on__item { margin-top: 20px; }
+                    .file__item {
+                        position: relative;
+                        width: 100%;
+                        padding: 15px 20px;
+                        border: 1px solid $primary;
+                        background-color: white;
+                        text-align: left;
+                        color: $primary;
+                        font-weight: 600;
+                        font-size: 14px;
+                        cursor: pointer;
+                        @include shadow;
+                        &:before {
+                            position: absolute;
+                            right: 20px;
+                            font-weight: 600;
+                            font-size: 14px;
+                            content: '받기';
+                        }
+                    }
+                }
+            }
+            .add-on.add-on--open {
+                .component__header {
+                    border-bottom: 1px dashed $border;
+                    .arrow { transform: translateY(8px) rotate(135deg); }
+                }
+                .component__content { display: block; }
+            }
+            .add-on ~ .add-on { margin-top: 20px; }
+            // 도장
+            // ––––––––––––––––––––––––––––––––––––––––––––––––––
+            .stamp-wrap {
+                z-index: 1;
+                position: relative;
+                display: inline-block;
+                margin-top: 70px;
+                .sender {}
+                .stamp {
+                    z-index: -1;
+                    position: absolute;
+                    top: -50%;
+                    right: -25%;
+                    max-width: 80px;
+                    max-height: 80px;
+                }
             }
         }
     }
