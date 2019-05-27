@@ -32,13 +32,16 @@
             font-weight: 700;
             font-size: 19px;
         }
-        .table {
+        .table-wrap {
             overflow: auto;
+        }
+        .table-wrap ~ .table-wrap { margin-top: 0px; }
+        .table {
             border-collapse: collapse;
             .table__row {
                 .table__header,
                 .table__data {
-                    min-width: 120px;
+                    min-width: 160px;
                     padding: 10px 15px;
                     border: 1px solid $oc-gray-9;
                     text-align: center;
@@ -371,6 +374,8 @@
                         color: $primary;
                         font-weight: 700;
                         font-size: 23px;
+                        border: none;
+                        &::placeholder { color: $oc-gray-4; }
                     }
                     .btn {
                         min-width: auto;

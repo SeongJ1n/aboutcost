@@ -1423,10 +1423,7 @@ input:focus {
     box-shadow: 0 2px 4px #dee2e6; }
 .new .document-section .table-wrap {
   margin-top: 15px;
-  overflow: auto;
-  scrollbar-width: none; }
-  .new .document-section .table-wrap::-webkit-scrollbar {
-    display: none; }
+  overflow: auto; }
   .new .document-section .table-wrap .table {
     border-collapse: collapse; }
     .new .document-section .table-wrap .table .table__row .table__header,
@@ -1682,6 +1679,10 @@ input:focus {
       margin-top: 25px; }
       .new .document-section .form__select.add-tax {
         max-width: 100%; }
+      .new .document-section .table-wrap {
+        scrollbar-width: none; }
+        .new .document-section .table-wrap::-webkit-scrollbar {
+          display: none; }
       .new .document-section .add-table__header .title {
         padding-left: 10px; }
       .new .document-section .table__summary {
@@ -2608,12 +2609,15 @@ input:focus {
       text-align: left;
       font-weight: 700;
       font-size: 19px; }
+    .preview .preview-body .table-wrap {
+      overflow: auto; }
+    .preview .preview-body .table-wrap ~ .table-wrap {
+      margin-top: 0px; }
     .preview .preview-body .table {
-      overflow: auto;
       border-collapse: collapse; }
       .preview .preview-body .table .table__row .table__header,
       .preview .preview-body .table .table__row .table__data {
-        min-width: 120px;
+        min-width: 160px;
         padding: 10px 15px;
         border: 1px solid #212529;
         text-align: center;
@@ -2856,7 +2860,10 @@ input:focus {
           .preview .preview-body .payment-info-btn .info__item .content-wrap .content {
             color: #22b8cf;
             font-weight: 700;
-            font-size: 23px; }
+            font-size: 23px;
+            border: none; }
+            .preview .preview-body .payment-info-btn .info__item .content-wrap .content::placeholder {
+              color: #ced4da; }
           .preview .preview-body .payment-info-btn .info__item .content-wrap .btn {
             min-width: auto;
             margin: 0; }
