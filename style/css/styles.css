@@ -2843,6 +2843,29 @@ input:focus {
       .preview .preview-body .payment-info-btn .btn {
         min-width: 250px;
         font-size: 17px; }
+      .preview .preview-body .payment-info-btn .info__item {
+        padding: 20px;
+        border: 1px solid #dee2e6; }
+        .preview .preview-body .payment-info-btn .info__item .title-wrap {
+          min-width: 130px;
+          padding: 0 15px; }
+          .preview .preview-body .payment-info-btn .info__item .title-wrap .title {
+            color: #212529; }
+        .preview .preview-body .payment-info-btn .info__item .content-wrap {
+          margin-left: 25px; }
+          .preview .preview-body .payment-info-btn .info__item .content-wrap .content {
+            color: #22b8cf;
+            font-weight: 700;
+            font-size: 23px; }
+          .preview .preview-body .payment-info-btn .info__item .content-wrap .btn {
+            min-width: auto;
+            margin: 0; }
+            .preview .preview-body .payment-info-btn .info__item .content-wrap .btn i {
+              margin-right: 10px; }
+          .preview .preview-body .payment-info-btn .info__item .content-wrap .btn ~ .btn {
+            margin-left: 15px; }
+      .preview .preview-body .payment-info-btn .info__item ~ .info__item {
+        margin-top: 20px; }
 
 html {
   background-color: #f1f3f5; }

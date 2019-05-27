@@ -278,7 +278,7 @@
                         <h4 class="title">안내사항</h4>
                         <div class="checkbox-wrapper">
                             <!-- id/name/for 테스트값 -->
-                            <input class="checkbox" id="test3" name="test3" type="checkbox">
+                            <input class="checkbox" id="test3" name="test3" type="checkbox" checked>
                             <label class="flex-container item-center" for="test3">
                                 <span class="checkbox__icon"></span>안내사항을 확인했습니다<span class="confirmed">확인일자: 2019-05-26</span>
                             </label>
@@ -291,8 +291,38 @@
                         <li class="list__item">- 사건처리는 입금 후 최대 4주 정도 소요됩니다.</li>
                     </ul>
                 </div>
+                <!-- 결제정보확인 버튼
                 <div class="payment-info-btn btn-wrap flex-container flex-center">
                     <button class="btn btn--primary">결제정보확인</button>
+                </div>
+                -->
+                <div class="payment-info-btn btn-wrap flex-container flex-column flex-center">
+                    <div class="info__item flex-container flex-item">
+                        <div class="title-wrap flex-container flex-center item-center">
+                            <h4 class="title">최종 결제금액</h4>
+                        </div>
+                        <div class="content-wrap flex-item item-center">
+                            <span class="content">3,500,000원</span>
+                        </div>
+                    </div>
+                    <div class="info__item flex-container flex-item">
+                        <div class="title-wrap flex-container flex-center item-center">
+                            <h4 class="title">입금계좌번호</h4>
+                        </div>
+                        <div class="content-wrap flex-item item-center">
+                            <span class="content">우리은행 1005-201-155625 (주식회사 모스인큐브)</span>
+                        </div>
+                    </div>
+                    <div class="info__item flex-container flex-item">
+                        <div class="title-wrap flex-container flex-center item-center">
+                            <h4 class="title">바로 결제하기</h4>
+                        </div>
+                        <div class="content-wrap flex-container flex-item item-center">
+                            <button class="flex-item btn btn--primary"><i class="fas fa-donate"></i>간편결제</button>
+                            <button class="flex-item btn btn--primary"><i class="fas fa-credit-card"></i>카드결제</button>
+                            <button class="flex-item btn btn--primary"><i class="fas fa-money-check-alt"></i>실시간 계좌이체</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

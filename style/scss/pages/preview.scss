@@ -357,6 +357,30 @@
                 min-width: 250px;
                 font-size: 17px;
             }
+            .info__item {
+                padding: 20px;
+                border: 1px solid $border;
+                .title-wrap {
+                    min-width: 130px;
+                    padding: 0 15px;
+                    .title { color: $oc-gray-9; }
+                }
+                .content-wrap {
+                    margin-left: 25px;
+                    .content {
+                        color: $primary;
+                        font-weight: 700;
+                        font-size: 23px;
+                    }
+                    .btn {
+                        min-width: auto;
+                        margin: 0;
+                        i { margin-right: 10px; }
+                    }
+                    .btn ~ .btn { margin-left: 15px; }
+                }
+            }
+            .info__item ~ .info__item { margin-top: 20px; }
         }
     }
 }
