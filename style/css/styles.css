@@ -2609,8 +2609,6 @@ input:focus {
       text-align: left;
       font-weight: 700;
       font-size: 19px; }
-    .preview .preview-body .table-wrap {
-      overflow: auto; }
     .preview .preview-body .table-wrap ~ .table-wrap {
       margin-top: 0px; }
     .preview .preview-body .table {
@@ -2737,10 +2735,7 @@ input:focus {
             color: #22b8cf; }
     .preview .preview-body .table-wrap {
       overflow: auto;
-      margin-top: 40px;
-      scrollbar-width: none; }
-      .preview .preview-body .table-wrap::-webkit-scrollbar {
-        display: none; }
+      margin-top: 40px; }
       .preview .preview-body .table-wrap .table {
         width: 100%; }
         .preview .preview-body .table-wrap .table .table__row .table__header {

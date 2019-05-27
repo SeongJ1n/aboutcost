@@ -32,9 +32,6 @@
             font-weight: 700;
             font-size: 19px;
         }
-        .table-wrap {
-            overflow: auto;
-        }
         .table-wrap ~ .table-wrap { margin-top: 0px; }
         .table {
             border-collapse: collapse;
@@ -223,8 +220,6 @@
         .table-wrap {
             overflow: auto;
             margin-top: 40px;
-            scrollbar-width: none;
-            &::-webkit-scrollbar { display: none; }
             .table {
                 width: 100%;
                 .table__row {
