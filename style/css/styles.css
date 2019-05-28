@@ -2869,6 +2869,15 @@ input:focus {
       .preview .preview-body .payment-info-btn .info__item ~ .info__item {
         margin-top: 20px; }
 
+@media (max-width: 1200px) {
+  .preview-html {
+    min-width: 1080px; }
+    .preview-html .sidebar.preview {
+      display: none; }
+    .preview-html .preview .btn-wrap {
+      margin-left: 0; }
+    .preview-html .preview .preview-body {
+      margin-left: 0; } }
 html {
   background-color: #f1f3f5; }
 

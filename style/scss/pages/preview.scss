@@ -384,3 +384,18 @@
         }
     }
 }
+
+@media (max-width: 1200px) {
+    .preview-html {
+        min-width: 1080px;
+        .sidebar.preview { display: none; }
+        .preview {
+            .btn-wrap {
+                margin-left: 0;
+            }
+            .preview-body {
+                margin-left: 0;
+            }
+        }
+    }
+}
