@@ -96,7 +96,38 @@
 // 카드 정보 등록하기
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 .modal-wrap {
-    .modal.add-card-info {
+    .modal.add-card-info {}
+}
 
+// 세금계산서 발행하기
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+.modal-wrap {
+    .modal.tax-invoice {
+        .form__input { margin-top: 20px; }
+        .form__textarea { margin-top: 20px; }
+        .file-wrap {
+            margin-top: 20px;
+            .subtitle {
+                display: block;
+                text-align: left;
+                font-weight: 700;
+                font-size: 14px;            
+            }
+            .file__item {
+                display: block;
+                width: 100%;
+                margin-top: 10px;
+                padding: 15px 20px;
+                border: 1px solid $border;
+                border-radius: $border-radius;
+                background-color: $oc-gray-0;
+                text-align: left;
+                font-size: 14px;
+                transition: 0.2s ease-out;
+                cursor: pointer;
+                &:hover { background-color: $oc-gray-1; }
+                i { margin-right: 10px; }
+            }
+        }
     }
 }

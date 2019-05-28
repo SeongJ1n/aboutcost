@@ -1168,6 +1168,34 @@ input:focus {
   background: linear-gradient(to top, white 0%, rgba(255, 255, 255, 0.987) 8.1%, rgba(255, 255, 255, 0.951) 15.5%, rgba(255, 255, 255, 0.896) 22.5%, rgba(255, 255, 255, 0.825) 29%, rgba(255, 255, 255, 0.741) 35.3%, rgba(255, 255, 255, 0.648) 41.2%, rgba(255, 255, 255, 0.55) 47.1%, rgba(255, 255, 255, 0.45) 52.9%, rgba(255, 255, 255, 0.352) 58.8%, rgba(255, 255, 255, 0.259) 64.7%, rgba(255, 255, 255, 0.175) 71%, rgba(255, 255, 255, 0.104) 77.5%, rgba(255, 255, 255, 0.049) 84.5%, rgba(255, 255, 255, 0.013) 91.9%, rgba(255, 255, 255, 0) 100%);
   content: ""; }
 
+.modal-wrap .modal.tax-invoice .form__input {
+  margin-top: 20px; }
+.modal-wrap .modal.tax-invoice .form__textarea {
+  margin-top: 20px; }
+.modal-wrap .modal.tax-invoice .file-wrap {
+  margin-top: 20px; }
+  .modal-wrap .modal.tax-invoice .file-wrap .subtitle {
+    display: block;
+    text-align: left;
+    font-weight: 700;
+    font-size: 14px; }
+  .modal-wrap .modal.tax-invoice .file-wrap .file__item {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    padding: 15px 20px;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+    text-align: left;
+    font-size: 14px;
+    transition: 0.2s ease-out;
+    cursor: pointer; }
+    .modal-wrap .modal.tax-invoice .file-wrap .file__item:hover {
+      background-color: #f1f3f5; }
+    .modal-wrap .modal.tax-invoice .file-wrap .file__item i {
+      margin-right: 10px; }
+
 .user .company-info,
 .user .payment-info,
 .user .manager-info,
