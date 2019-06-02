@@ -1280,6 +1280,63 @@ input:focus {
   border-radius: 5px;
   background-color: white;
   box-shadow: 0 2px 4px #dee2e6; }
+.user .company-info .business-field {
+  margin-top: 15px; }
+  .user .company-info .business-field .title {
+    font-weight: 700;
+    font-size: 14px; }
+    .user .company-info .business-field .title .required {
+      color: #f03e3e; }
+  .user .company-info .business-field .select-field {
+    margin-top: 10px; }
+    .user .company-info .business-field .select-field .btn {
+      position: relative;
+      padding-right: 32px;
+      text-align: left; }
+      .user .company-info .business-field .select-field .btn:after {
+        position: absolute;
+        z-index: 1;
+        top: 44%;
+        right: 16px;
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        border: solid #212729;
+        border-width: 0 0 1px 1px;
+        transform: translateY(-50%) rotate(-45deg);
+        content: ""; }
+      .user .company-info .business-field .select-field .btn .field__item-wrap {
+        z-index: 1;
+        position: absolute;
+        overflow: auto;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        max-height: 200px;
+        margin-top: 6px;
+        padding: 10px 0;
+        border: 1px solid #dee2e6;
+        border-radius: 5px;
+        background-color: white;
+        box-shadow: 0 2px 4px #dee2e6; }
+        .user .company-info .business-field .select-field .btn .field__item-wrap .field__item {
+          padding: 5px 15px;
+          font-weight: 500;
+          transition: 0.2s ease-out; }
+          .user .company-info .business-field .select-field .btn .field__item-wrap .field__item:hover {
+            background-color: #f1f3f5; }
+        .user .company-info .business-field .select-field .btn .field__item-wrap .field__item.see-more {
+          margin: 10px;
+          margin-bottom: 0;
+          border: 1px solid #dee2e6;
+          border-radius: 5px;
+          text-align: center; }
+    .user .company-info .business-field .select-field .btn ~ .btn {
+      margin-left: 10px; }
+  .user .company-info .business-field .btn-wrap .btn {
+    width: 100%;
+    margin-top: 12px;
+    border-style: dashed; }
 .user .payment-info {
   margin-top: 20px; }
   .user .payment-info .btn.btn--text {
