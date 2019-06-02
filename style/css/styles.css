@@ -2983,6 +2983,7 @@ input:focus {
       right: 11px;
       transform: translateY(-50%) rotate(-45deg); }
     .cost-handling-details .cost-handling-list .list--table .select-wrap .select {
+      min-width: 85px;
       margin: 0;
       padding: 5px 9px 6px;
       padding-right: 22px;
