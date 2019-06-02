@@ -1289,11 +1289,11 @@ input:focus {
       color: #f03e3e; }
   .user .company-info .business-field .select-field {
     margin-top: 10px; }
-    .user .company-info .business-field .select-field .btn {
+    .user .company-info .business-field .select-field .btn.btn-outline--secondary {
       position: relative;
       padding-right: 32px;
       text-align: left; }
-      .user .company-info .business-field .select-field .btn:after {
+      .user .company-info .business-field .select-field .btn.btn-outline--secondary:after {
         position: absolute;
         z-index: 1;
         top: 44%;
@@ -1305,10 +1305,11 @@ input:focus {
         border-width: 0 0 1px 1px;
         transform: translateY(-50%) rotate(-45deg);
         content: ""; }
-      .user .company-info .business-field .select-field .btn .field__item-wrap {
+      .user .company-info .business-field .select-field .btn.btn-outline--secondary .field__item-wrap {
         z-index: 1;
         position: absolute;
         overflow: auto;
+        display: none;
         top: 100%;
         left: 0;
         width: 100%;
@@ -1319,18 +1320,20 @@ input:focus {
         border-radius: 5px;
         background-color: white;
         box-shadow: 0 2px 4px #dee2e6; }
-        .user .company-info .business-field .select-field .btn .field__item-wrap .field__item {
+        .user .company-info .business-field .select-field .btn.btn-outline--secondary .field__item-wrap .field__item {
           padding: 5px 15px;
           font-weight: 500;
           transition: 0.2s ease-out; }
-          .user .company-info .business-field .select-field .btn .field__item-wrap .field__item:hover {
+          .user .company-info .business-field .select-field .btn.btn-outline--secondary .field__item-wrap .field__item:hover {
             background-color: #f1f3f5; }
-        .user .company-info .business-field .select-field .btn .field__item-wrap .field__item.see-more {
+        .user .company-info .business-field .select-field .btn.btn-outline--secondary .field__item-wrap .field__item.see-more {
           margin: 10px;
           margin-bottom: 0;
           border: 1px solid #dee2e6;
           border-radius: 5px;
           text-align: center; }
+      .user .company-info .business-field .select-field .btn.btn-outline--secondary .field__item-wrap.show {
+        display: block; }
     .user .company-info .business-field .select-field .btn ~ .btn {
       margin-left: 10px; }
   .user .company-info .business-field .btn-wrap .btn {

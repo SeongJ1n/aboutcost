@@ -23,7 +23,7 @@
             }
             .select-field {
                 margin-top: 10px;
-                .btn {
+                .btn.btn-outline--secondary {
                     position: relative;
                     padding-right: 32px;
                     text-align: left;
@@ -44,6 +44,7 @@
                         z-index: 1;
                         position: absolute;
                         overflow: auto;
+                        display: none;
                         top: 100%;
                         left: 0;
                         width: 100%;
@@ -68,6 +69,7 @@
                             text-align: center;
                         }
                     }
+                    .field__item-wrap.show { display: block; }
                 }
                 .btn ~ .btn { margin-left: 10px; }
             }
