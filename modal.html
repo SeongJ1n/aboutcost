@@ -179,7 +179,7 @@
                 <button class="flex-item btn btn--primary">확인</button>
             </div>
         </div>
-        <div class="modal file-download">
+        <div class="modal file-download show-mobile">
             <h3 class="title">파일 다운로드</h3>
             <div class="item-wrap flex-item">
                 <button class="item"><i class="fas fa-file-download"></i>소개자료.pptx</button>
@@ -190,6 +190,35 @@
             <div class="btn-wrap flex-container">
                 <button class="flex-item btn btn--primary">전부 다운로드</button>
                 <button class="flex-item btn btn-outline--primary">닫기</button>
+            </div>
+        </div>
+        <div class="modal select-advice-template">
+            <h3 class="title">안내사항 템플릿 선택</h3>
+            <div class="list-wrap">
+                <div class="list__item">
+                    <div class="flex-container flex-column flex-start">
+                        <h4 class="advice__name">템플릿 이름</h4>
+                        <p class="advice__content">- 송금시 반드시 의뢰인명을 기재해주시고, 원활한 사건처리를 위해 입금 후 사무소로 연락 부탁 드립니다.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-wrap flex-container">
+                <button class="flex-item btn btn-outline--primary">안내사항 템플릿 추가</button>
+                <button class="flex-item btn btn--primary">닫기</button>
+            </div>
+        </div>
+        <div class="modal add-advice-template">
+            <h3 class="title">안내사항 템플릿 추가</h3>
+            <div class="form__input">
+                <label>안내사항 이름</label>
+                <input class="input__text" type="text" placeholder="안내사항 이름을 입력하세요" />
+            </div>
+            <div class="form__textarea">
+                <label>안내사항 내용</label>
+                <textarea class="input__textarea" placeholder="자유롭게 입력하세요"></textarea>
+            </div>
+            <div class="btn-wrap flex-container">
+                <button class="flex-item btn btn--primary">추가하기</button>
             </div>
         </div>
     </div>

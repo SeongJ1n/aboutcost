@@ -1151,20 +1151,22 @@ input:focus {
       .modal-wrap .modal .btn-wrap .btn ~ .btn {
         margin-left: 15px; }
 
-.modal-wrap .modal.select-account .list-wrap .list__item {
-  padding: 15px;
-  border: 1px solid #dee2e6;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px #dee2e6; }
-  .modal-wrap .modal.select-account .list-wrap .list__item:hover {
-    background-color: #f8f9fa; }
-  .modal-wrap .modal.select-account .list-wrap .list__item .account__name {
-    font-size: 15px; }
-  .modal-wrap .modal.select-account .list-wrap .list__item .account__num {
-    font-weight: 400;
-    font-size: 15px; }
-.modal-wrap .modal.select-account .list-wrap .list__item ~ .list__item {
-  margin-top: 15px; }
+.modal-wrap .modal.select-account .list-wrap {
+  padding-bottom: 50px; }
+  .modal-wrap .modal.select-account .list-wrap .list__item {
+    padding: 15px;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px #dee2e6; }
+    .modal-wrap .modal.select-account .list-wrap .list__item:hover {
+      background-color: #f8f9fa; }
+    .modal-wrap .modal.select-account .list-wrap .list__item .account__name {
+      font-size: 15px; }
+    .modal-wrap .modal.select-account .list-wrap .list__item .account__num {
+      font-weight: 400;
+      font-size: 15px; }
+  .modal-wrap .modal.select-account .list-wrap .list__item ~ .list__item {
+    margin-top: 15px; }
 .modal-wrap .modal.select-account .btn-wrap:before {
   position: absolute;
   left: 0;
@@ -1231,6 +1233,44 @@ input:focus {
     background-color: #f1f3f5; }
   .modal-wrap .modal.file-download .item-wrap .item i {
     margin-right: 7px; }
+
+.modal-wrap .modal.select-advice-template .list-wrap {
+  padding-bottom: 50px; }
+  .modal-wrap .modal.select-advice-template .list-wrap .list__item {
+    padding: 15px 20px;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px #dee2e6; }
+    .modal-wrap .modal.select-advice-template .list-wrap .list__item:hover {
+      background-color: #f8f9fa; }
+    .modal-wrap .modal.select-advice-template .list-wrap .list__item .advice__name {
+      font-size: 15px; }
+    .modal-wrap .modal.select-advice-template .list-wrap .list__item .advice__content {
+      overflow: hidden;
+      display: -webkit-box;
+      max-height: 1.5em;
+      margin-top: 8px;
+      font-weight: 400;
+      font-size: 14px;
+      text-overflow: ellipsis;
+      line-height: 1.5em;
+      word-wrap: break-word;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical; }
+  .modal-wrap .modal.select-advice-template .list-wrap .list__item ~ .list__item {
+    margin-top: 15px; }
+.modal-wrap .modal.select-advice-template .btn-wrap:before {
+  position: absolute;
+  left: 0;
+  bottom: 50px;
+  display: inline-block;
+  width: 100%;
+  height: 80px;
+  background: linear-gradient(to top, white 0%, rgba(255, 255, 255, 0.987) 8.1%, rgba(255, 255, 255, 0.951) 15.5%, rgba(255, 255, 255, 0.896) 22.5%, rgba(255, 255, 255, 0.825) 29%, rgba(255, 255, 255, 0.741) 35.3%, rgba(255, 255, 255, 0.648) 41.2%, rgba(255, 255, 255, 0.55) 47.1%, rgba(255, 255, 255, 0.45) 52.9%, rgba(255, 255, 255, 0.352) 58.8%, rgba(255, 255, 255, 0.259) 64.7%, rgba(255, 255, 255, 0.175) 71%, rgba(255, 255, 255, 0.104) 77.5%, rgba(255, 255, 255, 0.049) 84.5%, rgba(255, 255, 255, 0.013) 91.9%, rgba(255, 255, 255, 0) 100%);
+  content: ""; }
+
+.modal-wrap .modal.add-advice-template .form__textarea {
+  margin-top: 15px; }
 
 .user .company-info,
 .user .payment-info,
