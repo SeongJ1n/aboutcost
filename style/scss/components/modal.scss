@@ -113,20 +113,33 @@
                 font-weight: 700;
                 font-size: 14px;            
             }
+            .btn-wrap {
+                margin-top: 10px;
+                padding: 0px;
+                .btn i { margin-right: 8px; }
+            }
             .file__item {
-                display: block;
                 width: 100%;
                 margin-top: 10px;
                 padding: 15px 20px;
-                border: 1px solid $border;
+                border: 1px solid $primary;
                 border-radius: $border-radius;
-                background-color: $oc-gray-0;
+                background-color: rgba(21, 170, 191, 0.05);
+                color: $primary;
                 text-align: left;
+                font-weight: 600;
                 font-size: 14px;
                 transition: 0.2s ease-out;
                 cursor: pointer;
-                &:hover { background-color: $oc-gray-1; }
                 i { margin-right: 10px; }
+            }
+            .file__item.uploded {
+                border-color: $border;
+                background-color: $oc-gray-0;
+                color: $oc-gray-9;
+                font-weight: 500;
+                cursor: auto;
+                &:hover { background-color: $oc-gray-0; }
             }
         }
     }

@@ -3,9 +3,11 @@
 .sidebar.preview {
     width: 200px;
 }
+.body-container.preview {
+    padding-left: 200px;
+}
 .preview {
     min-height: 100vh;
-    background-color: white;
     .btn-wrap {
         width: 1000px;
         margin-top: 40px;
@@ -22,6 +24,7 @@
         margin-bottom: 50px;
         padding: 60px;
         border: 1px solid $oc-gray-4;
+        background-color: white;
         text-align: center;
         // 기본 서식
         // ––––––––––––––––––––––––––––––––––––––––––––––––––
