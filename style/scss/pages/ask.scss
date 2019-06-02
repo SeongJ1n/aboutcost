@@ -1,12 +1,12 @@
-// 로그인페이지
+// 문의하기 페이지
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
-.login {
+.ask {
     background-color: $oc-gray-0;
     padding-top: 100px;
     padding-bottom: 60px;
     min-height: 100vh;
-    .login-form {
-        max-width: 450px;
+    .ask-form {
+        max-width: 600px;
         width: 100%;
         padding: 40px;
         border: 1px solid $border;
@@ -14,20 +14,21 @@
         background-color: $oc-white;
         box-shadow: 0 2px 4px $border;
         .title {
-            margin-bottom: 30px;
+            margin-bottom: 15px;
             text-align: center;
         }
-        .link-wrap {
-            margin-top: 25px;
+        .description {
             text-align: center;
             color: $oc-gray-6;
-            font-weight: 500;
-            font-size: 14px;
-            .link {
-                color: $primary--dark;
-            }
         }
-        .link-wrap ~ .link-wrap { margin-top: 15px; }
+        .divider {
+            width: 100%;
+            margin-top: 25px;
+            margin-bottom: 30px;        
+            border: 0;
+            border-bottom: 1px dashed #ced4da;
+        }
+        .form__textarea { margin-top: 20px; }
         .btn {
             width: 100%;
             margin-top: 20px;
@@ -37,8 +38,8 @@
 }
 
 @media (max-width: $mobile-max-width) {
-    .login {
-        .login-form {
+    .ask {
+        .ask-form {
             margin: 0 25px;
         }
     }

@@ -3171,7 +3171,8 @@ input:focus {
         margin-top: 20px; } }
 .login {
   background-color: #f8f9fa;
-  padding-top: 40px;
+  padding-top: 100px;
+  padding-bottom: 60px;
   min-height: 100vh; }
   .login .login-form {
     max-width: 450px;
@@ -3201,6 +3202,41 @@ input:focus {
 
 @media (max-width: 800px) {
   .login .login-form {
+    margin: 0 25px; } }
+.ask {
+  background-color: #f8f9fa;
+  padding-top: 100px;
+  padding-bottom: 60px;
+  min-height: 100vh; }
+  .ask .ask-form {
+    max-width: 600px;
+    width: 100%;
+    padding: 40px;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px #dee2e6; }
+    .ask .ask-form .title {
+      margin-bottom: 15px;
+      text-align: center; }
+    .ask .ask-form .description {
+      text-align: center;
+      color: #868e96; }
+    .ask .ask-form .divider {
+      width: 100%;
+      margin-top: 25px;
+      margin-bottom: 30px;
+      border: 0;
+      border-bottom: 1px dashed #ced4da; }
+    .ask .ask-form .form__textarea {
+      margin-top: 20px; }
+    .ask .ask-form .btn {
+      width: 100%;
+      margin-top: 20px;
+      font-size: 14px; }
+
+@media (max-width: 800px) {
+  .ask .ask-form {
     margin: 0 25px; } }
 html {
   background-color: #f1f3f5; }
