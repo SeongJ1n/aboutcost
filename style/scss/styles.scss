@@ -19,7 +19,6 @@ $mobile-max-width: 800px;
 @import 'components/input';
 @import 'components/chip';
 @import 'components/filter';
-// @import 'components/divider';
 @import 'components/modal';
 @import 'pages/user';
 @import 'pages/payment-details';
@@ -40,6 +39,7 @@ $mobile-max-width: 800px;
 @import 'pages/history';
 @import 'pages/preview';
 @import 'pages/cost-handling-details';
+@import 'pages/login';
 
 @media (max-width: $mobile-max-width) {}
 
