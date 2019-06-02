@@ -334,18 +334,14 @@
                     color: $primary;
                 }
             }
-            .advice-list {
+            .advice {
                 margin-top: 15px;
-                padding: 20px;
+                padding: 20px 25px;
                 border: 1px solid $border;
+                line-height: 1.55em;
                 font-weight: 500;
                 font-size: 15px;
                 background-color: $oc-gray-0;
-                .list__title { font-weight: 600; }
-                .list__item {
-                    margin-top: 10px;
-                    margin-left: 12px;
-                }
             }
         }
         // 결제정보확인 버튼

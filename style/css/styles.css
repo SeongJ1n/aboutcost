@@ -1699,6 +1699,35 @@ input:focus {
         -webkit-box-orient: vertical; }
       .new .add-on .component__content .file__item .btn.btn--danger {
         font-size: 17px; }
+    .new .add-on .component__content .checkbox-wrapper {
+      margin-top: 15px; }
+      .new .add-on .component__content .checkbox-wrapper .checkbox__icon {
+        position: relative;
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        margin-right: 8px;
+        margin-bottom: -4px;
+        border: 1px solid #dee2e6;
+        border-radius: 5px; }
+        .new .add-on .component__content .checkbox-wrapper .checkbox__icon:before {
+          position: absolute;
+          top: 5px;
+          left: 5px;
+          display: inline-block;
+          width: 11px;
+          height: 5px;
+          border: solid #dee2e6;
+          border-width: 0 0 2px 2px;
+          transform: rotate(-45deg);
+          content: ''; }
+      .new .add-on .component__content .checkbox-wrapper .checkbox {
+        display: none; }
+      .new .add-on .component__content .checkbox-wrapper .checkbox[type=checkbox]:checked + label .checkbox__icon {
+        border-color: #22b8cf;
+        background-color: #22b8cf; }
+        .new .add-on .component__content .checkbox-wrapper .checkbox[type=checkbox]:checked + label .checkbox__icon:before {
+          border-color: white; }
 .new .add-on.add-on--open .component__header {
   border-bottom: 1px dashed #dee2e6; }
   .new .add-on.add-on--open .component__header .arrow {
@@ -2890,18 +2919,14 @@ input:focus {
       .preview .preview-body .document-advice .checkbox-wrapper .confirmed {
         margin-left: 8px;
         color: #22b8cf; }
-      .preview .preview-body .document-advice .advice-list {
+      .preview .preview-body .document-advice .advice {
         margin-top: 15px;
-        padding: 20px;
+        padding: 20px 25px;
         border: 1px solid #dee2e6;
+        line-height: 1.55em;
         font-weight: 500;
         font-size: 15px;
         background-color: #f8f9fa; }
-        .preview .preview-body .document-advice .advice-list .list__title {
-          font-weight: 600; }
-        .preview .preview-body .document-advice .advice-list .list__item {
-          margin-top: 10px;
-          margin-left: 12px; }
     .preview .preview-body .payment-info-btn {
       width: auto;
       margin: 0;

@@ -319,6 +319,37 @@
                 }
                 .btn.btn--danger { font-size: 17px; }
             }
+            .checkbox-wrapper {
+                margin-top: 15px;
+                .checkbox__icon {
+                    position: relative;
+                    display: inline-block;
+                    width: 24px;
+                    height: 24px;
+                    margin-right: 8px;
+                    margin-bottom: -4px;
+                    border: 1px solid $border;
+                    border-radius: $border-radius;
+                    &:before {
+                        position: absolute;
+                        top: 5px;
+                        left: 5px;
+                        display: inline-block;
+                        width: 11px;
+                        height: 5px;
+                        border: solid $border;
+                        border-width: 0 0 2px 2px;
+                        transform: rotate(-45deg);
+                        content: '';
+                    }
+                }
+                .checkbox { display: none; }
+                .checkbox[type=checkbox]:checked+label .checkbox__icon {
+                    border-color: $primary;
+                    background-color: $primary;
+                    &:before { border-color: white; }
+                }
+            }
         }
     }
     .add-on.add-on--open {
