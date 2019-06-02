@@ -3238,6 +3238,39 @@ input:focus {
 @media (max-width: 800px) {
   .ask .ask-form {
     margin: 0 25px; } }
+.ask-sidebar .ask-form {
+  max-width: 600px;
+  width: 100%;
+  margin-top: 30px;
+  padding: 40px;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px #dee2e6; }
+  .ask-sidebar .ask-form .title {
+    margin-bottom: 15px;
+    text-align: center; }
+  .ask-sidebar .ask-form .description {
+    text-align: center;
+    color: #868e96; }
+  .ask-sidebar .ask-form .divider {
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    border: 0;
+    border-bottom: 1px dashed #ced4da; }
+  .ask-sidebar .ask-form .form__textarea {
+    margin-top: 20px; }
+  .ask-sidebar .ask-form .btn {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 14px; }
+
+@media (max-width: 800px) {
+  .ask-sidebar {
+    margin-top: 60px; }
+    .ask-sidebar .ask-form {
+      margin: 0; } }
 html {
   background-color: #f1f3f5; }
 
