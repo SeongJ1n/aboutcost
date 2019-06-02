@@ -1215,6 +1215,23 @@ input:focus {
     .modal-wrap .modal.tax-invoice .file-wrap .file__item.uploded:hover {
       background-color: #f8f9fa; }
 
+.modal-wrap .modal.file-download .item-wrap .item {
+  display: inline-block;
+  min-height: 34px;
+  margin-right: 4px;
+  margin-bottom: 6px;
+  padding: 6px 12px;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  font-size: 15px;
+  background-color: #f8f9fa;
+  transition: 0.2s ease-out;
+  cursor: pointer; }
+  .modal-wrap .modal.file-download .item-wrap .item:hover {
+    background-color: #f1f3f5; }
+  .modal-wrap .modal.file-download .item-wrap .item i {
+    margin-right: 7px; }
+
 .user .company-info,
 .user .payment-info,
 .user .manager-info,
@@ -2928,6 +2945,72 @@ input:focus {
       margin-left: 0; }
     .preview-html .preview .preview-body {
       margin-left: 0; } }
+.cost-handling-details .cost-handling-list {
+  padding: 20px 30px 30px;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0 2px 4px #dee2e6; }
+  .cost-handling-details .cost-handling-list .logo-wrap .logo {
+    max-height: 43px; }
+  .cost-handling-details .cost-handling-list .input--search {
+    position: relative;
+    width: 350px;
+    font-size: 14px; }
+    .cost-handling-details .cost-handling-list .input--search:before {
+      position: absolute;
+      top: 49%;
+      left: 15px;
+      font-family: "Font Awesome 5 Free";
+      font-weight: 300;
+      font-size: 16px;
+      transform: translate(0, -50%);
+      content: "\f002"; }
+    .cost-handling-details .cost-handling-list .input--search .input__text {
+      padding: 10px 16px 11px 42px;
+      margin: 0; }
+    .cost-handling-details .cost-handling-list .input--search .btn {
+      margin: 0; }
+  .cost-handling-details .cost-handling-list .filter-wrap {
+    margin-left: 15px; }
+  .cost-handling-details .cost-handling-list .list--table {
+    margin-top: 30px; }
+    .cost-handling-details .cost-handling-list .list--table .table__row:hover {
+      background-color: transparent;
+      cursor: auto; }
+    .cost-handling-details .cost-handling-list .list--table .select-wrap:after {
+      top: 43%;
+      right: 11px;
+      transform: translateY(-50%) rotate(-45deg); }
+    .cost-handling-details .cost-handling-list .list--table .select-wrap .select {
+      margin: 0;
+      padding: 5px 9px 6px;
+      padding-right: 22px;
+      cursor: pointer; }
+    .cost-handling-details .cost-handling-list .list--table .btn {
+      padding: 5px 11px 6px;
+      font-size: 12px; }
+
+@media (max-width: 800px) {
+  .body-container.preview {
+    padding: 0; }
+
+  .cost-handling-details {
+    margin-top: 60px;
+    margin-bottom: 50px; }
+    .cost-handling-details .cost-handling-list {
+      padding: 0;
+      border: none;
+      box-shadow: none; }
+      .cost-handling-details .cost-handling-list .input--search {
+        width: 100%;
+        margin-bottom: 10px; }
+        .cost-handling-details .cost-handling-list .input--search .input__text {
+          border-radius: 5px; }
+        .cost-handling-details .cost-handling-list .input--search .btn {
+          display: none; }
+      .cost-handling-details .cost-handling-list .list--card {
+        margin-top: 20px; } }
 html {
   background-color: #f1f3f5; }
 

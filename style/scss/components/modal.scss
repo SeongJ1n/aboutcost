@@ -144,3 +144,27 @@
         }
     }
 }
+
+// 세금계산서 발행하기
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+.modal-wrap {
+    .modal.file-download {
+        .item-wrap {
+            .item {
+                display: inline-block;
+                min-height: 34px;
+                margin-right: 4px;
+                margin-bottom: 6px;
+                padding: 6px 12px;
+                border: 1px solid $border;
+                border-radius: $border-radius;
+                font-size: 15px;
+                background-color: $oc-gray-0;
+                transition: 0.2s ease-out;
+                cursor: pointer;
+                &:hover { background-color: $oc-gray-1; }
+                i { margin-right: 7px; }
+            }
+        }
+    }
+}

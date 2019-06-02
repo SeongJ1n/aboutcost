@@ -9,6 +9,36 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 <body>
+    <nav class="nav">
+        <div class="nav__header flex-container flex-item item-center flex-space-between">
+            <a class="nav__logo" href="/"></a>
+            <i class="nav__hamburger fas fa-bars"></i>
+            <i class="nav__close fas fa-times"></i>
+        </div>
+        <ul class="nav__menu">
+            <li class="menu__item">
+                <a class="menu__link" href=""><i class="fas fa-bell"></i>클라우드 견적서란?</a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href=""><i class="fas fa-plus-square"></i>받은 견적서 보관하기</a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href=""><i class="fas fa-th-list"></i>견적내용보기</a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href=""><i class="fas fa-chart-line"></i>결제하기</a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href=""><i class="fas fa-cog"></i>견적 히스토리</a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href=""><i class="fas fa-building"></i>세금계산서 발행요청</a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href=""><i class="fas fa-mail-bulk"></i>비용 전체내역보기</a>
+            </li>
+        </ul>
+    </nav>
     <div class="sidebar preview">
         <ul class="sidebar__menu">
             <li class="menu__item">
@@ -39,14 +69,120 @@
     </div>
     <div class="body-container preview">
         <div class="body-wrap">
-            <div class="payment-details flex-container flex-center">
+            <div class="cost-handling-details flex-container flex-center">
                 <div class="content-container">
                     <div class="page-header flex-container flex-space-between">
                         <h2 class="title">비용 전체내역보기</h2>
                     </div>
                     <div class="row">
                         <div class="twelve columns">
-                            <div class="payment-list">
+                            <div class="cost-handling-list">
+                                <div class="flex-container flex-space-between">
+                                    <div class="logo-wrap show-pc">
+                                        <img class="logo" src="res/img/logo2.png">
+                                    </div>
+                                    <div class="flex-container flex-item flex-end">
+                                        <div class="form__input with-btn input--search flex-container">
+                                            <input class="input__text flex-item" type="text" placeholder="견적서이름, 회사명, 담당자 검색" /><button class="btn btn-outline--secondary">검색</button>
+                                        </div>
+                                        <div class="filter-wrap show-pc">
+                                            <button class="btn btn-outline--secondary">검색조건 추가하기</button>
+                                            <!-- filter--open 클래스를 삭제하면 필터가 닫힙니다. -->
+                                            <div class="filter">
+                                                <div class="set-period">
+                                                    <div class="period-btn flex-container">
+                                                        <button class="flex-item btn btn-outline--primary">일주일</button>
+                                                        <button class="flex-item btn btn-outline--secondary">한달</button>
+                                                        <button class="flex-item btn btn-outline--secondary">6개월</button>
+                                                        <button class="flex-item btn btn-outline--secondary">1년</button>
+                                                    </div>
+                                                    <div class="period flex-container">
+                                                        <div class="flex-item form__text">
+                                                            <input class="input__text flex-item" type="date" />
+                                                        </div>
+                                                        <div class="swung-dash">~</div>
+                                                        <div class="flex-item form__text">
+                                                            <input class="input__text flex-item" type="date" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- filter-list--open 클래스로 ON/OFF -->
+                                                <div class="filter-list filter-list--open">
+                                                    <div class="component__header flex-container item-center flex-space-between">
+                                                        <h3 class="title">입금상태</h3>
+                                                        <div class="arrow"></div>
+                                                    </div>
+                                                    <div class="component__content">
+                                                        <div class="form__check">
+                                                            <input class="checkbox" id="test1" name="test1" type="checkbox">
+                                                            <label class="flex-container flex-space-between item-center" for="test1">
+                                                                <span class="checkbox__label">100% 입금완료</span>
+                                                                <span class="checkbox__icon"></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="form__check">
+                                                            <input class="checkbox" id="test2" name="test2" type="checkbox">
+                                                            <label class="flex-container flex-space-between item-center" for="test2">
+                                                                <span class="checkbox__label">100% 미만은 입금액 표시</span>
+                                                                <span class="checkbox__icon"></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="form__check">
+                                                            <input class="checkbox" id="test3" name="test3" type="checkbox">
+                                                            <label class="flex-container flex-space-between item-center" for="test3">
+                                                                <span class="checkbox__label">0%인 경우는 입금대기중</span>
+                                                                <span class="checkbox__icon"></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="form__check">
+                                                            <input class="checkbox" id="test4" name="test4" type="checkbox">
+                                                            <label class="flex-container flex-space-between item-center" for="test4">
+                                                                <span class="checkbox__label">견적서 상태가 발행전이면 -(하이픈)</span>
+                                                                <span class="checkbox__icon"></span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="filter-list">
+                                                    <div class="component__header flex-container item-center flex-space-between">
+                                                        <h3 class="title">정산상태</h3>
+                                                        <div class="arrow"></div>
+                                                    </div>
+                                                    <div class="component__content">
+                                                    </div>
+                                                </div>
+                                                <div class="filter-list">
+                                                    <div class="component__header flex-container item-center flex-space-between">
+                                                        <h3 class="title">문서상태</h3>
+                                                        <div class="arrow"></div>
+                                                    </div>
+                                                    <div class="component__content">
+                                                    </div>
+                                                </div>
+                                                <div class="filter-list">
+                                                    <div class="component__header flex-container item-center flex-space-between">
+                                                        <h3 class="title">세금계산서발행상태</h3>
+                                                        <div class="arrow"></div>
+                                                    </div>
+                                                    <div class="component__content">
+                                                    </div>
+                                                </div>
+                                                <div class="filter-list">
+                                                    <div class="component__header flex-container item-center flex-space-between">
+                                                        <h3 class="title">업무진행상태</h3>
+                                                        <div class="arrow"></div>
+                                                    </div>
+                                                    <div class="component__content">
+                                                    </div>
+                                                </div>
+                                                <div class="btn-wrap">
+                                                    <button class="btn btn--primary">필터 적용하기</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="btn btn-outline--secondary show-mobile">검색조건 추가하기</button>
                                 <table class="list--table show-pc">
                                     <tr class="table__row">
                                         <th class="table__header">발행일자</th>
@@ -57,27 +193,53 @@
                                         <th class="table__header">첨부파일</th>
                                         <th class="table__header">문서 상태</th>
                                         <th class="table__header">비용증빙자료</th>
+                                        <th class="table__header">열람링크</th>
                                     </tr>
                                     <tr class="table__row">
-                                        <td class="table__data">1</td>
                                         <td class="table__data">2019-05-19</td>
-                                        <td class="table__data">멤버십 결제</td>
-                                        <td class="table__data">99,999원</td>
+                                        <td class="table__data">
+                                            <div class="tag tag--cyan">견적서</div>
+                                        </td>
+                                        <td class="table__data">20181204002</td>
+                                        <td class="table__data">2,000,000원</td>
+                                        <td class="table__data">
+                                            <div class="tag">입금 0%</div>
+                                        </td>
+                                        <td class="table__data">
+                                            <button class="btn btn-outline--primary">2개</button>
+                                        </td>
+                                        <td class="table__data">
+                                            <div class="select-wrap">
+                                                    <select class="select" name="">
+                                                    <option value="">발행완료</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                        <td class="table__data">
+                                            <button class="btn btn-outline--primary">2개</button>
+                                        </td>
+                                        <td class="table__data">
+                                            <button class="btn btn-outline--primary">견적서 보기</button>
+                                        </td>
                                     </tr>
                                 </table>
                                 <div class="list--card show-mobile">
                                     <div class="card">
-                                        <div class="flex-container flex-space-between">
-                                            <h4 class="card__title">멤버십 결제</h4>
-                                            <h4 class="card__title">99,999원</h4>
+                                        <div class="card__header flex-container item-center flex-space-between">
+                                            <span class="card__content">관리번호: <b>20181204002</b></span>
+                                            <div class="tag">입금 0%</div>
                                         </div>
                                         <div class="card__row flex-container flex-space-between">
-                                            <h5 class="card__subtitle">결제 번호</h5>
-                                            <span class="card__content">1</span>
+                                            <h5 class="card__subtitle">발행일자</h5>
+                                            <span class="card__content">2019-05-19</span>
                                         </div>
                                         <div class="card__row flex-container flex-space-between">
-                                            <h5 class="card__subtitle">일시</h5>
-                                            <span class="card__content">2019-05-19</span>
+                                            <h5 class="card__subtitle">표시명</h5>
+                                            <div class="tag tag--cyan">견적서</div>
+                                        </div>
+                                        <div class="card__row flex-container flex-space-between">
+                                            <h5 class="card__subtitle">금액</h5>
+                                            <span class="card__content">2,000,000원</span>
                                         </div>
                                     </div>
                                 </div>
