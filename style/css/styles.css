@@ -3485,10 +3485,6 @@ input:focus {
   border-radius: 5px;
   background-color: white;
   box-shadow: 0 2px 4px #dee2e6; }
-  .stastastics .stastastics--three .stastastics__item .text-wrap .title {
-    color: #868e96;
-    font-weight: 600;
-    font-size: 15px; }
   .stastastics .stastastics--three .stastastics__item .text-wrap .content {
     margin-top: 5px; }
   .stastastics .stastastics--three .stastastics__item .chart-wrap {
@@ -3499,6 +3495,10 @@ input:focus {
   .stastastics .stastastics--three .stastastics__item .content-wrap .change-value {
     margin-left: 5px;
     margin-bottom: 5px; }
+  .stastastics .stastastics--three .stastastics__item .title {
+    color: #868e96;
+    font-weight: 600;
+    font-size: 15px; }
   .stastastics .stastastics--three .stastastics__item .change-value {
     margin-top: 3px;
     font-weight: 700;
@@ -3535,7 +3535,44 @@ input:focus {
       font-size: 14px; }
     .stastastics .stastastics--one .content-wrap div ~ div {
       margin-top: 10px; }
+.stastastics .stastastics--two {
+  padding: 20px;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0 2px 4px #dee2e6; }
+  .stastastics .stastastics--two .text-wrap .content {
+    margin-top: 5px; }
+  .stastastics .stastastics--two .chart-wrap {
+    margin-left: 15px; }
+    .stastastics .stastastics--two .chart-wrap .chartjs-render-monitor {
+      margin-top: 10px;
+      background-color: #dee2e6; }
+  .stastastics .stastastics--two .content-wrap .change-value {
+    margin-left: 5px;
+    margin-bottom: 5px; }
+  .stastastics .stastastics--two .title {
+    color: #868e96;
+    font-weight: 600;
+    font-size: 15px; }
+  .stastastics .stastastics--two .change-value {
+    margin-top: 3px;
+    font-weight: 700;
+    color: #868e96; }
+  .stastastics .stastastics--two .change-value.increase {
+    color: #22b8cf; }
+  .stastastics .stastastics--two .change-value.decrease {
+    color: #f03e3e; }
 
+@media (max-width: 800px) {
+  .stastastics {
+    margin-top: 60px; }
+    .stastastics .page-header {
+      margin-bottom: -25px; }
+    .stastastics .stastastics--one {
+      margin-top: 25px; }
+    .stastastics .stastastics--two {
+      margin-top: 25px; } }
 html {
   background-color: #f1f3f5; }
 
