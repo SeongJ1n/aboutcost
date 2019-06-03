@@ -1166,6 +1166,18 @@ input:focus {
       text-align: center;
       font-weight: 700;
       font-size: 23px; }
+    .modal-wrap .modal .description {
+      margin-top: -15px;
+      text-align: center;
+      color: #868e96;
+      font-size: 14px;
+      line-height: 1.5em; }
+    .modal-wrap .modal .divider {
+      width: 100%;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      border: 0;
+      border-bottom: 1px dashed #ced4da; }
     .modal-wrap .modal .list-wrap {
       overflow: auto;
       max-height: 65vh;

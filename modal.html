@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="modal-wrap flex-container flex-center item-center">
-        <div class="modal select-account">
+        <div class="modal show-mobile select-account">
             <h3 class="title">은행 계좌 선택</h3>
             <div class="list-wrap select-account">
                 <div class="list__item">
@@ -67,7 +67,7 @@
                 <button class="flex-item btn btn--primary">닫기</button>
             </div>
         </div>
-        <div class="modal add-account">
+        <div class="modal show-mobile add-account">
             <h3 class="title">새로운 계좌 추가</h3>
             <div class="form__input">
                 <label>은행명</label>
@@ -81,7 +81,7 @@
                 <button class="flex-item btn btn--primary">추가하기</button>
             </div>
         </div>
-        <div class="modal add-card-info">
+        <div class="modal show-mobile add-card-info">
             <h3 class="title">카드 정보 등록</h3>
             <div class="form__input">
                 <label>카드 번호</label>
@@ -107,7 +107,7 @@
             </div>
         </div>
         <!-- 보내는 사람 화면 -->
-        <div class="modal tax-invoice">
+        <div class="modal show-mobile tax-invoice">
             <h3 class="title">세금계산서 발행요청</h3>
             <div class="form__select">
                 <label>계산서 형태</label>
@@ -148,7 +148,7 @@
             </div>
         </div>
         <!-- 받는 사람 화면 -->
-        <div class="modal tax-invoice">
+        <div class="modal show-mobile tax-invoice">
             <h3 class="title">세금계산서 발행요청</h3>
             <div class="form__select">
                 <label>계산서 형태</label>
@@ -179,7 +179,7 @@
                 <button class="flex-item btn btn--primary">확인</button>
             </div>
         </div>
-        <div class="modal file-download">
+        <div class="modal show-mobile file-download">
             <h3 class="title">파일 다운로드</h3>
             <div class="item-wrap flex-item">
                 <button class="item"><i class="fas fa-file-download"></i>소개자료.pptx</button>
@@ -192,7 +192,7 @@
                 <button class="flex-item btn btn-outline--primary">닫기</button>
             </div>
         </div>
-        <div class="modal select-advice-template">
+        <div class="modal show-mobile select-advice-template">
             <h3 class="title">안내사항 템플릿 선택</h3>
             <div class="list-wrap">
                 <div class="list__item">
@@ -207,7 +207,7 @@
                 <button class="flex-item btn btn--primary">닫기</button>
             </div>
         </div>
-        <div class="modal add-advice-template">
+        <div class="modal show-mobile add-advice-template">
             <h3 class="title">안내사항 템플릿 추가</h3>
             <div class="form__input">
                 <label>안내사항 이름</label>
@@ -216,6 +216,18 @@
             <div class="form__textarea">
                 <label>안내사항 내용</label>
                 <textarea class="input__textarea" placeholder="자유롭게 입력하세요"></textarea>
+            </div>
+            <div class="btn-wrap flex-container">
+                <button class="flex-item btn btn--primary">추가하기</button>
+            </div>
+        </div>
+        <div class="modal find-pw">
+            <h3 class="title">비밀번호 찾기</h3>
+            <p class="description">{임시텍스트 : 가입한 이메일 주소를 입력해주세요.</br>해당 주소로 비밀번호 재설정 메일을 보내드립니다.}</p>
+            <hr class="divider" />
+            <div class="form__input">
+                <label>이메일</label>
+                <input class="input__text" type="text" placeholder="이메일 주소를 입력하세요" />
             </div>
             <div class="btn-wrap flex-container">
                 <button class="flex-item btn btn--primary">추가하기</button>

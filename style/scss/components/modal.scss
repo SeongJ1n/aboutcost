@@ -22,6 +22,20 @@
             font-weight: 700;
             font-size: 23px;
         }
+        .description {
+            margin-top: -15px;
+            text-align: center;
+            color: $oc-gray-6;;
+            font-size: 14px;
+            line-height: 1.5em;
+        }
+        .divider {
+            width: 100%;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border: 0;
+            border-bottom: 1px dashed #ced4da;
+        }
         .list-wrap {
             overflow: auto;
             max-height: 65vh;
@@ -238,4 +252,10 @@
     .modal.add-advice-template {
         .form__textarea { margin-top: 15px; }
     }
+}
+
+// 비밀번호 찾기
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+.modal-wrap {
+    .modal.find-pw {}
 }
