@@ -3479,6 +3479,63 @@ input:focus {
       margin-bottom: 0;
       padding-top: 0;
       padding-bottom: 0; } }
+.stastastics .stastastics--three {
+  padding: 25px 30px;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0 2px 4px #dee2e6; }
+  .stastastics .stastastics--three .stastastics__item .text-wrap .title {
+    color: #868e96;
+    font-weight: 600;
+    font-size: 15px; }
+  .stastastics .stastastics--three .stastastics__item .text-wrap .content {
+    margin-top: 5px; }
+  .stastastics .stastastics--three .stastastics__item .chart-wrap {
+    margin-left: 15px; }
+    .stastastics .stastastics--three .stastastics__item .chart-wrap .chartjs-render-monitor {
+      margin-top: 10px;
+      background-color: #dee2e6; }
+  .stastastics .stastastics--three .stastastics__item .content-wrap .change-value {
+    margin-left: 5px;
+    margin-bottom: 5px; }
+  .stastastics .stastastics--three .stastastics__item .change-value {
+    margin-top: 3px;
+    font-weight: 700;
+    color: #868e96; }
+  .stastastics .stastastics--three .stastastics__item .change-value.increase {
+    color: #22b8cf; }
+  .stastastics .stastastics--three .stastastics__item .change-value.decrease {
+    color: #f03e3e; }
+  .stastastics .stastastics--three .stastastics__item ~ .stastastics__item {
+    margin-left: 30px; }
+.stastastics .stastastics--one {
+  padding: 20px;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0 2px 4px #dee2e6; }
+  .stastastics .stastastics--one .title {
+    font-weight: 700;
+    font-size: 15px; }
+  .stastastics .stastastics--one .chartjs-render-monitor {
+    width: 100%;
+    min-height: 220px;
+    margin-top: 15px;
+    background-color: #dee2e6; }
+  .stastastics .stastastics--one .content-wrap {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px dashed #dee2e6; }
+    .stastastics .stastastics--one .content-wrap .subtitle {
+      font-weight: 500;
+      font-size: 14px;
+      color: #adb5bd; }
+    .stastastics .stastastics--one .content-wrap .content {
+      font-size: 14px; }
+    .stastastics .stastastics--one .content-wrap div ~ div {
+      margin-top: 10px; }
+
 html {
   background-color: #f1f3f5; }
 

@@ -1,0 +1,77 @@
+// 상세통계추적 페이지
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+.stastastics {
+    .stastastics--three {
+        padding: 25px 30px;
+        border: 1px solid $border;
+        border-radius: $border-radius;
+        background-color: white;
+        @include shadow;
+        .stastastics__item {
+            .text-wrap {
+                .title {
+                    color: $oc-gray-6;
+                    font-weight: 600;
+                    font-size: 15px;
+                }
+                .content {
+                    margin-top: 5px;
+                }
+            }
+            .chart-wrap {
+                margin-left: 15px;
+                .chartjs-render-monitor {
+                    margin-top: 10px;
+                    background-color: $oc-gray-3;
+                }
+            }
+            .content-wrap {
+                .change-value {
+                    margin-left: 5px;
+                    margin-bottom: 5px;
+                }
+            }
+            .change-value {
+                margin-top: 3px;
+                font-weight: 700;
+                color: $oc-gray-6;
+            }
+            .change-value.increase {
+                color: $primary;
+            }
+            .change-value.decrease {
+                color: $oc-red-7;
+            }
+        }
+        .stastastics__item ~ .stastastics__item { margin-left: 30px; }
+    }
+    .stastastics--one {
+        padding: 20px;
+        border: 1px solid $border;
+        border-radius: $border-radius;
+        background-color: white;
+        @include shadow;
+        .title {
+            font-weight: 700;
+            font-size: 15px;
+        }
+        .chartjs-render-monitor {
+            width: 100%;
+            min-height: 220px;
+            margin-top: 15px;
+            background-color: $oc-gray-3;
+        }
+        .content-wrap {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px dashed $border;
+            .subtitle {
+                font-weight: 500;
+                font-size: 14px;
+                color: $oc-gray-5;
+            }
+            .content { font-size: 14px; }
+            div ~ div { margin-top: 10px; }
+        }
+    }
+}
