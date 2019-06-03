@@ -3289,7 +3289,7 @@ input:focus {
       box-shadow: 0 2px 4px #dee2e6; }
       .register .register-info .right .form__input {
         margin: 0;
-        padding: 40px 40px 0; }
+        padding: 30px 30px 0; }
       .register .register-info .right .form__input ~ .form__input {
         padding-top: 20px; }
       .register .register-info .right .divider {
@@ -3303,7 +3303,7 @@ input:focus {
         box-shadow: 0 2px 4px #f8f9fa; }
       .register .register-info .right .btn.btn--primary {
         width: 100%;
-        margin-top: 40px;
+        margin-top: 30px;
         padding: 13px 16px 14px;
         border-radius: 0 0 5px 5px;
         font-size: 14px; }
@@ -3456,6 +3456,29 @@ input:focus {
   .register section ~ section {
     margin-top: 40px; }
 
+@media (max-width: 800px) {
+  .register {
+    padding: 80px 20px 20px; }
+    .register .register-info,
+    .register .manager-info,
+    .register .company-info {
+      display: block; }
+      .register .register-info .left .title,
+      .register .manager-info .left .title,
+      .register .company-info .left .title {
+        margin: 0; }
+      .register .register-info .right,
+      .register .manager-info .right,
+      .register .company-info .right {
+        margin: 0;
+        margin-top: 20px; }
+    .register .register-info .right .form__input {
+      margin: 0;
+      padding: 20px 20px 0; }
+    .register .register-info .right .divider {
+      margin-bottom: 0;
+      padding-top: 0;
+      padding-bottom: 0; } }
 html {
   background-color: #f1f3f5; }
 
