@@ -3271,6 +3271,191 @@ input:focus {
     margin-top: 60px; }
     .ask-sidebar .ask-form {
       margin: 0; } }
+.register {
+  padding-top: 100px;
+  padding-bottom: 60px; }
+  .register .register-info {
+    max-width: 900px;
+    width: 100%; }
+    .register .register-info .left {
+      min-width: 180px; }
+      .register .register-info .left .title {
+        margin-top: 20px; }
+    .register .register-info .right {
+      margin-left: 100px;
+      border: 1px solid #dee2e6;
+      border-radius: 5px;
+      background-color: #ffffff;
+      box-shadow: 0 2px 4px #dee2e6; }
+      .register .register-info .right .form__input {
+        margin: 0;
+        padding: 40px 40px 0; }
+      .register .register-info .right .form__input ~ .form__input {
+        padding-top: 20px; }
+      .register .register-info .right .divider {
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding-top: 0;
+        padding-bottom: 20px;
+        border: 0;
+        border-bottom: 1px dashed #dee2e6;
+        box-shadow: 0 2px 4px #f8f9fa; }
+      .register .register-info .right .btn.btn--primary {
+        width: 100%;
+        margin-top: 40px;
+        padding: 13px 16px 14px;
+        border-radius: 0 0 5px 5px;
+        font-size: 14px; }
+  .register .manager-info {
+    max-width: 900px;
+    width: 100%;
+    margin-top: 40px; }
+    .register .manager-info .left {
+      min-width: 180px; }
+      .register .manager-info .left .title {
+        margin-top: 20px; }
+    .register .manager-info .right {
+      margin-left: 100px; }
+      .register .manager-info .right .manager {
+        border: 1px solid #dee2e6;
+        border-radius: 5px;
+        background-color: #ffffff;
+        box-shadow: 0 2px 4px #dee2e6; }
+        .register .manager-info .right .manager .component__header {
+          border: none;
+          transition: 0.2s ease-out;
+          cursor: pointer; }
+          .register .manager-info .right .manager .component__header:hover {
+            background-color: #f8f9fa; }
+          .register .manager-info .right .manager .component__header .arrow {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border: 0 solid #212529;
+            border-width: 0 0 2px 2px;
+            transform: rotate(-45deg);
+            transition: 0.2s ease-out; }
+        .register .manager-info .right .manager .component__content {
+          display: none; }
+        .register .manager-info .right .manager .btn.btn-outline--danger {
+          width: 100%;
+          margin-top: 20px; }
+      .register .manager-info .right .manager ~ .btn.btn-outline--primary {
+        width: 100%;
+        margin-top: 20px;
+        border-style: dashed; }
+      .register .manager-info .right .manager.manager--open .component__header {
+        border-bottom: 1px dashed #dee2e6; }
+        .register .manager-info .right .manager.manager--open .component__header .arrow {
+          transform: translateY(8px) rotate(135deg); }
+      .register .manager-info .right .manager.manager--open .component__content {
+        display: block; }
+  .register .company-info {
+    max-width: 900px;
+    width: 100%;
+    margin-top: 40px; }
+    .register .company-info .left {
+      min-width: 180px; }
+      .register .company-info .left .title {
+        margin-top: 20px; }
+    .register .company-info .right {
+      margin-left: 100px; }
+      .register .company-info .right .company {
+        border: 1px solid #dee2e6;
+        border-radius: 5px;
+        background-color: #ffffff;
+        box-shadow: 0 2px 4px #dee2e6; }
+        .register .company-info .right .company .component__header {
+          border: none;
+          transition: 0.2s ease-out;
+          cursor: pointer; }
+          .register .company-info .right .company .component__header:hover {
+            background-color: #f8f9fa; }
+          .register .company-info .right .company .component__header .arrow {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border: 0 solid #212529;
+            border-width: 0 0 2px 2px;
+            transform: rotate(-45deg);
+            transition: 0.2s ease-out; }
+        .register .company-info .right .company .component__content {
+          display: none; }
+        .register .company-info .right .company .business-field {
+          margin-top: 15px; }
+          .register .company-info .right .company .business-field .title {
+            font-weight: 700;
+            font-size: 14px; }
+            .register .company-info .right .company .business-field .title .required {
+              color: #f03e3e; }
+          .register .company-info .right .company .business-field .select-field {
+            margin-top: 10px; }
+            .register .company-info .right .company .business-field .select-field .btn.btn-outline--secondary {
+              position: relative;
+              padding-right: 32px;
+              text-align: left; }
+              .register .company-info .right .company .business-field .select-field .btn.btn-outline--secondary:after {
+                position: absolute;
+                z-index: 1;
+                top: 44%;
+                right: 16px;
+                display: inline-block;
+                width: 6px;
+                height: 6px;
+                border: solid #212729;
+                border-width: 0 0 1px 1px;
+                transform: translateY(-50%) rotate(-45deg);
+                content: ""; }
+              .register .company-info .right .company .business-field .select-field .btn.btn-outline--secondary .field__item-wrap {
+                z-index: 1;
+                position: absolute;
+                overflow: auto;
+                display: none;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                max-height: 200px;
+                margin-top: 6px;
+                padding: 10px 0;
+                border: 1px solid #dee2e6;
+                border-radius: 5px;
+                background-color: white;
+                box-shadow: 0 2px 4px #dee2e6; }
+                .register .company-info .right .company .business-field .select-field .btn.btn-outline--secondary .field__item-wrap .field__item {
+                  padding: 5px 15px;
+                  font-weight: 500;
+                  transition: 0.2s ease-out; }
+                  .register .company-info .right .company .business-field .select-field .btn.btn-outline--secondary .field__item-wrap .field__item:hover {
+                    background-color: #f1f3f5; }
+                .register .company-info .right .company .business-field .select-field .btn.btn-outline--secondary .field__item-wrap .field__item.see-more {
+                  margin: 10px;
+                  margin-bottom: 0;
+                  border: 1px solid #dee2e6;
+                  border-radius: 5px;
+                  text-align: center; }
+              .register .company-info .right .company .business-field .select-field .btn.btn-outline--secondary .field__item-wrap.show {
+                display: block; }
+            .register .company-info .right .company .business-field .select-field .btn ~ .btn {
+              margin-left: 10px; }
+          .register .company-info .right .company .business-field .btn-wrap .btn {
+            width: 100%;
+            margin-top: 12px;
+            border-style: dashed; }
+      .register .company-info .right .company.company--open .component__header {
+        border-bottom: 1px dashed #dee2e6; }
+        .register .company-info .right .company.company--open .component__header .arrow {
+          transform: translateY(8px) rotate(135deg); }
+      .register .company-info .right .company.company--open .component__content {
+        display: block; }
+      .register .company-info .right .btn.btn--primary {
+        width: 100%;
+        margin-top: 20px;
+        padding: 13px 16px 14px;
+        font-size: 14px; }
+  .register section ~ section {
+    margin-top: 40px; }
+
 html {
   background-color: #f1f3f5; }
 
