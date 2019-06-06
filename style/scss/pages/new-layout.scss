@@ -8,8 +8,6 @@
         overflow-x: auto;
         overflow-y: hidden;
         white-space: nowrap;
-        scrollbar-width: none;
-        &::-webkit-scrollbar { display: none; }
         .layout {
             display: inline-block;
             min-width: 80vw;
@@ -103,5 +101,10 @@
     .new-layout {
         margin-top: 60px;
         margin-bottom: 60px;
+        .layout-wrap {
+            padding-bottom: 0;
+            scrollbar-width: none;
+            &::-webkit-scrollbar { display: none; }
+        }
     }
 }

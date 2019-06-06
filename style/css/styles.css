@@ -2205,10 +2205,7 @@ input:focus {
   padding: 0 20px;
   overflow-x: auto;
   overflow-y: hidden;
-  white-space: nowrap;
-  scrollbar-width: none; }
-  .new-layout .layout-wrap::-webkit-scrollbar {
-    display: none; }
+  white-space: nowrap; }
   .new-layout .layout-wrap .layout {
     display: inline-block;
     min-width: 80vw; }
@@ -2292,7 +2289,12 @@ input:focus {
 @media (max-width: 800px) {
   .new-layout {
     margin-top: 60px;
-    margin-bottom: 60px; } }
+    margin-bottom: 60px; }
+    .new-layout .layout-wrap {
+      padding-bottom: 0;
+      scrollbar-width: none; }
+      .new-layout .layout-wrap::-webkit-scrollbar {
+        display: none; } }
 .new-send .send-form {
   max-width: 600px;
   width: 100%;
