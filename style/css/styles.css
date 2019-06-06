@@ -713,6 +713,8 @@ hr {
           min-width: 120px; }
         .body-container .body-wrap .content-container .page-header .btn.btn--primary {
           margin-left: 10px; }
+        .body-container .body-wrap .content-container .page-header .btn.btn-outline--primary ~ .btn.btn-outline--primary {
+          margin-left: 10px; }
         .body-container .body-wrap .content-container .page-header .btn.btn-outline--danger {
           border-style: dashed; }
       .body-container .body-wrap .content-container .page-description {
@@ -1539,6 +1541,8 @@ input:focus {
       margin: 0; }
     .setup .setup-list .input--search .btn {
       margin: 0; }
+  .setup .setup-list .table-wrap {
+    overflow: auto; }
   .setup .setup-list .list--table {
     margin-top: 30px; }
 
@@ -1563,7 +1567,9 @@ input:focus {
         .setup .setup-list .input--search .input__text {
           border-radius: 5px; }
         .setup .setup-list .input--search .btn {
-          display: none; } }
+          display: none; }
+    .setup .mt-15 {
+      margin-top: 15px; } }
 .setup-new.new .mt-0 {
   margin-top: 0; }
 .setup-new.new .document-info .load-btn-wrap .btn {

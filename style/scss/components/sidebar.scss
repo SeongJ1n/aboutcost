@@ -65,6 +65,7 @@
                 // btn 사이즈 조절 및 primary 색상 버튼 좌측 마진
                 .btn { min-width: 120px; }
                 .btn.btn--primary { margin-left: 10px; }
+                .btn.btn-outline--primary  ~ .btn.btn-outline--primary { margin-left: 10px; }
                 .btn.btn-outline--danger { border-style: dashed; }
             }
             .page-description {
