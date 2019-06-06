@@ -37,6 +37,9 @@
         .filter-wrap { margin-left: 15px; }
         // 테이블
         // ––––––––––––––––––––––––––––––––––––––––––––––––––
+        .table-wrap {
+            overflow: auto;
+        }
         .list--table {
             margin-top: 30px;
             .table__row:hover {

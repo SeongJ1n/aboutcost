@@ -3142,6 +3142,8 @@ input:focus {
       margin: 0; }
   .cost-handling-details .cost-handling-list .filter-wrap {
     margin-left: 15px; }
+  .cost-handling-details .cost-handling-list .table-wrap {
+    overflow: auto; }
   .cost-handling-details .cost-handling-list .list--table {
     margin-top: 30px; }
     .cost-handling-details .cost-handling-list .list--table .table__row:hover {
