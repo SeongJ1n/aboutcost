@@ -2485,6 +2485,8 @@ input:focus {
       margin: 0; }
   .receivelist .receivelist-list .filter-wrap {
     margin-left: 15px; }
+  .receivelist .receivelist-list .table-wrap {
+    overflow: auto; }
   .receivelist .receivelist-list .list--table {
     margin-top: 30px; }
 
