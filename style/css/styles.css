@@ -962,6 +962,44 @@ input:focus {
     border: solid white;
     border-width: 0 1px 1px 0; }
 
+.form__file {
+  margin-top: 20px; }
+  .form__file .input__file {
+    display: none; }
+  .form__file .file__label {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+    padding: 12px 12px 9px;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 14px;
+    color: #495057;
+    cursor: pointer; }
+    .form__file .file__label:after {
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: inline-block;
+      height: 100%;
+      padding: 0 12px;
+      border-left: 1px solid #dee2e6;
+      background-color: #f8f9fa;
+      font-size: 14px;
+      line-height: 38px;
+      content: '업로드'; }
+  .form__file .btn.btn-outline--secondary {
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: #f8f9fa;
+    font-weight: 500;
+    transition: 0.2s ease-out; }
+    .form__file .btn.btn-outline--secondary:hover {
+      background-color: #f1f3f5; }
+
 .chip {
   overflow: hidden;
   position: relative;
@@ -1454,50 +1492,18 @@ input:focus {
 .user .manager-info.manager-info--open .component__content {
   display: block; }
 
+@media (max-width: 1200px) {
+  .user .manager-info-wrap.show-mobile {
+    display: block !important;
+    margin-top: 20px; }
+  .user .six.columns {
+    width: 100%; }
+  .user .six.columns.show-pc {
+    display: none; } }
 @media (max-width: 800px) {
   .user {
     margin-top: 60px;
-    margin-bottom: 50px; }
-    .user .six.columns ~ .six.columns {
-      margin-top: 20px; } }
-.form__file {
-  margin-top: 20px; }
-  .form__file .input__file {
-    display: none; }
-  .form__file .file__label {
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-    margin-top: 10px;
-    padding: 12px 12px 9px;
-    border: 1px solid #dee2e6;
-    border-radius: 5px;
-    font-family: inherit;
-    font-weight: 500;
-    font-size: 14px;
-    color: #495057;
-    cursor: pointer; }
-    .form__file .file__label:after {
-      position: absolute;
-      top: 0;
-      right: 0;
-      display: inline-block;
-      height: 100%;
-      padding: 0 12px;
-      border-left: 1px solid #dee2e6;
-      background-color: #f8f9fa;
-      font-size: 14px;
-      line-height: 38px;
-      content: '업로드'; }
-  .form__file .btn.btn-outline--secondary {
-    margin-top: 10px;
-    margin-left: 10px;
-    background-color: #f8f9fa;
-    font-weight: 500;
-    transition: 0.2s ease-out; }
-    .form__file .btn.btn-outline--secondary:hover {
-      background-color: #f1f3f5; }
-
+    margin-bottom: 50px; } }
 .payment-details .payment-list {
   padding: 20px 30px 30px;
   border: 1px solid #dee2e6;

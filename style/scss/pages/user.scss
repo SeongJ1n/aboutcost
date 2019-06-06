@@ -174,50 +174,20 @@
     }
 }
 
+@media (max-width: 1200px) {
+    .user {
+        .manager-info-wrap.show-mobile {
+            display: block !important;
+            margin-top: 20px;
+        }
+        .six.columns { width: 100%; }
+        .six.columns.show-pc { display: none; }
+    }
+}
+
 @media (max-width: $mobile-max-width) {
     .user {
         margin-top: 60px;
         margin-bottom: 50px;
-        .six.columns ~ .six.columns { margin-top: 20px; }
-    }
-}
-
-.form__file {
-    margin-top: 20px;
-    .input__file { display: none; }
-    .file__label {
-        overflow: hidden;
-        position: relative;
-        width: 100%;
-        margin-top: 10px;
-        padding: 12px 12px 9px;
-        border: 1px solid $border;
-        border-radius: $border-radius;
-        font-family : inherit;
-        font-weight: 500;
-        font-size: 14px;
-        color: $oc-gray-7;
-        cursor: pointer;
-        &:after {
-            position: absolute;
-            top: 0;
-            right: 0;
-            display: inline-block;
-            height: 100%;
-            padding: 0 12px;
-            border-left: 1px solid $oc-gray-3;
-            background-color: $oc-gray-0;
-            font-size: 14px;
-            line-height: 38px;
-            content: '업로드';
-        }
-    }
-    .btn.btn-outline--secondary {
-        margin-top: 10px;
-        margin-left: 10px;
-        background-color: $oc-gray-0;
-        font-weight: 500;
-        transition: 0.2s ease-out;
-        &:hover { background-color: $oc-gray-1; }
     }
 }

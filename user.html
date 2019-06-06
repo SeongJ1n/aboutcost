@@ -216,6 +216,37 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="manager-info-wrap show-mobile">
+                                <!-- manager-info--open 클래스를 제거하면 component__content 영역이 닫힙니다.  -->
+                                <div class="manager-info manager-info--open">
+                                    <div class="component__header flex-container flex-space-between">
+                                        <h3 class="title">[담당자 이름/직책] 정보</h3>
+                                        <div class="arrow"></div>
+                                    </div>
+                                    <div class="component__content">
+                                        <div class="form__input">
+                                            <label>담당자 이름/직책</label>
+                                            <input class="input__text" type="text" placeholder="이름과 직책을 입력하세요" />
+                                        </div>
+                                        <div class="form__input">
+                                            <label>담당자 부서</label>
+                                            <input class="input__text" type="text" placeholder="부서를 입력하세요" />
+                                        </div>
+                                        <div class="form__input">
+                                            <label>담당자 이메일</label>
+                                            <input class="input__text" type="text" placeholder="아이디 상의 이메일 주소와 다른 경우 수정하세요" />
+                                        </div>
+                                        <div class="form__input">
+                                            <label>담당자 연락처</label>
+                                            <input class="input__text" type="text" placeholder="{설명 필요}" />
+                                        </div>
+                                        <div class="btn-wrap">
+                                            <button class="btn btn-outline--danger">담당자 삭제하기 ×</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="btn btn-outline--primary">담당자 추가하기 ＋</button>
+                            </div>
                             <div class="payment-info">
                                 <div class="component__header">
                                     <h3 class="title">결제 정보</h3>
@@ -277,7 +308,7 @@
                             </div>
                             <button class="change-pw btn btn-outline--secondary">비밀번호 변경하기</button>
                         </div>
-                        <div class="six columns">
+                        <div class="six columns show-pc">
                             <!-- manager-info--open 클래스를 제거하면 component__content 영역이 닫힙니다.  -->
                             <div class="manager-info manager-info--open">
                                 <div class="component__header flex-container flex-space-between">
