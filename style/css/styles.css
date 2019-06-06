@@ -2126,6 +2126,7 @@ input:focus {
 .new-payment-option .conditional-payment-option__title {
   margin-top: 20px; }
 .new-payment-option .conditional-payment-option {
+  min-width: 320px;
   margin-top: 15px;
   border: 1px solid #dee2e6;
   border-radius: 5px;
