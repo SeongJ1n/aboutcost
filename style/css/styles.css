@@ -2382,6 +2382,9 @@ input:focus {
   border-radius: 5px;
   background-color: white;
   box-shadow: 0 2px 4px #dee2e6; }
+.customer-new .company-info .add-memo {
+  width: 100%;
+  margin-top: 10px; }
 .customer-new .manager-info .component__header {
   border: none;
   transition: 0.2s ease-out;

@@ -13,6 +13,14 @@
         background-color: white;
         @include shadow;
     }
+    // 회사 정보
+    // ––––––––––––––––––––––––––––––––––––––––––––––––––
+    .company-info {
+        .add-memo {
+            width: 100%;
+            margin-top: 10px;
+        }
+    }
     // 담당자 정보
     // ––––––––––––––––––––––––––––––––––––––––––––––––––
     .manager-info {
