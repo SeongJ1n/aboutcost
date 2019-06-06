@@ -2562,6 +2562,27 @@ input:focus {
           border-radius: 5px; }
         .sendlist .sendlist-list .input--search .btn {
           display: none; } }
+.document-detail .alert {
+  max-width: 550px;
+  margin: 30px;
+  padding: 25px;
+  margin-bottom: 0;
+  border: 1px solid #dee2e6;
+  border-radius: 5px; }
+  .document-detail .alert .icon-wrap {
+    width: 80px;
+    height: 80px;
+    border: 1px solid #dee2e6;
+    border-radius: 50%;
+    background-color: #f8f9fa; }
+    .document-detail .alert .icon-wrap i {
+      font-size: 35px; }
+  .document-detail .alert .title {
+    margin-top: 12px; }
+  .document-detail .alert .btn {
+    max-width: 200px;
+    width: 100%;
+    margin-top: 12px; }
 .document-detail .detail-info {
   max-width: 550px;
   width: 100%;
@@ -2670,6 +2691,9 @@ input:focus {
       margin-top: 0;
       border: none;
       box-shadow: none; }
+      .document-detail .detail-info .alert {
+        margin: 0;
+        margin-bottom: 20px; }
       .document-detail .detail-info .history-list {
         padding: 0;
         padding-bottom: 20px; }

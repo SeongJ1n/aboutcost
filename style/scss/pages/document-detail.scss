@@ -1,6 +1,30 @@
 // {견적서 이름} 상세보기
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 .document-detail {
+    .alert {
+        max-width: 550px;
+        margin: 30px;
+        padding: 25px;
+        margin-bottom: 0;
+        border: 1px solid $border;
+        border-radius: $border-radius;
+        .icon-wrap {
+            width: 80px;
+            height: 80px;
+            border: 1px solid $border;
+            border-radius: 50%;
+            background-color: $oc-gray-0;
+            i {
+                font-size: 35px;
+            }
+        }
+        .title { margin-top: 12px; }
+        .btn {
+            max-width: 200px;
+            width: 100%;
+            margin-top: 12px;
+        }
+    }
     .detail-info {
         max-width: 550px;
         width: 100%;
@@ -121,6 +145,10 @@
             margin-top: 0;
             border: none;
             box-shadow: none;
+            .alert {
+                margin: 0;
+                margin-bottom: 20px;
+            }
             .history-list {
                 padding: 0;
                 padding-bottom: 20px;
