@@ -25,7 +25,9 @@ input:focus { outline: none; }
 .input__text.disabled {
     background-color: $oc-gray-0;
 }
-.form__input {}
+.form__input {
+    position: relative;
+}
 .form__input.with-btn {
     .input__text { border-radius: $border-radius 0 0 $border-radius;}
     .btn {

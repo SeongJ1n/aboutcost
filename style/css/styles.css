@@ -831,6 +831,9 @@ input:focus {
 .input__text.disabled {
   background-color: #f8f9fa; }
 
+.form__input {
+  position: relative; }
+
 .form__input.with-btn .input__text {
   border-radius: 5px 0 0 5px; }
 .form__input.with-btn .btn {
@@ -2028,6 +2031,38 @@ input:focus {
 .new-recipient .add-memo {
   width: 100%;
   margin-top: 20px; }
+.new-recipient .autocomplete-wrap {
+  z-index: 9;
+  overflow: hidden;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  margin-top: 8px;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  background-color: white; }
+  .new-recipient .autocomplete-wrap .autocomplete__section .section__title {
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-bottom: 5px;
+    color: #22b8cf;
+    font-weight: 700;
+    font-size: 12px; }
+  .new-recipient .autocomplete-wrap .autocomplete__section .autocomplete__item {
+    padding: 8px 15px;
+    font-weight: 500;
+    transition: 0.2s ease-out;
+    cursor: pointer; }
+    .new-recipient .autocomplete-wrap .autocomplete__section .autocomplete__item:hover {
+      background-color: #f1f3f5; }
+  .new-recipient .autocomplete-wrap .autocomplete__section ~ .autocomplete__section {
+    margin-top: 15px;
+    border-top: 1px dashed #dee2e6; }
+  .new-recipient .autocomplete-wrap .btn-wrap {
+    padding: 15px;
+    padding-top: 10px; }
+    .new-recipient .autocomplete-wrap .btn-wrap .btn--add {
+      width: 100%; }
 .new-recipient .manager-info .component__header {
   border: none;
   transition: 0.2s ease-out;

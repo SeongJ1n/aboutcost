@@ -12,6 +12,43 @@
         width: 100%;
         margin-top: 20px;
     }
+    .autocomplete-wrap {
+        z-index: 9;
+        overflow: hidden;
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        margin-top: 8px;
+        border: 1px solid $border;
+        border-radius: $border-radius;
+        background-color: white;
+        .autocomplete__section {
+            .section__title {
+                margin-top: 15px;
+                margin-left: 15px;
+                margin-bottom: 5px;
+                color: $primary;
+                font-weight: 700;
+                font-size: 12px;
+            }
+            .autocomplete__item {
+                padding: 8px 15px;
+                font-weight: 500;
+                transition: 0.2s ease-out;
+                cursor: pointer;
+                &:hover { background-color: $oc-gray-1; }
+            }
+        }
+        .autocomplete__section ~ .autocomplete__section {
+            margin-top: 15px;
+            border-top: 1px dashed $border;
+        }
+        .btn-wrap {
+            padding: 15px;
+            padding-top: 10px;
+            .btn--add { width: 100%; }
+        }
+    }
     // 담당자 정보
     // ––––––––––––––––––––––––––––––––––––––––––––––––––
     .manager-info {
